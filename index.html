@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detention Center Reports</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+</head>
+<body>
+
+  <!-- Logo -->
+  <header>
+    <img src="Relevant_Research_HZ_Color.png" alt="Relevant Research Logo" class="logo" />
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Select a Detention Center Report</h1>
+
+    <div class="dropdown-wrapper">
+      <select id="reportSelector" class="dropdown">
+        <option value="">-- Choose Detention Center --</option>
+        <option value="Adams.html">Adams County</option>
+        <option value="Baker.html">Baker County</option>
+        <option value="DodgeCounty.html">Dodge County</option>
+      </select>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    Developed by <a href="https://relevant-research.com/" target="_blank">Relevant Research</a>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    const choices = new Choices('#reportSelector', {
+      searchEnabled: true,
+      itemSelectText: '',
+      shouldSort: false,
+    });
+
+    document.getElementById("reportSelector").addEventListener("change", function () {
+      const selectedFile = this.value;
+      if (selectedFile) {
+        window.open(selectedFile, "_blank");
+      }
+    });
+  </script>
+
+</body>
+</html>
