@@ -1,5 +1,5 @@
 {
-  "total_files": 143,
+  "total_files": 174,
   "files": [
     {
       "filename": "ADAMS_COUNTY_DET_CENTER.html",
@@ -18,6 +18,10 @@
       "name": "Alexandria Staging Facility"
     },
     {
+      "filename": "ALLEGANY_COUNTY_JAIL.html",
+      "name": "Allegany County Jail"
+    },
+    {
       "filename": "ALLEN_PARISH_PUBLIC_SAFETY_COMPLEX.html",
       "name": "Allen Parish Public Safety Complex"
     },
@@ -34,8 +38,8 @@
       "name": "Baldwin County Correctional Center"
     },
     {
-      "filename": "BELL_COUNTY_JAIL.html",
-      "name": "Bell County Jail"
+      "filename": "BERLIN_FED._CORR._INST..html",
+      "name": "Berlin Fed. Corr. Inst."
     },
     {
       "filename": "BLUEBONNET_DETENTION_FACILITY.html",
@@ -46,6 +50,14 @@
       "name": "Boone County Jail"
     },
     {
+      "filename": "BROOME_COUNTY_JAIL.html",
+      "name": "Broome County Jail"
+    },
+    {
+      "filename": "BROWARD_COUNTY_JAIL.html",
+      "name": "Broward County Jail"
+    },
+    {
       "filename": "BROWARD_TRANSITIONAL_CENTER.html",
       "name": "Broward Transitional Center"
     },
@@ -54,8 +66,8 @@
       "name": "Buffalo Service Processing Center"
     },
     {
-      "filename": "BURNET_COUNTY_JAIL.html",
-      "name": "Burnet County Jail"
+      "filename": "BURLEIGH_COUNTY.html",
+      "name": "Burleigh County"
     },
     {
       "filename": "BUTLER_COUNTY_JAIL.html",
@@ -66,8 +78,16 @@
       "name": "Calhoun County Correctional Center"
     },
     {
+      "filename": "CAMPBELL_CO_DET_CTR.html",
+      "name": "Campbell Co Det Ctr"
+    },
+    {
       "filename": "CAROLINE_DETENTION_FACILITY.html",
       "name": "Caroline Detention Facility"
+    },
+    {
+      "filename": "CASS_COUNTY_JAIL.html",
+      "name": "Cass County Jail"
     },
     {
       "filename": "CCA,_FLORENCE_CORRECTIONAL_CENTER.html",
@@ -82,10 +102,6 @@
       "name": "Chase County Jail"
     },
     {
-      "filename": "CHAVEZ_DETENTION_CENTER.html",
-      "name": "Chavez Detention Center"
-    },
-    {
       "filename": "CHIPPEWA_COUNTY_SSM.html",
       "name": "Chippewa County Ssm"
     },
@@ -98,8 +114,24 @@
       "name": "Cibola County Correctional Center"
     },
     {
+      "filename": "CIMMARRON_CORR_FACILITY.html",
+      "name": "Cimmarron Corr Facility"
+    },
+    {
+      "filename": "CLARK_COUNTY_JAIL_(IN).html",
+      "name": "Clark County Jail (In)"
+    },
+    {
       "filename": "CLAY_COUNTY_JUSTICE_CENTER.html",
       "name": "Clay County Justice Center"
+    },
+    {
+      "filename": "CLINTON_COUNTY_(IN).html",
+      "name": "Clinton County (In)"
+    },
+    {
+      "filename": "CLINTON_COUNTY_(NY).html",
+      "name": "Clinton County (Ny)"
     },
     {
       "filename": "CLINTON_COUNTY_CORRECTIONAL_FACILITY.html",
@@ -114,6 +146,10 @@
       "name": "Collier County Naples Jail Center"
     },
     {
+      "filename": "CORR._CTR_OF_NORTHWEST_OHIO.html",
+      "name": "Corr. Ctr Of Northwest Ohio"
+    },
+    {
       "filename": "CUMBERLAND_COUNTY_JAIL.html",
       "name": "Cumberland County Jail"
     },
@@ -122,12 +158,12 @@
       "name": "Dakota County Jail"
     },
     {
-      "filename": "DALE_G._HAILE_DETENTION_CENTER.html",
-      "name": "Dale G. Haile Detention Center"
-    },
-    {
       "filename": "DALLAS_COUNTY_JAIL_-_LEW_STERRETT_JUSTICE_CENTER.html",
       "name": "Dallas County Jail - Lew Sterrett Justice Center"
+    },
+    {
+      "filename": "DELANEY_HALL_DETENTION_FACILITY.html",
+      "name": "Delaney Hall Detention Facility"
     },
     {
       "filename": "DENVER_CONTRACT_DETENTION_FACILITY.html",
@@ -150,10 +186,6 @@
       "name": "Dodge County Jail"
     },
     {
-      "filename": "DORCHESTER_CO_DET_CTR.html",
-      "name": "Dorchester Co Det Ctr"
-    },
-    {
       "filename": "EAST_HIDALGO_DETENTION_CENTER.html",
       "name": "East Hidalgo Detention Center"
     },
@@ -174,6 +206,10 @@
       "name": "El Paso Service Processing Center"
     },
     {
+      "filename": "EL_PASO_SOFT_SIDED_FACILITY.html",
+      "name": "El Paso Soft Sided Facility"
+    },
+    {
       "filename": "EL_VALLE_DETENTION_FACILITY.html",
       "name": "El Valle Detention Facility"
     },
@@ -182,12 +218,20 @@
       "name": "Erie County Jail"
     },
     {
+      "filename": "ESTANCIA.html",
+      "name": "Estancia"
+    },
+    {
       "filename": "ETOWAH_COUNTY_JAIL_(ALABAMA).html",
       "name": "Etowah County Jail (Alabama)"
     },
     {
       "filename": "FAYETTE_COUNTY_DETENTION_CENTER.html",
       "name": "Fayette County Detention Center"
+    },
+    {
+      "filename": "FDC_PHILADELPHIA.html",
+      "name": "Fdc Philadelphia"
     },
     {
       "filename": "FINNEY_COUNTY_JAIL.html",
@@ -202,6 +246,10 @@
       "name": "Florence Staging Facility"
     },
     {
+      "filename": "FLOYD_COUNTY_JAIL.html",
+      "name": "Floyd County Jail"
+    },
+    {
       "filename": "FOLKSTON_ANNEX_IPC.html",
       "name": "Folkston Annex Ipc"
     },
@@ -212,10 +260,6 @@
     {
       "filename": "FREEBORN_COUNTY_ADULT_DETENTION_CENTER.html",
       "name": "Freeborn County Adult Detention Center"
-    },
-    {
-      "filename": "GARVIN_COUNTY_DETENTION_CENTER.html",
-      "name": "Garvin County Detention Center"
     },
     {
       "filename": "GEAUGA_COUNTY_JAIL.html",
@@ -238,12 +282,32 @@
       "name": "Grayson County Jail"
     },
     {
+      "filename": "GREENE_COUNTY_JAIL.html",
+      "name": "Greene County Jail"
+    },
+    {
+      "filename": "GUAYNABO_MDC_(SAN JUAN).html",
+      "name": "Guaynabo Mdc (San Juan)"
+    },
+    {
       "filename": "HANCOCK_COUNTY_PUBLIC_SAFETY_COMPLEX.html",
       "name": "Hancock County Public Safety Complex"
     },
     {
+      "filename": "HARDIN_COUNTY_JAIL.html",
+      "name": "Hardin County Jail"
+    },
+    {
       "filename": "HENDERSON_DETENTION.html",
       "name": "Henderson Detention"
+    },
+    {
+      "filename": "HONOLULU_FEDERAL_DETENTION_CENTER.html",
+      "name": "Honolulu Federal Detention Center"
+    },
+    {
+      "filename": "HOPKINS_COUNTY_JAIL.html",
+      "name": "Hopkins County Jail"
     },
     {
       "filename": "HOUSTON_CONTRACT_DETENTION_FACILITY.html",
@@ -270,12 +334,12 @@
       "name": "Joe Corley Processing Ctr"
     },
     {
-      "filename": "KANDIYOHI_COUNTY_JAIL.html",
-      "name": "Kandiyohi County Jail"
+      "filename": "JTF_CAMP_SIX.html",
+      "name": "Jtf Camp Six"
     },
     {
-      "filename": "KARNES_COUNTY_CORRECTIONAL_CENTER.html",
-      "name": "Karnes County Correctional Center"
+      "filename": "KANDIYOHI_COUNTY_JAIL.html",
+      "name": "Kandiyohi County Jail"
     },
     {
       "filename": "KARNES_COUNTY_IMMIGRATION_PROCESSING_CENTER.html",
@@ -286,6 +350,10 @@
       "name": "Kay Co Justice Facility"
     },
     {
+      "filename": "KENTON_COUNTY_JAIL.html",
+      "name": "Kenton County Jail"
+    },
+    {
       "filename": "KNOX_COUNTY_DETENTION_FACILITY.html",
       "name": "Knox County Detention Facility"
     },
@@ -294,8 +362,16 @@
       "name": "Krome North Service Processing Center"
     },
     {
+      "filename": "LAKE_COUNTY_JAIL.html",
+      "name": "Lake County Jail"
+    },
+    {
       "filename": "LAREDO_PROCESSING_CENTER.html",
       "name": "Laredo Processing Center"
+    },
+    {
+      "filename": "LAUREL_COUNTY_SHERIFFS_JAIL.html",
+      "name": "Laurel County Sheriffs Jail"
     },
     {
       "filename": "LA_PAZ_COUNTY_ADULT_DETENTION_FACILITY.html",
@@ -304,6 +380,10 @@
     {
       "filename": "LA_SALLE_COUNTY_REGIONAL_DETENTION_CENTER.html",
       "name": "La Salle County Regional Detention Center"
+    },
+    {
+      "filename": "LEAVENWORTH_US_PENITENTIARY.html",
+      "name": "Leavenworth Us Penitentiary"
     },
     {
       "filename": "LEXINGTON_COUNTY_JAIL.html",
@@ -330,20 +410,20 @@
       "name": "Madison County Jail"
     },
     {
-      "filename": "MARION_COUNTY_JAIL.html",
-      "name": "Marion County Jail"
+      "filename": "MAHONING_COUNTY_JAIL.html",
+      "name": "Mahoning County Jail"
     },
     {
-      "filename": "MCLENNAN_COUNTY_JAIL.html",
-      "name": "Mclennan County Jail"
+      "filename": "MARION_COUNTY_JAIL.html",
+      "name": "Marion County Jail"
     },
     {
       "filename": "MESA_VERDE_ICE_PROCESSING_CENTER.html",
       "name": "Mesa Verde Ice Processing Center"
     },
     {
-      "filename": "MIDLAND_COUNTY_DETENTION_CENTER.html",
-      "name": "Midland County Detention Center"
+      "filename": "MIGRANT_OPS_CENTER_MAIN_A.html",
+      "name": "Migrant Ops Center Main A"
     },
     {
       "filename": "MILLER_COUNTY_JAIL.html",
@@ -366,8 +446,12 @@
       "name": "Moshannon Valley Processing Center"
     },
     {
-      "filename": "NATRONA_COUNTY_JAIL.html",
-      "name": "Natrona County Jail"
+      "filename": "MUSCATINE_COUNTY_JAIL.html",
+      "name": "Muscatine County Jail"
+    },
+    {
+      "filename": "NASSAU_COUNTY_CORRECTIONAL_CENTER.html",
+      "name": "Nassau County Correctional Center"
     },
     {
       "filename": "NEVADA_SOUTHERN_DETENTION_CENTER.html",
@@ -378,12 +462,32 @@
       "name": "New Hanover County Jail"
     },
     {
+      "filename": "NIAGARA_COUNTY_JAIL.html",
+      "name": "Niagara County Jail"
+    },
+    {
+      "filename": "NORTHEAST_OHIO_CORRECTIONAL_CENTER.html",
+      "name": "Northeast Ohio Correctional Center"
+    },
+    {
+      "filename": "NORTHERN_REGIONAL_JAIL.html",
+      "name": "Northern Regional Jail"
+    },
+    {
+      "filename": "NORTHWESTERN_REGIONAL_JUVENILE_DETENTION_CENTER.html",
+      "name": "Northwestern Regional Juvenile Detention Center"
+    },
+    {
       "filename": "NORTHWEST_ICE_PROCESSSING_CENTER.html",
       "name": "Northwest Ice Processsing Center"
     },
     {
       "filename": "NORTHWEST_REGIONAL_CORRECTIONS_CENTER.html",
       "name": "Northwest Regional Corrections Center"
+    },
+    {
+      "filename": "NORTHWEST_STATE_CORRECTIONAL_CENTER.html",
+      "name": "Northwest State Correctional Center"
     },
     {
       "filename": "OLDHAM_COUNTY_JAIL.html",
@@ -404,6 +508,10 @@
     {
       "filename": "OTERO_COUNTY_PROCESSING_CENTER.html",
       "name": "Otero County Processing Center"
+    },
+    {
+      "filename": "OZARK_COUNTY_SHERIFF'S_OFFICE.html",
+      "name": "Ozark County Sheriff'S Office"
     },
     {
       "filename": "PENNINGTON_COUNTY_JAIL_(SOUTH_DAKOTA).html",
@@ -462,6 +570,10 @@
       "name": "Prince Edward County (Farmville)"
     },
     {
+      "filename": "PUTNAM_COUNTY_SHERIFF.html",
+      "name": "Putnam County Sheriff"
+    },
+    {
       "filename": "RICHWOOD_CORRECTIONAL_CENTER.html",
       "name": "Richwood Correctional Center"
     },
@@ -486,8 +598,20 @@
       "name": "Salt Lake County Metro Jail"
     },
     {
+      "filename": "SAN_JUAN_STAGING.html",
+      "name": "San Juan Staging"
+    },
+    {
       "filename": "SAN_LUIS_REGIONAL_DETENTION_CENTER.html",
       "name": "San Luis Regional Detention Center"
+    },
+    {
+      "filename": "SARPY_COUNTY_JAIL.html",
+      "name": "Sarpy County Jail"
+    },
+    {
+      "filename": "SEBASTIAN_COUNTY_DETENTION_CENTER.html",
+      "name": "Sebastian County Detention Center"
     },
     {
       "filename": "SENECA_COUNTY_JAIL.html",
@@ -514,6 +638,10 @@
       "name": "St. Clair County Jail"
     },
     {
+      "filename": "STE._GENEVIEVE_COUNTY_JAIL.html",
+      "name": "Ste. Genevieve County Jail"
+    },
+    {
       "filename": "STEWART_DETENTION_CENTER.html",
       "name": "Stewart Detention Center"
     },
@@ -530,12 +658,16 @@
       "name": "Tulsa County Jail (David L. Moss Justice Ctr)"
     },
     {
+      "filename": "TWO_BRIDGES_REGIONAL_JAIL.html",
+      "name": "Two Bridges Regional Jail"
+    },
+    {
       "filename": "T_DON_HUTTO_DETENTION_CENTER.html",
       "name": "T Don Hutto Detention Center"
     },
     {
-      "filename": "VICTORIA_COUNTY_JAIL.html",
-      "name": "Victoria County Jail"
+      "filename": "WALTON_COUNTY_JAIL.html",
+      "name": "Walton County Jail"
     },
     {
       "filename": "WASHINGTON_COUNTY_DETENTION_CENTER.html",
@@ -554,10 +686,6 @@
       "name": "Webb County Detention Center (Cca)"
     },
     {
-      "filename": "WILSON_COUNTY_JAIL.html",
-      "name": "Wilson County Jail"
-    },
-    {
       "filename": "WINN_CORRECTIONAL_CENTER.html",
       "name": "Winn Correctional Center"
     },
@@ -568,10 +696,6 @@
     {
       "filename": "WYATT_DETENTION_CENTER.html",
       "name": "Wyatt Detention Center"
-    },
-    {
-      "filename": "YELLOWSTONE_COUNTY_JAIL.html",
-      "name": "Yellowstone County Jail"
     }
   ]
 }
