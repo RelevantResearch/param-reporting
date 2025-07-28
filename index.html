@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICE Detention Facilities - Directory</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y0JF41VY73"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Y0JF41VY73');
+    </script>
     <style>
         * {
             margin: 0;
@@ -203,6 +213,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header class="header">
@@ -211,13 +222,8 @@
         </header>
 
         <div class="search-container">
-            <input 
-                type="text" 
-                class="search-box" 
-                id="searchInput" 
-                placeholder="Search facilities by name or location..."
-                autocomplete="off"
-            >
+            <input type="text" class="search-box" id="searchInput"
+                placeholder="Search facilities by name or location..." autocomplete="off">
             <div class="search-info">
                 <span id="searchResults"></span>
                 Type to search facilities. Results update in real-time.
@@ -231,7 +237,8 @@
         </div>
 
         <footer class="footer">
-            <p>This directory provides transparency and information about ICE detention facilities across the United States.</p>
+            <p>This directory provides transparency and information about ICE detention facilities across the United
+                States.</p>
             <p>Questions? Email Adam at <a href="mailto:adam@relevant-research.com">adam@relevant-research.com</a></p>
             <p>Developed by <a href="https://relevant-research.com/" target="_blank">Relevant Research</a></p>
         </footer>
@@ -246,20 +253,20 @@
             try {
                 const response = await fetch('index.json');
                 const data = await response.json();
-                
+
                 allFacilities = data.files;
                 filteredFacilities = [...allFacilities];
-                
+
                 // Update total count
-                document.getElementById('totalFacilities').textContent = 
+                document.getElementById('totalFacilities').textContent =
                     `${data.total_files} Detention Centers`;
-                
+
                 // Display facilities
                 displayFacilities(filteredFacilities);
-                
+
             } catch (error) {
                 console.error('Error loading facilities:', error);
-                document.getElementById('facilitiesContent').innerHTML = 
+                document.getElementById('facilitiesContent').innerHTML =
                     '<div class="no-results">Error loading facilities. Please check if index.json exists.</div>';
             }
         }
@@ -267,7 +274,7 @@
         // Display facilities
         function displayFacilities(facilities) {
             const container = document.getElementById('facilitiesContent');
-            
+
             if (facilities.length === 0) {
                 container.innerHTML = '<div class="no-results">No facilities found matching your search.</div>';
                 return;
@@ -291,7 +298,7 @@
                 filteredFacilities = [...allFacilities];
             } else {
                 const searchTerm = query.toLowerCase();
-                filteredFacilities = allFacilities.filter(facility => 
+                filteredFacilities = allFacilities.filter(facility =>
                     facility.name.toLowerCase().includes(searchTerm) ||
                     facility.filename.toLowerCase().includes(searchTerm)
                 );
@@ -317,4 +324,5 @@
         loadFacilities();
     </script>
 </body>
+
 </html>
