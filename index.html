@@ -25,11 +25,27 @@
         </header>
 
         <div class="search-container">
+            <div class="filter-row">
+                <div class="filter-group">
+                    <label for="stateSearch">State</label>
+                    <select id="stateSearch" class="filter-input">
+                        <option value="">All States</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="citySearch">City</label>
+                    <input type="text" id="citySearch" class="filter-input" placeholder="e.g., Natchez">
+                </div>
+                <div class="filter-group">
+                    <label for="zipSearch">Zip Code</label>
+                    <input type="text" id="zipSearch" class="filter-input" placeholder="e.g., 39120">
+                </div>
+            </div>
             <input type="text" class="search-box" id="searchInput"
-                placeholder="Search facilities by name or location..." autocomplete="off">
+                placeholder="Search facilities by name, location, or detention code..." autocomplete="off">
             <div class="search-info">
                 <span id="searchResults"></span>
-                Type to search facilities. Results update in real-time.
+                Search facilities by name, city, state, or detention location code.
             </div>
         </div>
 

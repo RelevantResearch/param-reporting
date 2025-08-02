@@ -60,6 +60,51 @@ body {
     border: 1px solid #e9ecef;
 }
 
+.filter-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-size: 0.9rem;
+}
+
+.filter-input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: white;
+    cursor: pointer;
+}
+
+.filter-input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+select.filter-input {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6,9 12,15 18,9'></polyline></svg>");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+    padding-right: 2.5rem;
+}
+
 .search-box {
     width: 100%;
     padding: 1rem;
@@ -135,12 +180,18 @@ body {
 .facility-name {
     font-weight: 600;
     font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.facility-location {
+    font-size: 0.9rem;
+    color: #7f8c8d;
     margin-bottom: 0.2rem;
 }
 
-.facility-filename {
-    font-size: 0.85rem;
-    color: #7f8c8d;
+.facility-detloc {
+    font-size: 0.8rem;
+    color: #95a5a6;
     font-family: 'Courier New', monospace;
 }
 
