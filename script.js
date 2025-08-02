@@ -146,20 +146,22 @@ function searchFacilities() {
         // Ensure all fields exist and convert to lowercase for comparison
         const facilityName = (facility.Name || '').toLowerCase();
         const facilityCity = (facility.City || '').toLowerCase();
-        const facilityState = (facility.State || '');
+        const facilityState = (facility.State || '').toLowerCase();
+        const facilityStateFull = (stateNames[facility.State] || '').toLowerCase(); // Full state name
         const facilityDetloc = (facility.DETLOC || '').toLowerCase();
-        const facilityZip = (facility.Zip || '').toString();
+        const facilityZip = (facility.Zip || '').toString().toLowerCase();
 
-        // Main search (name, location, detention code)
+        // Main search (name, city, state abbreviation, state full name, detention code, zip)
         const matchesSearch = !searchQuery || 
             facilityName.includes(searchQuery) ||
             facilityCity.includes(searchQuery) ||
-            facilityState.toLowerCase().includes(searchQuery) ||
+            facilityState.includes(searchQuery) ||
+            facilityStateFull.includes(searchQuery) ||
             facilityDetloc.includes(searchQuery) ||
             facilityZip.includes(searchQuery);
 
         // State filter (exact match for dropdown)
-        const matchesState = !stateQuery || facilityState === stateQuery;
+        const matchesState = !stateQuery || facilityState.toUpperCase() === stateQuery.toUpperCase();
 
         // City filter
         const matchesCity = !cityQuery || 
