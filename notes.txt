@@ -1,0 +1,20 @@
+# Notes
+
+**June 23, 2025**: Four facilities listed by ICE for this date featured population averages that were impossibly high:
+
+- Fayette County Detention Center
+- La Paz County Adult Detention Facility
+- Lexington County Jail
+- New Hanover County Jail
+
+Population numbers reported by ICE for these four facilities has been removed from the dataset for this date.
+
+**July 7, 2025**: More than half (96 out of 172) of the facilities listed by ICE for this date featured population averages that were impossibly low. 
+
+While it's quite possible that ICE released correct populations for other facilities, the pervasiveness of the error has forced us to drop this entire dataset from release.
+
+**July 21, 2025**: One facility listed by ICE for this date featured population averages that were impossibly low:
+
+- Northwest Regional Corrections Center
+
+Population numbers reported by ICE for this facility has been removed from the dataset for this date.

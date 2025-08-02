@@ -1,6 +1,66 @@
 let allFacilities = [];
 let filteredFacilities = [];
 
+// US State abbreviations to full names mapping
+const stateNames = {
+    'AL': 'Alabama',
+    'AK': 'Alaska',
+    'AZ': 'Arizona',
+    'AR': 'Arkansas',
+    'CA': 'California',
+    'CO': 'Colorado',
+    'CT': 'Connecticut',
+    'DE': 'Delaware',
+    'FL': 'Florida',
+    'GA': 'Georgia',
+    'HI': 'Hawaii',
+    'ID': 'Idaho',
+    'IL': 'Illinois',
+    'IN': 'Indiana',
+    'IA': 'Iowa',
+    'KS': 'Kansas',
+    'KY': 'Kentucky',
+    'LA': 'Louisiana',
+    'ME': 'Maine',
+    'MD': 'Maryland',
+    'MA': 'Massachusetts',
+    'MI': 'Michigan',
+    'MN': 'Minnesota',
+    'MS': 'Mississippi',
+    'MO': 'Missouri',
+    'MT': 'Montana',
+    'NE': 'Nebraska',
+    'NV': 'Nevada',
+    'NH': 'New Hampshire',
+    'NJ': 'New Jersey',
+    'NM': 'New Mexico',
+    'NY': 'New York',
+    'NC': 'North Carolina',
+    'ND': 'North Dakota',
+    'OH': 'Ohio',
+    'OK': 'Oklahoma',
+    'OR': 'Oregon',
+    'PA': 'Pennsylvania',
+    'RI': 'Rhode Island',
+    'SC': 'South Carolina',
+    'SD': 'South Dakota',
+    'TN': 'Tennessee',
+    'TX': 'Texas',
+    'UT': 'Utah',
+    'VT': 'Vermont',
+    'VA': 'Virginia',
+    'WA': 'Washington',
+    'WV': 'West Virginia',
+    'WI': 'Wisconsin',
+    'WY': 'Wyoming',
+    'DC': 'District of Columbia',
+    'AS': 'American Samoa',
+    'GU': 'Guam',
+    'MP': 'Northern Mariana Islands',
+    'PR': 'Puerto Rico',
+    'VI': 'U.S. Virgin Islands'
+};
+
 // Load facilities from JSON
 async function loadFacilities() {
     try {
@@ -30,18 +90,19 @@ async function loadFacilities() {
 // Set dynamic placeholders and populate dropdowns based on actual data
 function setDynamicPlaceholders() {
     if (allFacilities.length > 0) {
-        // Get unique values for placeholders and dropdowns
-        const states = [...new Set(allFacilities.map(f => f.State).filter(Boolean))].sort();
+        // Get unique state abbreviations and sort them
+        const stateAbbreviations = [...new Set(allFacilities.map(f => f.State).filter(Boolean))].sort();
         const cities = [...new Set(allFacilities.map(f => f.City).filter(Boolean))];
         const zips = [...new Set(allFacilities.map(f => f.Zip).filter(Boolean))];
 
-        // Populate states dropdown
+        // Populate states dropdown with full names
         const stateSelect = document.getElementById('stateSearch');
         stateSelect.innerHTML = '<option value="">All States</option>';
-        states.forEach(state => {
+        
+        stateAbbreviations.forEach(abbr => {
             const option = document.createElement('option');
-            option.value = state;
-            option.textContent = state;
+            option.value = abbr; // Keep abbreviation as value for filtering
+            option.textContent = stateNames[abbr] || abbr; // Show full name, fallback to abbreviation
             stateSelect.appendChild(option);
         });
 
