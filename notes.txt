@@ -16,3 +16,5 @@ Population numbers reported by ICE for these four facilities have been excluded 
 -   Northwest Regional Corrections Center
 
 Population numbers reported by ICE for this facility have been excluded from the dataset for this date.
+
+As originally published, Miami Federal Detention featured inaccurate Interval ADP numbers. This was corrected on 2025-08-07. 
