@@ -1,20 +1,84 @@
 # Notes
 
-*June 23, 2025*: Four facilities listed by ICE on this date featured population averages that were impossibly high:
+
+#### June 23, 2025:
+
+Four facilities listed by ICE on this date featured population averages
+that were impossibly high:
 
 -   Fayette County Detention Center
 -   La Paz County Adult Detention Facility
 -   Lexington County Jail
 -   New Hanover County Jail
 
-Population numbers reported by ICE for these four facilities have been excluded from the dataset for this date.
+Population numbers reported by ICE for these four facilities have been
+excluded from the dataset for this date.
 
-*July 7, 2025*: More than half (96 out of 172) of the facilities listed by ICE on this date featured population averages that were impossibly low. While it's quite possible that ICE released correct populations for other facilities, the pervasiveness of the error has forced us to drop this entire dataset from release.
+A fifth detention facility had two entries for this release with
+differing population values:
 
-*July 21, 2025*: One facility listed by ICE on this date featured population averages that were impossibly low:
+-   Nassau County Correctional Center
+
+Upon the passage of time and the inclusion of more data, we have
+selected the entry with the lower ADP value for this week as it comports
+more consistently with population releases before and after June 23.
+
+#### July 7, 2025
+
+More than half (96 out of 172) of the facilities listed by ICE on this
+date featured population averages that were impossibly low. While it’s
+quite possible that ICE released correct populations for other
+facilities, the pervasiveness of the error has forced us to drop this
+entire dataset from release.
+
+#### July 21, 2025:
+
+One facility listed by ICE on this date featured population averages
+that were impossibly low:
 
 -   Northwest Regional Corrections Center
 
-Population numbers reported by ICE for this facility have been excluded from the dataset for this date.
+Population numbers reported by ICE for this facility have been excluded
+from the dataset for this date.
 
-As originally published, Miami Federal Detention featured inaccurate Interval ADP numbers. This was corrected on 2025-08-07. 
+As originally published, Miami Federal Detention featured inaccurate
+Interval ADP numbers. This was corrected on August 7, 2025.
+
+#### August 4, 2025
+
+Typically, disaggregated average daily population numbers released by
+ICE include decimals, allowing each of the three separate reporting
+categories – Security Classification, Gender/Criminal Status, and ICE
+Threat Level – to sum to equal population values. In this release, ICE
+rounded all population numbers to the nearest integer.
+
+This has meant that one category might show a higher population than
+another category by one or two people, despite the fact that both
+systems of classification report on the same number of people. To put it
+differently, ICE released up to three different average daily population
+figures per facility.
+
+For the purposes of calculating Interval ADP, that difference of 1 or 2
+can create discrepancies of 14 or even 28 people when calculating the
+population for each facility between July 22 and August 4.
+
+To mitigate the impact of this reporting style, we have decided to take
+the average of the three categories and treat that number as the
+official Average Daily Population as reported by ICE. We then computed
+the Interval ADP for July 22 to August 4 based on that equally-weighted
+number.
+
+The rounding discrepancy causes nonsensical numbers for security
+classification, gender, and criminal status, particularly for facilities
+which hold fewer people. We will not report any disaggregation of
+Interval ADP for detention facilities which held an average of 14 or
+fewer individuals over the last interval (the 14 days between July 2 and
+August 4).
+
+One facility listed by ICE on this date featured population averages
+that were impossibly low:
+
+-   Robert A. Deyton Detention Facility
+
+Population numbers reported by ICE for this facility have been excluded
+from the dataset for this date.
