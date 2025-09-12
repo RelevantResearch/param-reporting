@@ -72,7 +72,7 @@ async function loadFacilities() {
 
         // Update total count
         document.getElementById('totalFacilities').textContent =
-            `${data.length} Detention Centers`;
+            `${data.length - 1} Detention Centers`;
 
         // Set dynamic placeholders based on first few facilities
         setDynamicPlaceholders();
