@@ -245,6 +245,8 @@ select.filter-input {
         grid-template-columns: 1fr;
     }
 }
+
+/* Map container styling - FIXED */
 .Search-from-map {
   margin: 1.5rem 0;
   background: #ffffff;
@@ -257,4 +259,21 @@ select.filter-input {
 #map {
   height: 600px;
   width: 100%;
+  min-height: 600px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure Leaflet controls are visible */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Mobile responsiveness for map */
+@media (max-width: 768px) {
+    #map {
+        height: 400px;
+        min-height: 400px;
+    }
 }
