@@ -64,13 +64,26 @@ const stateNames = {
 
 let map;
 let markersLayer;
+// function initMap() {
+//     map = L.map('map').setView([37.8, -96], 4); //US center
+//     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//     maxZoom: 18,
+//     attribution: '&copy; OpenStreetMap'
+//   }).addTo(map);
+//   markersLayer = L.layerGroup().addTo(map);
+// }
 function initMap() {
-    map = L.map('map').setView([37.8, -96], 4); //US center
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  map = L.map('map').setView([37.8, -96], 4);
+
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18,
     attribution: '&copy; OpenStreetMap'
   }).addTo(map);
+
   markersLayer = L.layerGroup().addTo(map);
+  setTimeout(() => {
+    map.invalidateSize();
+  }, 300);
 }
  async function loadCountyCoordinates() {
     try {
