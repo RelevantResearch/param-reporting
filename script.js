@@ -74,7 +74,7 @@ function initMap() {
 }
  async function loadCountyCoordinates() {
     try {
-        const response = await fetch('CountyCoordinates.json');
+        const response = await fetch('./CountyCoordinates.json');
         const data = await response.json();
         renderCountyMarkers(data);
     } catch (error) {
@@ -131,7 +131,7 @@ function renderCountyMarkers(points) {
 // Load facilities from JSON
 async function loadFacilities() {
     try {
-        const response = await fetch('index.json');
+        const response = await fetch('./index.json');
         const data = await response.json();
 
         allFacilities = data;
