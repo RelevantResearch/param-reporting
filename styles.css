@@ -245,3 +245,4 @@ select.filter-input {
         grid-template-columns: 1fr;
     }
 }
+#map { height: 600px; width: 100%; }

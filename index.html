@@ -15,14 +15,19 @@
         gtag('config', 'G-Y0JF41VY73');
     </script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <h1>ICE Detention Facilities Statistics</h1>
+            <h1>ICE Detention Reports</h1>
             <div class="stats" id="totalFacilities">Loading...</div>
         </header>
+        <div class="Search-from-map">
+            <div id = "map"></div>
+        </div>
 
         <div class="search-container">
             <div class="filter-row">

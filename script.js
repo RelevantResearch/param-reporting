@@ -61,6 +61,73 @@ const stateNames = {
     'VI': 'U.S. Virgin Islands'
 };
 
+
+let map;
+let markersLayer;
+function initMap() {
+    map = L.map('map').setView([37.8, -96], 4); //US center
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap'
+  }).addTo(map);
+  markersLayer = L.layerGroup().addTo(map);
+}
+ async function loadCountyCoordinates() {
+    try {
+        const response = await fetch('CountyCoordinates.json');
+        const data = await response.json();
+        renderCountyMarkers(data);
+    } catch (error) {
+        console.error('Error loading county coordinates:', error);
+    }
+ }
+
+function facilityNameToHtmlFile(name) {
+  return String(name || "")
+    .trim()
+    .toUpperCase()
+    .replace(/ /g, "_")   // ONLY spaces
+    + ".html";
+}
+
+function renderCountyMarkers(points) {
+  markersLayer.clearLayers();
+
+  points.forEach(p => {
+    const lat = Number(p.Latitude);
+    const lng = Number(p.Longitude);
+    if (!Number.isFinite(lat) || !Number.isFinite(lng)) return;
+
+    // const popupHtml = `
+    //   <div style="min-width:220px;">
+    //     <div><strong>${p.Name ?? "Unknown"}</strong></div>
+    //     <div>${p.City ?? ""}, ${p.State ?? ""}</div>
+    //     <div style="margin-top:10px;">
+    //       <button class="map-btn"
+    //               data-lat="${lat}"
+    //               data-lng="${lng}"
+    //               data-name="${encodeURIComponent(p.Name ?? "")}">
+    //         Select this county
+    //       </button>
+    //     </div>
+    //   </div>
+    // `;
+
+    const marker = L.marker([lat, lng]).addTo(markersLayer)
+      .bindTooltip(p.Name)
+    //   .bindPopup(popupHtml);
+
+    // ✅ NEW FEATURE: click marker -> go to facility HTML
+    marker.on("click", () => {
+      const filename = facilityNameToHtmlFile(p.Name);
+      window.location.href = `facility/${filename}`;
+    });
+  });
+}
+
+
+
+
 // Load facilities from JSON
 async function loadFacilities() {
     try {
@@ -135,6 +202,8 @@ function displayFacilities(facilities) {
     container.innerHTML = `<div class="facilities-list">${facilitiesHTML}</div>`;
 }
 
+
+
 // Search functionality
 function searchFacilities() {
     const searchQuery = document.getElementById('searchInput').value.toLowerCase().trim();
@@ -192,6 +261,20 @@ document.getElementById('searchInput').addEventListener('input', searchFacilitie
 document.getElementById('stateSearch').addEventListener('input', searchFacilities);
 document.getElementById('citySearch').addEventListener('input', searchFacilities);
 document.getElementById('zipSearch').addEventListener('input', searchFacilities);
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('.map-btn');
+  if (!btn) return;
 
-// Load facilities on page load
+  e.preventDefault();
+  e.stopPropagation(); 
+
+  const lat = btn.dataset.lat;
+  const lng = btn.dataset.lng;
+  const name = btn.dataset.name;
+
+  window.location.href = `result.html?lat=${lat}&lng=${lng}&name=${name}`;
+});
+
+initMap();
+loadCountyCoordinates();
 loadFacilities();
