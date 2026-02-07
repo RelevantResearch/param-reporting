@@ -44,7 +44,9 @@
   {
     "Name": "BAKER CORRECTIONAL INSTITUTION",
     "City": "SANDERSON",
-    "State": "FL"
+    "State": "FL",
+    "Longitude": -82.37393183,
+    "Latitude":30.21461913
   },
   {
     "Name": "BAKER COUNTY SHERIFF DEPT.",
@@ -539,7 +541,9 @@
   {
     "Name": "FLORIDA SOFT-SIDED FACILITY",
     "City": "OCHOPEE",
-    "State": "FL"
+    "State": "FL",
+    "Longitude": -80.89804155,
+    "Latitude": 25.86397848
   },
   {
     "Name": "FLOYD COUNTY JAIL",
@@ -572,7 +576,9 @@
   {
     "Name": "FRANKLIN COUNTY JAIL",
     "City": "CHAMBERSBURG",
-    "State": "PA"
+    "State": "PA",
+    "Longitude": -77.62635749,
+    "Latitude": 39.93511808
   },
   {
     "Name": "FREEBORN COUNTY ADULT DETENTION CENTER",
@@ -1051,7 +1057,9 @@
   {
     "Name": "NORTH LAKE CORRECTIONAL FACILITY",
     "City": "BALDWIN",
-    "State": "MI"
+    "State": "MI",
+    "Longitude": -85.832058,
+    "Latitude": 43.929498
   },
   {
     "Name": "NORTHEAST OHIO CORRECTIONAL CENTER",
@@ -1497,7 +1505,9 @@
   {
     "Name": "WASHINGTON COUNTY JAIL (PURGATORY CORRECTIONAL FACILITY)",
     "City": "HURRICANE",
-    "State": "UT"
+    "State": "UT",
+    "Longitude": -113.412233,
+    "Latitude": 37.158392
   },
   {
     "Name": "WASHOE COUNTY JAIL",
@@ -1563,3 +1573,4 @@
     "Latitude": 41.8923
   }
 ]
+
