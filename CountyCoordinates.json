@@ -479,8 +479,8 @@
     "Name": "ERO EL PASO CAMP EAST MONTANA",
     "City": "EL PASO",
     "State": "TX",
-    "Longitude": -106.3688,
-    "Latitude": 31.7941
+    "Longitude": -106.29806027208802,
+    "Latitude": 31.812154397605642
   },
   {
     "Name": "ETOWAH COUNTY JAIL",
@@ -1573,4 +1573,5 @@
     "Latitude": 41.8923
   }
 ]
+
 
