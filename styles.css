@@ -50,6 +50,21 @@ body {
     font-weight: 600;
     font-size: 0.9rem;
 }
+.date-info-heading {
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 400; 
+    margin-bottom: 0.25rem;
+}
+
+.date-info {
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 700; 
+}
+
 
 .search-container {
     margin-bottom: 2rem;
