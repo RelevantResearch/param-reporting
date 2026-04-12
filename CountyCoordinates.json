@@ -14,7 +14,7 @@
     "Latitude": 34.5594
   },
   {
-    "Name": "ALEXANDRIA STAGING FACILI",
+    "Name": "ALEXANDRIA STAGING FACILITY",
     "City": "ALEXANDRIA",
     "State": "LA",
     "Longitude": -92.5366,
@@ -33,13 +33,6 @@
     "State": "LA",
     "Longitude": -92.7749,
     "Latitude": 30.6224
-  },
-  {
-    "Name": "ANCHORAGE CORRECTIONAL COMPLEX",
-    "City": "ANCHORAGE",
-    "State": "AK",
-    "Longitude": -149.8555,
-    "Latitude": 61.2186
   },
   {
     "Name": "BAKER CORRECTIONAL INSTITUTION",
@@ -259,14 +252,7 @@
     "Latitude": 41.1511
   },
   {
-    "Name": "CLINTON COUNTY JAIL (NY)",
-    "City": "PLATTSBURGH",
-    "State": "NY",
-    "Longitude": -73.4667,
-    "Latitude": 44.72
-  },
-  {
-    "Name": "CLINTON COUNTY JAIL (IN)",
+    "Name": "CLINTON COUNTY JAIL",
     "City": "FRANKFORT",
     "State": "IN",
     "Longitude": -86.509,
@@ -306,13 +292,6 @@
     "State": "NE",
     "Longitude": -96.4198,
     "Latitude": 42.4161
-  },
-  {
-    "Name": "DALLAS COUNTY JAIL - LEW STERRETT JUSTICE CENTER",
-    "City": "DALLAS",
-    "State": "TX",
-    "Longitude": -96.8143,
-    "Latitude": 32.7785
   },
   {
     "Name": "DAVIESS COUNTY DETENTION",
@@ -374,8 +353,8 @@
     "Name": "DILLEY PROCESSING SINGLE ADULT FEMALE",
     "City": "DILLEY",
     "State": "TX",
-    "Longitude": -99.19778766131917,
-    "Latitude": 28.660537266058288
+    "Longitude": -99.2009,
+    "Latitude": 28.6585
   },
   {
     "Name": "DODGE COUNTY JAIL",
@@ -383,13 +362,6 @@
     "State": "WI",
     "Longitude": -88.7102,
     "Latitude": 43.3722
-  },
-  {
-    "Name": "DONA ANA COUNTY DETENTION CENTER",
-    "City": "LAS CRUCES",
-    "State": "NM",
-    "Longitude": -106.8053,
-    "Latitude": 32.3027
   },
   {
     "Name": "DOUGLAS COUNTY",
@@ -411,13 +383,6 @@
     "State": "TX",
     "Longitude": -99.834,
     "Latitude": 31.2166
-  },
-  {
-    "Name": "EL PASO COUNTY DETENTION FACILITY",
-    "City": "EL PASO",
-    "State": "TX",
-    "Longitude": -106.4825,
-    "Latitude": 31.7585
   },
   {
     "Name": "EL PASO SERVICE PROCESSING CENTER",
@@ -455,13 +420,6 @@
     "Latitude": 32.8176
   },
   {
-    "Name": "ERIE COUNTY JAIL",
-    "City": "ERIE",
-    "State": "PA",
-    "Longitude": -80.0659,
-    "Latitude": 42.1247
-  },
-  {
     "Name": "ERO EL PASO CAMP EAST MONTANA",
     "City": "EL PASO",
     "State": "TX",
@@ -497,6 +455,13 @@
     "Latitude": 39.9525
   },
   {
+    "Name": "FLAGLER COUNTY JAIL",
+    "City": "BUNNELL",
+    "State": "FL",
+    "Longitude": -81.256,
+    "Latitude": 29.4526
+  },
+  {
     "Name": "FLORENCE SERVICE PROCESSING CENTER",
     "City": "FLORENCE",
     "State": "AZ",
@@ -516,6 +481,13 @@
     "State": "FL",
     "Longitude": -80.8995,
     "Latitude": 25.8681
+  },
+  {
+    "Name": "FLOYD COUNTY JAIL",
+    "City": "ROME",
+    "State": "GA",
+    "Longitude": -85.1415,
+    "Latitude": 34.28
   },
   {
     "Name": "FOLKSTON ANNEX IPC",
@@ -621,13 +593,6 @@
     "State": "NV",
     "Longitude": -114.9795,
     "Latitude": 36.0306
-  },
-  {
-    "Name": "HILLSBOROUGH COUNTY JAIL",
-    "City": "TAMPA",
-    "State": "FL",
-    "Longitude": -82.3713,
-    "Latitude": 27.9594
   },
   {
     "Name": "HONOLULU FEDERAL DETENTION CENTER",
@@ -749,13 +714,6 @@
     "Latitude": 25.7548
   },
   {
-    "Name": "LA PAZ COUNTY ADULT DETENTION FACILITY",
-    "City": "PARKER",
-    "State": "AZ",
-    "Longitude": -114.2901,
-    "Latitude": 34.1459
-  },
-  {
     "Name": "LA SALLE COUNTY REGIONAL DETENTION CENTER",
     "City": "ENCINAL",
     "State": "TX",
@@ -768,13 +726,6 @@
     "State": "LA",
     "Longitude": -92.0214,
     "Latitude": 30.2236
-  },
-  {
-    "Name": "LAKE COUNTY JAIL",
-    "City": "TAVARES",
-    "State": "FL",
-    "Longitude": -81.733,
-    "Latitude": 28.8019
   },
   {
     "Name": "LARAMIE COUNTY JAIL",
@@ -805,13 +756,6 @@
     "Latitude": 44.3744
   },
   {
-    "Name": "LEAVENWORTH US PENITENTIARY",
-    "City": "LEAVENWORTH",
-    "State": "KS",
-    "Longitude": -94.9364,
-    "Latitude": 39.3299
-  },
-  {
     "Name": "LEWISBURG US PENITENTIARY",
     "City": "LEWISBURG",
     "State": "PA",
@@ -824,6 +768,13 @@
     "State": "SC",
     "Longitude": -81.2504,
     "Latitude": 33.9793
+  },
+  {
+    "Name": "LIBERTY COUNTY JAIL",
+    "City": "BRISTOL",
+    "State": "FL",
+    "Longitude": -84.9687,
+    "Latitude": 30.4341
   },
   {
     "Name": "LIMESTONE COUNTY DETENTION CENTER",
@@ -917,11 +868,11 @@
     "Latitude": 25.7793
   },
   {
-    "Name": "MIGRANT OPS CENTER MAIN A",
-    "City": "FPO",
-    "State": "FL",
-    "Longitude": -75.0976,
-    "Latitude": 19.9092
+    "Name": "MIDWEST REGIONAL RECEPTION CENTER",
+    "City": "LEAVENWORTH",
+    "State": "KS",
+    "Longitude": -94.8916,
+    "Latitude": 39.272
   },
   {
     "Name": "MILLER COUNTY JAIL",
@@ -973,13 +924,6 @@
     "Latitude": 41.4243
   },
   {
-    "Name": "NASSAU COUNTY CORRECTIONAL CENTER",
-    "City": "EAST MEADOW",
-    "State": "NY",
-    "Longitude": -73.5527,
-    "Latitude": 40.7352
-  },
-  {
     "Name": "NATRONA COUNTY JAIL",
     "City": "CASPER",
     "State": "WY",
@@ -1015,13 +959,6 @@
     "Latitude": 43.1803
   },
   {
-    "Name": "NORTH CENTRAL REGIONAL JAIL",
-    "City": "GREENWOOD",
-    "State": "WV",
-    "Longitude": -80.8531,
-    "Latitude": 39.2813
-  },
-  {
     "Name": "NORTH LAKE CORRECTIONAL FACILITY",
     "City": "BALDWIN",
     "State": "MI",
@@ -1034,13 +971,6 @@
     "State": "OH",
     "Longitude": -80.6315,
     "Latitude": 41.1313
-  },
-  {
-    "Name": "NORTHERN REGIONAL JAIL",
-    "City": "MOUNDSVILLE",
-    "State": "WV",
-    "Longitude": -80.7445,
-    "Latitude": 39.9252
   },
   {
     "Name": "NORTHWEST ICE PROCESSSING CENTER",
@@ -1190,13 +1120,6 @@
     "Latitude": 32.4214
   },
   {
-    "Name": "PUTNAM COUNTY SHERIFF",
-    "City": "COOKEVILLE",
-    "State": "TN",
-    "Longitude": -85.498,
-    "Latitude": 36.1615
-  },
-  {
     "Name": "RICHWOOD CORRECTIONAL CENTER",
     "City": "MONROE",
     "State": "LA",
@@ -1225,13 +1148,6 @@
     "Latitude": 37.3081
   },
   {
-    "Name": "ROANOKE CITY JAIL",
-    "City": "ROANOKE",
-    "State": "VA",
-    "Longitude": -79.9462,
-    "Latitude": 37.2715
-  },
-  {
     "Name": "ROBERT A DEYTON DETENTION FACILITY",
     "City": "LOVEJOY",
     "State": "GA",
@@ -1246,11 +1162,11 @@
     "Latitude": 15.191
   },
   {
-    "Name": "SAN DIEGO DISTRICT STAGING",
-    "City": "SAN DIEGO",
-    "State": "CA",
-    "Longitude": -117.1637,
-    "Latitude": 32.7134
+    "Name": "SALT LAKE COUNTY METRO JAIL",
+    "City": "SALT LAKE CITY",
+    "State": "UT",
+    "Longitude": -111.9155,
+    "Latitude": 40.6969
   },
   {
     "Name": "SAN JUAN STAGING",
@@ -1265,13 +1181,6 @@
     "State": "AZ",
     "Longitude": -114.6846,
     "Latitude": 32.4847
-  },
-  {
-    "Name": "SARASOTA COUNTY JAIL",
-    "City": "SARASOTA",
-    "State": "FL",
-    "Longitude": -82.5298,
-    "Latitude": 27.3363
   },
   {
     "Name": "SARPY COUNTY JAIL",
@@ -1295,13 +1204,6 @@
     "Latitude": 41.524
   },
   {
-    "Name": "SEBASTIAN COUNTY DETENTION CENTER",
-    "City": "FORT SMITH",
-    "State": "AR",
-    "Longitude": -94.425,
-    "Latitude": 35.3825
-  },
-  {
     "Name": "SENECA COUNTY JAIL",
     "City": "TIFFIN",
     "State": "OH",
@@ -1323,13 +1225,6 @@
     "Latitude": 43.0187
   },
   {
-    "Name": "SOUTH CENTRAL REGIONAL JAIL",
-    "City": "CHARLESTON",
-    "State": "WV",
-    "Longitude": -81.7103,
-    "Latitude": 38.311
-  },
-  {
     "Name": "SOUTH LOUISIANA ICE PROCESSING CENTER",
     "City": "BASILE",
     "State": "LA",
@@ -1344,18 +1239,18 @@
     "Latitude": 28.8957
   },
   {
-    "Name": "SOUTHWESTERN REGIONAL JAIL",
-    "City": "HOLDEN",
-    "State": "WV",
-    "Longitude": -82.096,
-    "Latitude": 37.8059
-  },
-  {
     "Name": "ST. CLAIR COUNTY JAIL",
     "City": "PORT HURON",
     "State": "MI",
     "Longitude": -82.4794,
     "Latitude": 42.9423
+  },
+  {
+    "Name": "ST. LUCIE COUNTY JAIL",
+    "City": "FORT PIERCE",
+    "State": "FL",
+    "Longitude": -80.41,
+    "Latitude": 27.4534
   },
   {
     "Name": "STE. GENEVIEVE COUNTY SHERIFF-JAIL",
@@ -1393,13 +1288,6 @@
     "Latitude": 30.5651
   },
   {
-    "Name": "TOM GREEN COUNTY JAIL",
-    "City": "SAN ANGELO",
-    "State": "TX",
-    "Longitude": -82.5298,
-    "Latitude": 27.3363
-  },
-  {
     "Name": "TOOELE COUNTY JAIL",
     "City": "TOOELE",
     "State": "UT",
@@ -1407,7 +1295,7 @@
     "Latitude": 40.5296
   },
   {
-    "Name": "TORRANCE-ESTANCIA, NM",
+    "Name": "TORRANCE COUNTY DETENTION FACILITY",
     "City": "ESTANCIA",
     "State": "NM",
     "Longitude": -106.0186,
@@ -1428,13 +1316,6 @@
     "Latitude": 25.8104
   },
   {
-    "Name": "TWO BRIDGES REGIONAL JAIL",
-    "City": "WISCASSET",
-    "State": "ME",
-    "Longitude": -69.6987,
-    "Latitude": 43.9784
-  },
-  {
     "Name": "UINTA COUNTY JAIL",
     "City": "EVANSTON",
     "State": "WY",
@@ -1449,13 +1330,6 @@
     "Latitude": 29.3733
   },
   {
-    "Name": "VICTORIA COUNTY JAIL",
-    "City": "VICTORIA",
-    "State": "TX",
-    "Longitude": -97.0075,
-    "Latitude": 28.8003
-  },
-  {
     "Name": "WALTON COUNTY JAIL",
     "City": "DEFUNIAK SPRINGS",
     "State": "FL",
@@ -1468,6 +1342,13 @@
     "State": "ND",
     "Longitude": -101.2869,
     "Latitude": 48.2338
+  },
+  {
+    "Name": "WASHINGTON COUNTY DETENTION CENTER",
+    "City": "FAYETTEVILLE",
+    "State": "AR",
+    "Longitude": -94.1774,
+    "Latitude": 36.0334
   },
   {
     "Name": "WASHINGTON COUNTY JAIL (PURGATORY CORRECTIONAL FACILITY)",
@@ -1505,18 +1386,18 @@
     "Latitude": 41.2404
   },
   {
-    "Name": "WESTERN REGIONAL JAIL AND CORRECTIONAL FACILITY",
-    "City": "BARBOURSVILLE",
-    "State": "WV",
-    "Longitude": -82.2932,
-    "Latitude": 38.4188
-  },
-  {
     "Name": "WESTERN TENNESSEE DETENTION FACILITY",
     "City": "MASON",
     "State": "TN",
     "Longitude": -89.5478,
     "Latitude": 35.4082
+  },
+  {
+    "Name": "WESTERN VIRGINIA REGIONAL JAIL",
+    "City": "SALEM",
+    "State": "VA",
+    "Longitude": -80.1697,
+    "Latitude": 37.2508
   },
   {
     "Name": "WINN CORRECTIONAL CENTER",

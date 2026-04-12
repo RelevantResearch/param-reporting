@@ -130,9 +130,10 @@ function renderCountyMarkers(points) {
       .bindTooltip(p.Name)
     //   .bindPopup(popupHtml);
 
-    // ✅ NEW FEATURE: click marker -> go to facility HTML
     marker.on("click", () => {
-      const filename = facilityNameToHtmlFile(p.Name);
+      const pNameUpper = (p.Name || "").toUpperCase();
+      const match = allFacilities.find(f => (f.Name || "").toUpperCase() === pNameUpper);
+      const filename = match ? match.filename : facilityNameToHtmlFile(p.Name);
       window.location.href = `facility/${filename}`;
     });
   });
@@ -216,7 +217,6 @@ function displayFacilities(facilities) {
 }
 
 
-
 // Search functionality
 function searchFacilities() {
     const searchQuery = document.getElementById('searchInput').value.toLowerCase().trim();
@@ -289,5 +289,4 @@ document.addEventListener('click', (e) => {
 });
 
 initMap();
-loadCountyCoordinates();
-loadFacilities();
+loadFacilities().then(() => loadCountyCoordinates());
