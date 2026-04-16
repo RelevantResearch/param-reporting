@@ -377,6 +377,12 @@ select.filter-input {
     color: #bdc3c7;
 }
 
+.meta-label {
+    font-weight: 500;
+    opacity: 0.7;
+    letter-spacing: 0.02em;
+}
+
 /* ADP mini progress bar */
 .facility-adp-track {
     height: 3px;
@@ -462,6 +468,16 @@ select.filter-input {
 
     .header h1 {
         font-size: 2rem;
+    }
+
+    .header-top {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    .notes-link {
+        position: static;
+        align-self: center;
     }
 
     .facilities-list {

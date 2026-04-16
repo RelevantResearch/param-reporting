@@ -316,10 +316,10 @@ function displayFacilities(facilities) {
         }
 
         const adpBadge = hasAdp
-            ? `<span class="facility-adp">${adp.toLocaleString()}</span>`
+            ? `<span class="facility-adp"><span class="meta-label">ADP</span> ${adp.toLocaleString()}</span>`
             : '';
         const updatedBadge = facility.LatestUpdate
-            ? `<span class="facility-updated">${formatDate(facility.LatestUpdate)}</span>`
+            ? `<span class="facility-updated"><span class="meta-label">Updated</span> ${formatDate(facility.LatestUpdate)}</span>`
             : '';
 
         // Mini progress bar relative to max ADP
