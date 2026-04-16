@@ -1,5 +1,7 @@
 let allFacilities = [];
 let filteredFacilities = [];
+let currentSort = 'name';
+let maxAdp = 0;
 
 // US State abbreviations to full names mapping
 const stateNames = {
@@ -75,12 +77,28 @@ let markersLayer;
 function initMap() {
   map = L.map('map').setView([37.8, -96], 4);
 
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 18,
-    attribution: '&copy; OpenStreetMap'
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
   }).addTo(map);
 
   markersLayer = L.layerGroup().addTo(map);
+
+  // Add ADP legend control to the map
+  const legend = L.control({ position: 'bottomright' });
+  legend.onAdd = function () {
+    const div = L.DomUtil.create('div', 'map-legend');
+    div.innerHTML = `
+      <div class="map-legend-title">ADP Level</div>
+      <div class="map-legend-item"><span class="map-legend-dot" style="background:#f03b20;"></span> &ge; 1,000</div>
+      <div class="map-legend-item"><span class="map-legend-dot" style="background:#feb24c;"></span> 100 – 999</div>
+      <div class="map-legend-item"><span class="map-legend-dot" style="background:#ffeda0; border:1px solid #feb24c;"></span> &lt; 100</div>
+      <div class="map-legend-item"><span class="map-legend-dot" style="background:#bdc3c7;"></span> No updated data</div>
+    `;
+    return div;
+  };
+  legend.addTo(map);
+
   setTimeout(() => {
     map.invalidateSize();
   }, 300);
@@ -103,6 +121,20 @@ function facilityNameToHtmlFile(name) {
     + ".html";
 }
 
+const ADP_COLORS = {
+  high:   { fill: '#f03b20', stroke: '#bd0026' },
+  medium: { fill: '#feb24c', stroke: '#f07d00' },
+  low:    { fill: '#ffeda0', stroke: '#feb24c' },
+  none:   { fill: '#bdc3c7', stroke: '#95a5a6' },
+};
+
+function adpColorKey(adp) {
+  if (adp == null) return 'none';
+  if (adp >= 1000) return 'high';
+  if (adp >= 100)  return 'medium';
+  return 'low';
+}
+
 function renderCountyMarkers(points) {
   markersLayer.clearLayers();
 
@@ -111,28 +143,35 @@ function renderCountyMarkers(points) {
     const lng = Number(p.Longitude);
     if (!Number.isFinite(lat) || !Number.isFinite(lng)) return;
 
-    // const popupHtml = `
-    //   <div style="min-width:220px;">
-    //     <div><strong>${p.Name ?? "Unknown"}</strong></div>
-    //     <div>${p.City ?? ""}, ${p.State ?? ""}</div>
-    //     <div style="margin-top:10px;">
-    //       <button class="map-btn"
-    //               data-lat="${lat}"
-    //               data-lng="${lng}"
-    //               data-name="${encodeURIComponent(p.Name ?? "")}">
-    //         Select this county
-    //       </button>
-    //     </div>
-    //   </div>
-    // `;
+    // Match to allFacilities to get ADP
+    const pNameUpper = (p.Name || '').toUpperCase();
+    const match = allFacilities.find(f => (f.Name || '').toUpperCase() === pNameUpper);
+    const adp = match ? match.CurrentIntervalADP : null;
+    const colorKey = adpColorKey(adp);
+    const colors = ADP_COLORS[colorKey];
 
-    const marker = L.marker([lat, lng]).addTo(markersLayer)
-      .bindTooltip(p.Name)
-    //   .bindPopup(popupHtml);
+    // Rich tooltip with ADP info
+    const adpLabel = adp != null ? `ADP: ${adp.toLocaleString()}` : 'No ADP data';
+    const updatedLabel = match && match.LatestUpdate ? formatDate(match.LatestUpdate) : '';
+    const tooltipHtml = `
+      <div style="font-size:0.82rem; line-height:1.5;">
+        <div style="font-weight:600; margin-bottom:2px;">${p.Name}</div>
+        <div style="color:#888; font-size:0.75rem;">${p.City}, ${p.State}</div>
+        <div style="color:${colors.fill}; font-weight:700; margin-top:4px;">${adpLabel}</div>
+        ${updatedLabel ? `<div style="color:#aaa; font-size:0.72rem;">Updated: ${updatedLabel}</div>` : ''}
+      </div>`;
+
+    const marker = L.circleMarker([lat, lng], {
+      radius: 7,
+      fillColor: colors.fill,
+      color: colors.stroke,
+      weight: 1.5,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(markersLayer)
+      .bindTooltip(tooltipHtml, { direction: 'top', offset: [0, -6] });
 
     marker.on("click", () => {
-      const pNameUpper = (p.Name || "").toUpperCase();
-      const match = allFacilities.find(f => (f.Name || "").toUpperCase() === pNameUpper);
       const filename = match ? match.filename : facilityNameToHtmlFile(p.Name);
       window.location.href = `facility/${filename}`;
     });
@@ -148,12 +187,30 @@ async function loadFacilities() {
         const response = await fetch('./index.json');
         const data = await response.json();
 
-        allFacilities = data;
+        // Separate the NOTES entry from real facilities
+        const notesEntry = data.find(f => f.DETLOC === 'NOTES');
+        allFacilities = data.filter(f => f.DETLOC !== 'NOTES');
         filteredFacilities = [...allFacilities];
 
-        // Update total count
+        // Compute max ADP for the progress bar
+        maxAdp = Math.max(0, ...allFacilities
+            .map(f => f.CurrentIntervalADP)
+            .filter(v => v !== null && v !== undefined));
+
+        // Show notes link if notes entry exists
+        const notesLink = document.getElementById('notesLink');
+        if (notesEntry && notesLink) {
+            notesLink.href = `facility/${notesEntry.filename}`;
+            notesLink.style.display = 'inline-flex';
+        }
+
+        // Update total count (header badge)
         document.getElementById('totalFacilities').textContent =
-            `${data.length - 1} Detention Centers`;
+            `${allFacilities.length} Detention Centers`;
+
+        // Results count in toolbar
+        const resultsCount = document.getElementById('resultsCount');
+        if (resultsCount) resultsCount.textContent = `${allFacilities.length} facilities`;
 
         // Set dynamic placeholders based on first few facilities
         setDynamicPlaceholders();
@@ -193,22 +250,91 @@ function setDynamicPlaceholders() {
     }
 }
 
+function sortFacilities(facilities) {
+    return [...facilities].sort((a, b) => {
+        switch (currentSort) {
+            case 'adp-desc':
+                if (a.CurrentIntervalADP == null && b.CurrentIntervalADP == null) return 0;
+                if (a.CurrentIntervalADP == null) return 1;
+                if (b.CurrentIntervalADP == null) return -1;
+                return b.CurrentIntervalADP - a.CurrentIntervalADP;
+            case 'adp-asc':
+                if (a.CurrentIntervalADP == null && b.CurrentIntervalADP == null) return 0;
+                if (a.CurrentIntervalADP == null) return 1;
+                if (b.CurrentIntervalADP == null) return -1;
+                return a.CurrentIntervalADP - b.CurrentIntervalADP;
+            case 'updated-desc':
+                if (!a.LatestUpdate && !b.LatestUpdate) return 0;
+                if (!a.LatestUpdate) return 1;
+                if (!b.LatestUpdate) return -1;
+                return b.LatestUpdate.localeCompare(a.LatestUpdate);
+            case 'updated-asc':
+                if (!a.LatestUpdate && !b.LatestUpdate) return 0;
+                if (!a.LatestUpdate) return 1;
+                if (!b.LatestUpdate) return -1;
+                return a.LatestUpdate.localeCompare(b.LatestUpdate);
+            default:
+                return (a.Name || '').localeCompare(b.Name || '');
+        }
+    });
+}
+
+function formatDate(dateStr) {
+    if (!dateStr) return '';
+    const [year, month, day] = dateStr.split('-');
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return `${months[parseInt(month, 10) - 1]} ${parseInt(day, 10)}, ${year}`;
+}
+
 // Display facilities
 function displayFacilities(facilities) {
     const container = document.getElementById('facilitiesContent');
 
     if (facilities.length === 0) {
-        container.innerHTML = '<div class="no-results">No facilities found matching your search.</div>';
+        container.innerHTML = `
+            <div class="no-results">
+                <div class="no-results-icon">&#9740;</div>
+                <div>No facilities match your filters.</div>
+                <button onclick="clearAllFilters()" class="no-results-clear">Clear filters</button>
+            </div>`;
         return;
     }
 
-    const facilitiesHTML = facilities.map(facility => {
+    const sorted = sortFacilities(facilities);
+
+    const facilitiesHTML = sorted.map(facility => {
         const linkPath = `facility/${facility.filename}`;
+        const adp = facility.CurrentIntervalADP;
+        const hasAdp = adp !== null && adp !== undefined;
+
+        // Color class based on ADP level
+        let adpClass = 'adp-none';
+        if (hasAdp) {
+            if (adp >= 1000) adpClass = 'adp-high';
+            else if (adp >= 100) adpClass = 'adp-medium';
+            else adpClass = 'adp-low';
+        }
+
+        const adpBadge = hasAdp
+            ? `<span class="facility-adp">${adp.toLocaleString()}</span>`
+            : '';
+        const updatedBadge = facility.LatestUpdate
+            ? `<span class="facility-updated">${formatDate(facility.LatestUpdate)}</span>`
+            : '';
+
+        // Mini progress bar relative to max ADP
+        const barPct = (hasAdp && maxAdp > 0) ? Math.min((adp / maxAdp) * 100, 100).toFixed(1) : 0;
+        const adpBar = hasAdp ? `
+            <div class="facility-adp-track">
+                <div class="facility-adp-fill ${adpClass}-fill" style="width:${barPct}%"></div>
+            </div>` : '';
+
         return `
-            <a href="${linkPath}" class="facility-item">
+            <a href="${linkPath}" class="facility-item ${adpClass}">
                 <div class="facility-name">${facility.Name}</div>
                 <div class="facility-location">${facility.City}, ${facility.State} ${facility.Zip}</div>
-                <div class="facility-detloc">${facility.DETLOC}</div>
+                <div class="facility-meta">${adpBadge}${updatedBadge}</div>
+                ${adpBar}
             </a>
         `;
     }).join('');
@@ -217,24 +343,22 @@ function displayFacilities(facilities) {
 }
 
 
-// Search functionality
+// Search + filter functionality
 function searchFacilities() {
     const searchQuery = document.getElementById('searchInput').value.toLowerCase().trim();
-    const stateQuery = document.getElementById('stateSearch').value; // No need to lowercase for exact match
+    const stateQuery = document.getElementById('stateSearch').value;
     const cityQuery = document.getElementById('citySearch').value.toLowerCase().trim();
     const zipQuery = document.getElementById('zipSearch').value.toLowerCase().trim();
 
     filteredFacilities = allFacilities.filter(facility => {
-        // Ensure all fields exist and convert to lowercase for comparison
         const facilityName = (facility.Name || '').toLowerCase();
         const facilityCity = (facility.City || '').toLowerCase();
         const facilityState = (facility.State || '').toLowerCase();
-        const facilityStateFull = (stateNames[facility.State] || '').toLowerCase(); // Full state name
+        const facilityStateFull = (stateNames[facility.State] || '').toLowerCase();
         const facilityDetloc = (facility.DETLOC || '').toLowerCase();
         const facilityZip = (facility.Zip || '').toString().toLowerCase();
 
-        // Main search (name, city, state abbreviation, state full name, detention code, zip)
-        const matchesSearch = !searchQuery || 
+        const matchesSearch = !searchQuery ||
             facilityName.includes(searchQuery) ||
             facilityCity.includes(searchQuery) ||
             facilityState.includes(searchQuery) ||
@@ -242,38 +366,48 @@ function searchFacilities() {
             facilityDetloc.includes(searchQuery) ||
             facilityZip.includes(searchQuery);
 
-        // State filter (exact match for dropdown)
         const matchesState = !stateQuery || facilityState.toUpperCase() === stateQuery.toUpperCase();
-
-        // City filter
-        const matchesCity = !cityQuery || 
-            facilityCity.includes(cityQuery);
-
-        // Zip filter
-        const matchesZip = !zipQuery || 
-            facilityZip.includes(zipQuery);
+        const matchesCity = !cityQuery || facilityCity.includes(cityQuery);
+        const matchesZip = !zipQuery || facilityZip.includes(zipQuery);
 
         return matchesSearch && matchesState && matchesCity && matchesZip;
     });
 
-    // Update search results info
-    const searchResults = document.getElementById('searchResults');
     const hasFilters = searchQuery || stateQuery || cityQuery || zipQuery;
-    
-    if (hasFilters) {
-        searchResults.textContent = `${filteredFacilities.length} facilities found. `;
-    } else {
-        searchResults.textContent = '';
+
+    // Results count in toolbar
+    const resultsCount = document.getElementById('resultsCount');
+    if (resultsCount) {
+        resultsCount.textContent = hasFilters
+            ? `${filteredFacilities.length} of ${allFacilities.length} facilities`
+            : `${allFacilities.length} facilities`;
     }
+
+    // Show/hide clear button
+    const clearBtn = document.getElementById('clearFilters');
+    if (clearBtn) clearBtn.style.display = hasFilters ? 'inline-flex' : 'none';
 
     displayFacilities(filteredFacilities);
 }
 
+function clearAllFilters() {
+    document.getElementById('searchInput').value = '';
+    document.getElementById('stateSearch').value = '';
+    document.getElementById('citySearch').value = '';
+    document.getElementById('zipSearch').value = '';
+    searchFacilities();
+}
+
 // Event listeners
 document.getElementById('searchInput').addEventListener('input', searchFacilities);
-document.getElementById('stateSearch').addEventListener('input', searchFacilities);
+document.getElementById('stateSearch').addEventListener('change', searchFacilities);
 document.getElementById('citySearch').addEventListener('input', searchFacilities);
 document.getElementById('zipSearch').addEventListener('input', searchFacilities);
+document.getElementById('clearFilters').addEventListener('click', clearAllFilters);
+document.getElementById('sortBy').addEventListener('change', (e) => {
+    currentSort = e.target.value;
+    displayFacilities(filteredFacilities);
+});
 document.addEventListener('click', (e) => {
   const btn = e.target.closest('.map-btn');
   if (!btn) return;
