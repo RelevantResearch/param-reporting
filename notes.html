@@ -34,10 +34,97 @@ ul.task-list li input[type="checkbox"] {
 <link href="notes_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="notes_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
+<style>
+  .site-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    background: #fff;
+    border-bottom: 1px solid #e9ecef;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-logo-wrap {
+    flex-shrink: 0;
+    padding-right: 1.25rem;
+    border-right: 1px solid #e0e0e0;
+  }
+  .header-logo {
+    height: 60px;
+    max-width: 150px;
+    object-fit: contain;
+    display: block;
+  }
+  .header-content {
+    flex: 1;
+    min-width: 0;
+  }
+  .site-header h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 0;
+  }
+  .header-subtitle {
+    font-size: 0.82rem;
+    color: #7f8c8d;
+    margin-top: 0.1rem;
+  }
+  .header-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: #f8f9fa;
+    color: #555;
+    border: 1px solid #dee2e6;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+  .header-back-link:hover {
+    background: #e9ecef;
+    border-color: #adb5bd;
+    color: #2c3e50;
+  }
+  .header-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  @media (max-width: 600px) {
+    .site-header h1 { font-size: 1.2rem; }
+    .header-logo { height: 44px; }
+  }
+</style>
 
 </head>
 
 <body class="fullcontent">
+
+<header class="site-header">
+  <div class="header-logo-wrap">
+    <a href="https://detentionreports.com/">
+      <img src="logo.png" class="header-logo" alt="Relevant Research Logo" />
+    </a>
+  </div>
+  <div class="header-content">
+    <div class="header-title-row">
+      <div>
+        <h1>ICE Detention Reports</h1>
+        <div class="header-subtitle">Notes on Data Processing</div>
+      </div>
+      <a href="https://detentionreports.com/" class="header-back-link">&#8592; Back to Reports</a>
+    </div>
+  </div>
+</header>
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 
@@ -62,7 +149,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="https://detentionreports.com/"><em>Back to Detention Reports</em></a></p>
 <section id="about-detention-reports" class="level2">
 <h2 class="anchored" data-anchor-id="about-detention-reports">About Detention Reports</h2>
 <p>These reports use the Interval Average Daily Population calculation to estimate recent numbers of detainees at Immigration and Customs Enforcement (ICE) facilities across the United States and its Territories.</p>
@@ -171,7 +257,6 @@ ul.task-list li input[type="checkbox"] {
 <li>Nassau County Correctional Center</li>
 </ul>
 <p>Upon the passage of time and the inclusion of more data, we have selected the entry with the lower ADP value for this week as it comports more consistently with population releases before and after June 23.</p>
-<p><a href="https://detentionreports.com/"><em>Back to Detention Reports</em></a></p>
 </section>
 </section>
 
