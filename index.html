@@ -21,7 +21,19 @@
     <link rel="stylesheet" href="styles.css" />
     <script>
       if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("/sw.js");
+        navigator.serviceWorker.register("/sw.js").then((registration) => {
+          // Force the browser to check for a new SW version on every page load
+          registration.update();
+        });
+
+        // When a new SW activates (new cache version deployed), reload once to
+        // get fresh files. SessionStorage flag prevents an infinite reload loop.
+        navigator.serviceWorker.addEventListener("controllerchange", () => {
+          if (!sessionStorage.getItem("sw-reloaded")) {
+            sessionStorage.setItem("sw-reloaded", "1");
+            window.location.reload();
+          }
+        });
       }
     </script>
     <link
