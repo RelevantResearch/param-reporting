@@ -17,10 +17,10 @@ self.addEventListener("activate", (event) => {
         Promise.all(
           keys
             .filter((key) => key !== CACHE_NAME)
-            .map((key) => caches.delete(key))
-        )
+            .map((key) => caches.delete(key)),
+        ),
       )
-      .then(() => self.clients.claim())
+      .then(() => self.clients.claim()),
   );
 });
 
@@ -41,7 +41,7 @@ self.addEventListener("fetch", (event) => {
       })
       .catch(() =>
         // Network failed — serve from cache (offline fallback)
-        caches.match(event.request)
-      )
+        caches.match(event.request),
+      ),
   );
 });
