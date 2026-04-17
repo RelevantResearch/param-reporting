@@ -1,150 +1,444 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Notes on Data Processing - ICE Detention Reports</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    body { height: auto; overflow: auto; }
-    .notes-body { max-width: 820px; margin: 0 auto; padding: 2rem 1.5rem 3rem; }
-    .notes-card { background: #fff; border-radius: 12px; border: 1px solid #e9ecef; box-shadow: 0 1px 6px rgba(0,0,0,0.06); padding: 2rem 2.5rem; }
-    .notes-card h2 { font-size: 1.25rem; font-weight: 700; color: #2c3e50; margin: 2rem 0 0.75rem; padding-bottom: 0.4rem; border-bottom: 2px solid #e9ecef; }
-    .notes-card h2:first-child { margin-top: 0; }
-    .notes-card h4 { font-size: 1rem; font-weight: 700; color: #2c3e50; margin: 1.5rem 0 0.4rem; padding: 0.3rem 0.75rem; background: #f8f9fa; border-left: 3px solid #3498db; border-radius: 0 6px 6px 0; }
-    .notes-card p { font-size: 0.93rem; color: #444; line-height: 1.75; margin: 0.6rem 0; }
-    .notes-card a { color: #3498db; text-decoration: none; font-weight: 500; }
-    .notes-card a:hover { text-decoration: underline; }
-    .notes-card ul { margin: 0.5rem 0 0.5rem 1.5rem; padding: 0; }
-    .notes-card ul li { font-size: 0.93rem; color: #444; line-height: 1.75; margin-bottom: 0.25rem; }
-    .notes-card strong { color: #2c3e50; }
-    .notes-card em { color: #555; }
-    @media (max-width: 600px) { .notes-card { padding: 1.25rem 1rem; } }
-  </style>
-</head>
-<body>
-  <header class="site-header">
-    <div class="header-logo-wrap">
-      <a href="https://detentionreports.com/">
-        <img src="logo.png" alt="Relevant Research Logo" class="header-logo" />
-      </a>
-    </div>
-    <div class="header-content">
-      <div class="header-title-row">
-        <div>
-          <h1>ICE Detention Reports</h1>
-          <div class="stats">Notes on Data Processing</div>
-        </div>
-        <a href="https://detentionreports.com/" class="notes-link" style="display:inline-flex;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="15 18 9 12 15 6"></polyline>
-          </svg>
-          Back to Reports
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes on Data Processing - ICE Detention Reports</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        height: auto;
+        overflow: auto;
+      }
+      .notes-body {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem 3rem;
+      }
+      .notes-card {
+        background: #fff;
+        border-radius: 12px;
+        border: 1px solid #e9ecef;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+        padding: 2rem 2.5rem;
+      }
+      .notes-card h2 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin: 2rem 0 0.75rem;
+        padding-bottom: 0.4rem;
+        border-bottom: 2px solid #e9ecef;
+      }
+      .notes-card h2:first-child {
+        margin-top: 0;
+      }
+      .notes-card h4 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin: 1.5rem 0 0.4rem;
+        padding: 0.3rem 0.75rem;
+        background: #f8f9fa;
+        border-left: 3px solid #3498db;
+        border-radius: 0 6px 6px 0;
+      }
+      .notes-card p {
+        font-size: 0.93rem;
+        color: #444;
+        line-height: 1.75;
+        margin: 0.6rem 0;
+      }
+      .notes-card a {
+        color: #3498db;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      .notes-card a:hover {
+        text-decoration: underline;
+      }
+      .notes-card ul {
+        margin: 0.5rem 0 0.5rem 1.5rem;
+        padding: 0;
+      }
+      .notes-card ul li {
+        font-size: 0.93rem;
+        color: #444;
+        line-height: 1.75;
+        margin-bottom: 0.25rem;
+      }
+      .notes-card strong {
+        color: #2c3e50;
+      }
+      .notes-card em {
+        color: #555;
+      }
+      @media (max-width: 600px) {
+        .notes-card {
+          padding: 1.25rem 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-logo-wrap">
+        <a href="https://detentionreports.com/">
+          <img
+            src="logo.png"
+            alt="Relevant Research Logo"
+            class="header-logo"
+          />
         </a>
       </div>
+      <div class="header-content">
+        <div class="header-title-row">
+          <div>
+            <h1>ICE Detention Reports</h1>
+            <div class="stats">Notes on Data Processing</div>
+          </div>
+          <a
+            href="https://detentionreports.com/"
+            class="notes-link"
+            style="display: inline-flex"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            Back to Reports
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="notes-body">
+      <div class="notes-card">
+        <h2>About Detention Reports</h2>
+        <p>
+          These reports use the Interval Average Daily Population calculation to
+          estimate recent numbers of detainees at Immigration and Customs
+          Enforcement (ICE) facilities across the United States and its
+          Territories.
+        </p>
+        <p>
+          The reports use numbers compiled from the semi-monthly data updates
+          released by ICE. These data can be found in the "Facilities" tab in
+          the xlsx file at the bottom of the "ICE Detention Management" website
+          <a href="https://www.ice.gov/detain/detention-management">here</a>.
+        </p>
+        <p>
+          For more information about Interval ADP, you can see our white paper
+          published <a href="https://relevant-research.com/work">here</a>.
+        </p>
+        <p>
+          Relevant Research announced the new
+          <a href="https://detentionreports.com/">DetentionReports.com</a>
+          platform
+          <a
+            href="https://austinkocher.substack.com/p/new-tool-detentionreportscom-provides"
+            >on July 28, 2025</a
+          >.
+        </p>
+        <p>
+          We welcome feedback! Please email Adam at
+          <strong>adam@relevant-research.com</strong> if you have any questions
+          or comments.
+        </p>
+
+        <h2>Ongoing Data Processing Notes</h2>
+
+        <h4>April 2, 2026</h4>
+        <p>No unique data processing steps were necessary for this release.</p>
+        <p>
+          We added a chart that shows the population classified under "mandatory
+          detention" according to ICE reporting. The determination of mandatory
+          detention can be found in the Immigration Nationality Act
+          <a
+            href="https://www.americanimmigrationcouncil.org/practice-advisory/ina-235b-detention-practice-advisory/"
+            >Section 235(b)</a
+          >. Individuals classified under mandatory detention generally cannot
+          be bonded out. Mandatory detention as applied under the Trump
+          administration has led to ongoing federal litigation (See
+          <a href="https://www.justice.gov/eoir/media/1413311/dl?inline"
+            >Matter of Yajure Hurtado</a
+          >
+          and
+          <a
+            href="https://www.aclu.org/cases/maldonadobautista-v-dhs?document=PRACTICE-ADVISORY"
+            >Maldonado Bautista v. DHS</a
+          >).
+        </p>
+        <p>
+          While some shifts might be due to the typical ICE practice of moving
+          people from facility to facility, changes in mandatory detention
+          policy have created fluctuations in the mandatory detainee population
+          that are <em>not</em> related to ICE transfers. When large groups of
+          people are reclassified as mandatory detainees, the mandatory
+          detention interval adp can <em>exceed</em> the overall ICE detainee
+          population held at that location, theoretically without a single
+          person having been transferred by ICE. In these situations, we have
+          capped the mandatory detention population at 100% of the overall
+          detainee population of a facility.
+        </p>
+        <p>
+          We are grateful for our conversations with
+          <a href="https://josephgunther.me">Joseph Gunther</a> on the topic of
+          mandatory detention and interval adp.
+        </p>
+
+        <h4>February 5, 2026</h4>
+        <p>No unique data processing steps were necessary for this release.</p>
+        <p>
+          We added a note that reads "Detention population data from Immigration
+          and Customs Enforcement through:" followed by the most recent date
+          when ICE generated the summary report for detention facilities. This
+          date can be found in the heading of the Facilities tab of the
+          <a href="https://www.ice.gov/detain/detention-management"
+            >Detention Statistics xlsx file</a
+          >.
+        </p>
+        <p>
+          We maintain detention reports from previous reporting periods back to
+          June 2025, even when ICE has not updated a facility with updated
+          population summaries through the most recent date. See the "Data as
+          of" note on each individual detention report for the most recent date
+          of facility population reporting for that specific facility from ICE.
+        </p>
+
+        <h4>January 22, 2026</h4>
+        <p>No unique data processing steps were necessary for this release.</p>
+        <p>
+          We added a map to the front landing page. Each icon represents a
+          detention facility utilized by ICE in the most recent release.
+        </p>
+
+        <h4>December 26, 2025</h4>
+        <p>No unique data processing steps were necessary for this release.</p>
+        <p>
+          ICE recently released a series of facility contract documents on its
+          <a href="https://www.ice.gov/foia/library">FOIA Library</a>. Contracts
+          posted between June and December 2025 have been added to the bottom of
+          each corresponding detention report page.
+        </p>
+
+        <h4>December 11, 2025</h4>
+        <p>No unique data processing steps were necessary for this release.</p>
+
+        <h4>November 28, 2025</h4>
+        <p>
+          We added a scatterplot in this update. The scatterplot shows the
+          Interval ADP on the x-axis and the Average Length of Stay (ALOS) in
+          days on the y-axis. Two lines represent the average of the facilities
+          for each of these dimensions. The four subsequent quadrants provide a
+          useful way to compare facilities.
+        </p>
+        <ul>
+          <li>
+            The upper left quadrant is made up of facilities with lower average
+            detainee population sizes, but longer average stints at that
+            location.
+          </li>
+          <li>
+            The upper right quadrant is made up of facilities with higher
+            average detainee population sizes and longer average stints at that
+            location.
+          </li>
+          <li>
+            The lower right quadrant is made up of facilities with higher
+            average detainee population sizes but shorter average stints at that
+            location.
+          </li>
+          <li>
+            The lower left quadrant is made up of facilities with lower average
+            detainee population sizes and shorter average stints at that
+            location.
+          </li>
+        </ul>
+        <p>
+          Since ICE moves detainees around frequently, the "Average Length of
+          Stay" indicator on the facility sheet represents how long people are
+          detained at that specific facility (what the Deportation Data Project
+          has called a
+          <a href="https://deportationdata.org/data/processed/ice.html"
+            >"stint"</a
+          >) not their overall "stay" in detention, which may include detention
+          stints in multiple facilities.
+        </p>
+        <p>
+          ICE rounded detainee ADPs to the nearest integer in the facility sheet
+          throughout this statistical release. For this reason, summing up
+          subpopulations by criminality, gender, or "ICE Threat Level" will not
+          sum to the total interval ADP.
+        </p>
+
+        <h4>November 10, 2025</h4>
+        <p>
+          This is the first ICE detention statistics release of the fiscal year.
+          For this reason, the backward moving average that is Interval ADP will
+          not differ from the ADP as reported by ICE. Interval ADP will begin to
+          show differences from the ICE Reported ADP upon the second detention
+          statistics release of the fiscal year, likely in early December.
+        </p>
+        <p>
+          ICE rounded detainee ADPs to the nearest integer in the facility sheet
+          throughout this statistical release. While this will not cause any
+          problem presently, the Interval ADP measure calculated for the next
+          update will show discrepancies due to rounding. For more information,
+          please see the note for August 4, 2025 found below.
+        </p>
+
+        <h4>September 15, 2025</h4>
+        <p>No unique data processing steps were necessary for this release.</p>
+
+        <h4>September 2, 2025</h4>
+        <p>No unique data processing steps were necessary for this release.</p>
+
+        <h4>August 18, 2025</h4>
+        <p>
+          ICE resumed publishing average population figures with decimals. The
+          decision to round to integers in the previous release (see below,
+          August 4, 2025) does create inconsistencies here, too. Users will note
+          that the Overall Interval ADP may differ significantly from the
+          disaggregation categories: Security Classification, Gender, and
+          Criminality.
+        </p>
+        <p>
+          These discrepancies are most apparent at 1) smaller facilities and/or
+          2) facilities with large fluctuations in the number of book ins/book
+          outs over the last two weeks.
+        </p>
+
+        <h4>August 4, 2025</h4>
+        <p>
+          Typically, disaggregated average daily population numbers released by
+          ICE include decimals, allowing each of the three separate reporting
+          categories - Security Classification, Gender/Criminal Status, and ICE
+          Threat Level - to sum to equal population values. In this release, ICE
+          rounded all population numbers to the nearest integer.
+        </p>
+        <p>
+          This has meant that one category might show a higher population than
+          another category by one or two people, despite the fact that both
+          systems of classification report on the same number of individuals
+          detained. To put it differently, ICE released up to three different
+          average daily population figures per facility.
+        </p>
+        <p>
+          For the purposes of calculating Interval ADP, that difference of 1 or
+          2 can create discrepancies of 14 or even 28 people when calculating
+          the population for each facility between July 22 and August 4.
+        </p>
+        <p>
+          To mitigate the impact of this reporting style, we have decided to
+          take the average of the three categories and treat that number as the
+          official Average Daily Population as reported by ICE. We then computed
+          the Interval ADP for July 22 to August 4 based on that
+          equally-weighted number.
+        </p>
+        <p>
+          The rounding discrepancy causes nonsensical numbers for the
+          disaggregation categories: security classification, gender, and
+          criminal status. This was particularly true for facilities which hold
+          fewer people in total. We will not report any subpopulation Interval
+          ADP for detention facilities which held an average of 14 or fewer
+          individuals over the last interval (the 14 days between July 2 and
+          August 4).
+        </p>
+        <p>
+          One facility listed by ICE on this date featured population averages
+          that were impossibly low:
+        </p>
+        <ul>
+          <li>Robert A. Deyton Detention Facility</li>
+        </ul>
+        <p>
+          Population numbers reported by ICE for this facility have been
+          excluded from the dataset for this date.
+        </p>
+
+        <h4>July 21, 2025</h4>
+        <p>
+          One facility listed by ICE on this date featured population averages
+          that were impossibly low:
+        </p>
+        <ul>
+          <li>Northwest Regional Corrections Center</li>
+        </ul>
+        <p>
+          Population numbers reported by ICE for this facility have been
+          excluded from the dataset for this date.
+        </p>
+        <p>
+          As originally published, Miami Federal Detention featured inaccurate
+          Interval ADP numbers. This was corrected on August 7, 2025.
+        </p>
+
+        <h4>July 7, 2025</h4>
+        <p>
+          More than half (96 out of 172) of the facilities listed by ICE on this
+          date featured population averages that were impossibly low. While it
+          is quite possible that ICE released correct populations for other
+          facilities, the pervasiveness of the error has forced us to drop this
+          entire dataset from release.
+        </p>
+
+        <h4>June 23, 2025</h4>
+        <p>
+          Four facilities listed by ICE on this date featured population
+          averages that were impossibly high:
+        </p>
+        <ul>
+          <li>Fayette County Detention Center</li>
+          <li>La Paz County Adult Detention Facility</li>
+          <li>Lexington County Jail</li>
+          <li>New Hanover County Jail</li>
+        </ul>
+        <p>
+          Population numbers reported by ICE for these four facilities have been
+          excluded from the dataset for this date.
+        </p>
+        <p>
+          A fifth detention facility had two entries for this release with
+          differing population values:
+        </p>
+        <ul>
+          <li>Nassau County Correctional Center</li>
+        </ul>
+        <p>
+          Upon the passage of time and the inclusion of more data, we have
+          selected the entry with the lower ADP value for this week as it
+          comports more consistently with population releases before and after
+          June 23.
+        </p>
+      </div>
+
+      <footer class="footer" style="margin-top: 1.5rem">
+        <p>
+          Questions? Email Adam at
+          <a href="mailto:adam@relevant-research.com"
+            >adam@relevant-research.com</a
+          >
+        </p>
+        <p>
+          Developed by
+          <a href="https://relevant-research.com/">Relevant Research</a>
+        </p>
+        <img
+          src="logo.png"
+          alt="Relevant Research Logo"
+          style="height: 40px; margin-top: 0.75rem; opacity: 0.7"
+        />
+      </footer>
     </div>
-  </header>
-
-  <div class="notes-body">
-    <div class="notes-card">
-
-      <h2>About Detention Reports</h2>
-      <p>These reports use the Interval Average Daily Population calculation to estimate recent numbers of detainees at Immigration and Customs Enforcement (ICE) facilities across the United States and its Territories.</p>
-      <p>The reports use numbers compiled from the semi-monthly data updates released by ICE. These data can be found in the "Facilities" tab in the xlsx file at the bottom of the "ICE Detention Management" website <a href="https://www.ice.gov/detain/detention-management">here</a>.</p>
-      <p>For more information about Interval ADP, you can see our white paper published <a href="https://relevant-research.com/work">here</a>.</p>
-      <p>Relevant Research announced the new <a href="https://detentionreports.com/">DetentionReports.com</a> platform <a href="https://austinkocher.substack.com/p/new-tool-detentionreportscom-provides">on July 28, 2025</a>.</p>
-      <p>We welcome feedback! Please email Adam at <strong>adam@relevant-research.com</strong> if you have any questions or comments.</p>
-
-      <h2>Ongoing Data Processing Notes</h2>
-
-      <h4>April 2, 2026</h4>
-      <p>No unique data processing steps were necessary for this release.</p>
-      <p>We added a chart that shows the population classified under "mandatory detention" according to ICE reporting. The determination of mandatory detention can be found in the Immigration Nationality Act <a href="https://www.americanimmigrationcouncil.org/practice-advisory/ina-235b-detention-practice-advisory/">Section 235(b)</a>. Individuals classified under mandatory detention generally cannot be bonded out. Mandatory detention as applied under the Trump administration has led to ongoing federal litigation (See <a href="https://www.justice.gov/eoir/media/1413311/dl?inline">Matter of Yajure Hurtado</a> and <a href="https://www.aclu.org/cases/maldonadobautista-v-dhs?document=PRACTICE-ADVISORY">Maldonado Bautista v. DHS</a>).</p>
-      <p>While some shifts might be due to the typical ICE practice of moving people from facility to facility, changes in mandatory detention policy have created fluctuations in the mandatory detainee population that are <em>not</em> related to ICE transfers. When large groups of people are reclassified as mandatory detainees, the mandatory detention interval adp can <em>exceed</em> the overall ICE detainee population held at that location, theoretically without a single person having been transferred by ICE. In these situations, we have capped the mandatory detention population at 100% of the overall detainee population of a facility.</p>
-      <p>We are grateful for our conversations with <a href="https://josephgunther.me">Joseph Gunther</a> on the topic of mandatory detention and interval adp.</p>
-
-      <h4>February 5, 2026</h4>
-      <p>No unique data processing steps were necessary for this release.</p>
-      <p>We added a note that reads "Detention population data from Immigration and Customs Enforcement through:" followed by the most recent date when ICE generated the summary report for detention facilities. This date can be found in the heading of the Facilities tab of the <a href="https://www.ice.gov/detain/detention-management">Detention Statistics xlsx file</a>.</p>
-      <p>We maintain detention reports from previous reporting periods back to June 2025, even when ICE has not updated a facility with updated population summaries through the most recent date. See the "Data as of" note on each individual detention report for the most recent date of facility population reporting for that specific facility from ICE.</p>
-
-      <h4>January 22, 2026</h4>
-      <p>No unique data processing steps were necessary for this release.</p>
-      <p>We added a map to the front landing page. Each icon represents a detention facility utilized by ICE in the most recent release.</p>
-
-      <h4>December 26, 2025</h4>
-      <p>No unique data processing steps were necessary for this release.</p>
-      <p>ICE recently released a series of facility contract documents on its <a href="https://www.ice.gov/foia/library">FOIA Library</a>. Contracts posted between June and December 2025 have been added to the bottom of each corresponding detention report page.</p>
-
-      <h4>December 11, 2025</h4>
-      <p>No unique data processing steps were necessary for this release.</p>
-
-      <h4>November 28, 2025</h4>
-      <p>We added a scatterplot in this update. The scatterplot shows the Interval ADP on the x-axis and the Average Length of Stay (ALOS) in days on the y-axis. Two lines represent the average of the facilities for each of these dimensions. The four subsequent quadrants provide a useful way to compare facilities.</p>
-      <ul>
-        <li>The upper left quadrant is made up of facilities with lower average detainee population sizes, but longer average stints at that location.</li>
-        <li>The upper right quadrant is made up of facilities with higher average detainee population sizes and longer average stints at that location.</li>
-        <li>The lower right quadrant is made up of facilities with higher average detainee population sizes but shorter average stints at that location.</li>
-        <li>The lower left quadrant is made up of facilities with lower average detainee population sizes and shorter average stints at that location.</li>
-      </ul>
-      <p>Since ICE moves detainees around frequently, the "Average Length of Stay" indicator on the facility sheet represents how long people are detained at that specific facility (what the Deportation Data Project has called a <a href="https://deportationdata.org/data/processed/ice.html">"stint"</a>) not their overall "stay" in detention, which may include detention stints in multiple facilities.</p>
-      <p>ICE rounded detainee ADPs to the nearest integer in the facility sheet throughout this statistical release. For this reason, summing up subpopulations by criminality, gender, or "ICE Threat Level" will not sum to the total interval ADP.</p>
-
-      <h4>November 10, 2025</h4>
-      <p>This is the first ICE detention statistics release of the fiscal year. For this reason, the backward moving average that is Interval ADP will not differ from the ADP as reported by ICE. Interval ADP will begin to show differences from the ICE Reported ADP upon the second detention statistics release of the fiscal year, likely in early December.</p>
-      <p>ICE rounded detainee ADPs to the nearest integer in the facility sheet throughout this statistical release. While this will not cause any problem presently, the Interval ADP measure calculated for the next update will show discrepancies due to rounding. For more information, please see the note for August 4, 2025 found below.</p>
-
-      <h4>September 15, 2025</h4>
-      <p>No unique data processing steps were necessary for this release.</p>
-
-      <h4>September 2, 2025</h4>
-      <p>No unique data processing steps were necessary for this release.</p>
-
-      <h4>August 18, 2025</h4>
-      <p>ICE resumed publishing average population figures with decimals. The decision to round to integers in the previous release (see below, August 4, 2025) does create inconsistencies here, too. Users will note that the Overall Interval ADP may differ significantly from the disaggregation categories: Security Classification, Gender, and Criminality.</p>
-      <p>These discrepancies are most apparent at 1) smaller facilities and/or 2) facilities with large fluctuations in the number of book ins/book outs over the last two weeks.</p>
-
-      <h4>August 4, 2025</h4>
-      <p>Typically, disaggregated average daily population numbers released by ICE include decimals, allowing each of the three separate reporting categories - Security Classification, Gender/Criminal Status, and ICE Threat Level - to sum to equal population values. In this release, ICE rounded all population numbers to the nearest integer.</p>
-      <p>This has meant that one category might show a higher population than another category by one or two people, despite the fact that both systems of classification report on the same number of individuals detained. To put it differently, ICE released up to three different average daily population figures per facility.</p>
-      <p>For the purposes of calculating Interval ADP, that difference of 1 or 2 can create discrepancies of 14 or even 28 people when calculating the population for each facility between July 22 and August 4.</p>
-      <p>To mitigate the impact of this reporting style, we have decided to take the average of the three categories and treat that number as the official Average Daily Population as reported by ICE. We then computed the Interval ADP for July 22 to August 4 based on that equally-weighted number.</p>
-      <p>The rounding discrepancy causes nonsensical numbers for the disaggregation categories: security classification, gender, and criminal status. This was particularly true for facilities which hold fewer people in total. We will not report any subpopulation Interval ADP for detention facilities which held an average of 14 or fewer individuals over the last interval (the 14 days between July 2 and August 4).</p>
-      <p>One facility listed by ICE on this date featured population averages that were impossibly low:</p>
-      <ul><li>Robert A. Deyton Detention Facility</li></ul>
-      <p>Population numbers reported by ICE for this facility have been excluded from the dataset for this date.</p>
-
-      <h4>July 21, 2025</h4>
-      <p>One facility listed by ICE on this date featured population averages that were impossibly low:</p>
-      <ul><li>Northwest Regional Corrections Center</li></ul>
-      <p>Population numbers reported by ICE for this facility have been excluded from the dataset for this date.</p>
-      <p>As originally published, Miami Federal Detention featured inaccurate Interval ADP numbers. This was corrected on August 7, 2025.</p>
-
-      <h4>July 7, 2025</h4>
-      <p>More than half (96 out of 172) of the facilities listed by ICE on this date featured population averages that were impossibly low. While it is quite possible that ICE released correct populations for other facilities, the pervasiveness of the error has forced us to drop this entire dataset from release.</p>
-
-      <h4>June 23, 2025</h4>
-      <p>Four facilities listed by ICE on this date featured population averages that were impossibly high:</p>
-      <ul>
-        <li>Fayette County Detention Center</li>
-        <li>La Paz County Adult Detention Facility</li>
-        <li>Lexington County Jail</li>
-        <li>New Hanover County Jail</li>
-      </ul>
-      <p>Population numbers reported by ICE for these four facilities have been excluded from the dataset for this date.</p>
-      <p>A fifth detention facility had two entries for this release with differing population values:</p>
-      <ul><li>Nassau County Correctional Center</li></ul>
-      <p>Upon the passage of time and the inclusion of more data, we have selected the entry with the lower ADP value for this week as it comports more consistently with population releases before and after June 23.</p>
-
-    </div>
-
-    <footer class="footer" style="margin-top:1.5rem;">
-      <p>Questions? Email Adam at <a href="mailto:adam@relevant-research.com">adam@relevant-research.com</a></p>
-      <p>Developed by <a href="https://relevant-research.com/">Relevant Research</a></p>
-      <img src="logo.png" alt="Relevant Research Logo" style="height:40px; margin-top:0.75rem; opacity:0.7;" />
-    </footer>
-  </div>
-
-</body>
+  </body>
 </html>
