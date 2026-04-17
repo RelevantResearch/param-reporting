@@ -1,111 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ICE Detention Facilities - Directory</title>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y0JF41VY73"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Y0JF41VY73"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-Y0JF41VY73');
+      gtag("config", "G-Y0JF41VY73");
     </script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-</head>
+  </head>
 
-<body>
-    <div class="container">
-        <header class="header">
-            <div class="header-top">
-                <h1>ICE Detention Reports</h1>
-                <a href="#" id="notesLink" class="notes-link" style="display:none;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                    Notes on Data Processing
-                </a>
-            </div>
-            <div class="stats" id="totalFacilities">Loading...</div>
-        </header>
-        <div class = "date-info-heading">Detention population data from Immigration and Customs Enforcement through:</div>
-        <div class = "date-info">April 02, 2026</div>
+  <body>
+    <!-- Sticky header bar: logo left, title + stats right -->
+    <header class="site-header">
+      <div class="header-logo-wrap">
+        <img src="logo.png" alt="Relevant Research Logo" class="header-logo" />
+      </div>
+      <div class="header-content">
+        <div class="header-title-row">
+          <h1>ICE Detention Reports</h1>
+          <a href="#" id="notesLink" class="notes-link" style="display: none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              ></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            Notes on Data Processing
+          </a>
+        </div>
+        <div class="stats" id="totalFacilities">Loading...</div>
+      </div>
+    </header>
+
+    <!-- Two-column main layout -->
+    <div class="main-layout">
+      <!-- Left panel: map + filters (always visible) -->
+      <aside class="left-panel">
+        <div class="date-info-block">
+          <span class="date-info-heading">Data through</span>
+          <span class="date-info">April 02, 2026</span>
+        </div>
+
         <div class="map-section">
-            <div class="map-header">
-                <div class="map-title-text">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>
-                    Detention Facilities Map
-                </div>
-                <div class="map-hint">Click a marker to view facility details</div>
+          <div class="map-header">
+            <div class="map-title-text">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polygon
+                  points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"
+                ></polygon>
+                <line x1="8" y1="2" x2="8" y2="18"></line>
+                <line x1="16" y1="6" x2="16" y2="22"></line>
+              </svg>
+              Facilities Map
             </div>
-            <div id="map"></div>
+            <div class="map-hint">Click a marker to open report</div>
+          </div>
+          <div id="map"></div>
         </div>
 
         <div class="search-container">
-            <div class="filter-row">
-                <div class="filter-group">
-                    <label for="stateSearch">State</label>
-                    <select id="stateSearch" class="filter-input">
-                        <option value="">All States</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label for="citySearch">City</label>
-                    <input type="text" id="citySearch" class="filter-input" placeholder="e.g., Natchez">
-                </div>
-                <div class="filter-group">
-                    <label for="zipSearch">Zip Code</label>
-                    <input type="text" id="zipSearch" class="filter-input" placeholder="e.g., 39120">
-                </div>
+          <div class="filter-section-label">Filter Facilities</div>
+          <div class="filter-row">
+            <div class="filter-group full-width">
+              <label for="stateSearch">State</label>
+              <select id="stateSearch" class="filter-input">
+                <option value="">All States</option>
+              </select>
             </div>
-            <div class="search-box-wrapper">
-                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                <input type="text" class="search-box" id="searchInput"
-                    placeholder="Search by name, location, or detention code..." autocomplete="off">
+            <div class="filter-group">
+              <label for="citySearch">City</label>
+              <input
+                type="text"
+                id="citySearch"
+                class="filter-input"
+                placeholder="e.g., Natchez"
+              />
             </div>
-            <div class="search-footer">
-                <span class="search-info">Filter by state, city, or zip — or search across all fields above.</span>
-                <button id="clearFilters" class="clear-btn" style="display:none;">× Clear filters</button>
+            <div class="filter-group">
+              <label for="zipSearch">Zip</label>
+              <input
+                type="text"
+                id="zipSearch"
+                class="filter-input"
+                placeholder="e.g., 39120"
+              />
             </div>
+          </div>
+          <div class="search-box-wrapper">
+            <svg
+              class="search-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input
+              type="text"
+              class="search-box"
+              id="searchInput"
+              placeholder="Search by name, location, or code..."
+              autocomplete="off"
+            />
+          </div>
+          <div class="search-footer">
+            <button id="clearFilters" class="clear-btn" style="display: none">
+              × Clear filters
+            </button>
+          </div>
         </div>
+      </aside>
 
+      <!-- Right panel: scrollable facility list -->
+      <main class="right-panel">
         <div class="facilities-container">
-            <div class="facilities-toolbar">
-                <span id="resultsCount" class="results-count">Loading...</span>
-                <div class="sort-control">
-                    <span class="sort-label">Sort</span>
-                    <select id="sortBy" class="sort-select">
-                        <option value="name">Name A → Z</option>
-                        <option value="adp-desc">ADP: Highest First</option>
-                        <option value="adp-asc">ADP: Lowest First</option>
-                        <option value="updated-desc">Recently Updated</option>
-                        <option value="updated-asc">Oldest Updated</option>
-                    </select>
-                </div>
+          <div class="facilities-toolbar">
+            <span id="resultsCount" class="results-count">Loading...</span>
+            <div class="sort-control">
+              <span class="sort-label">Sort</span>
+              <select id="sortBy" class="sort-select">
+                <option value="name">Name A → Z</option>
+                <option value="adp-desc">ADP: Highest First</option>
+                <option value="adp-asc">ADP: Lowest First</option>
+                <option value="updated-desc">Recently Updated</option>
+                <option value="updated-asc">Oldest Updated</option>
+              </select>
             </div>
-            <div class="adp-legend">
-                <span class="legend-item legend-high">&ge; 1,000</span>
-                <span class="legend-item legend-medium">100 – 999</span>
-                <span class="legend-item legend-low">&lt; 100</span>
-                <span class="legend-item legend-none">No updated data</span>
-            </div>
-            <div id="facilitiesContent" class="loading">
-                Loading facilities...
-            </div>
+          </div>
+          <div class="adp-legend">
+            <span class="legend-item legend-high">&ge; 1,000</span>
+            <span class="legend-item legend-medium">100 – 999</span>
+            <span class="legend-item legend-low">&lt; 100</span>
+            <span class="legend-item legend-none">No updated data</span>
+          </div>
+          <div id="facilitiesContent" class="loading">
+            Loading facilities...
+          </div>
         </div>
 
         <footer class="footer">
-            <p>This directory provides transparency and information about ICE detention facilities across the United
-                States.</p>
-            <p>Questions? Email Adam at <a href="mailto:adam@relevant-research.com">adam@relevant-research.com</a></p>
-            <p>Developed by <a href="https://relevant-research.com/" target="_blank">Relevant Research</a></p>
+          <p>
+            This directory provides transparency and information about ICE
+            detention facilities across the United States.
+          </p>
+          <p>
+            Questions? Email Adam at
+            <a href="mailto:adam@relevant-research.com"
+              >adam@relevant-research.com</a
+            >
+          </p>
+          <p>
+            Developed by
+            <a href="https://relevant-research.com/" target="_blank"
+              >Relevant Research</a
+            >
+          </p>
         </footer>
+      </main>
     </div>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
