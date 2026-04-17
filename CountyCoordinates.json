@@ -266,11 +266,18 @@
     "Latitude": 41.1511
   },
   {
-    "Name": "CLINTON COUNTY JAIL",
+    "Name": "CLINTON COUNTY JAIL (IN)",
     "City": "FRANKFORT",
     "State": "IN",
-    "Longitude": -86.509,
-    "Latitude": 40.2793
+    "Longitude": -86.39330259557691,
+    "Latitude": 40.30781107358957 
+  },
+  {
+    "Name": "CLINTON COUNTY JAIL (NY)",
+    "City": "PLATTSBURGH",
+    "State": "NY",
+    "Longitude": -73.45306540186002,
+    "Latitude": 44.724080401643484 
   },
   {
     "Name": "COASTAL BEND DETENTION FACILITY",
@@ -1491,7 +1498,7 @@
     "Latitude": 27.4534
   },
   {
-    "Name": "STE. GENEVIEVE COUNTY SHERIFF-JAIL",
+    "Name": "STE. GENEVIEVE COUNTY SHERIFF/JAIL",
     "City": "STE. GENEVIEVE",
     "State": "MO",
     "Longitude": -90.0554,
