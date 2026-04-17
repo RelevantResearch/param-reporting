@@ -19,6 +19,11 @@
       gtag("config", "G-Y0JF41VY73");
     </script>
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js");
+      }
+    </script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"

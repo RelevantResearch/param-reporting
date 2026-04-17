@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notes on Data Processing - ICE Detention Reports</title>
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js");
+      }
+    </script>
     <style>
       body {
         height: auto;
@@ -78,7 +83,7 @@
           padding: 1.25rem 1rem;
         }
       }
-    </style>
+    </script>
   </head>
   <body>
     <header class="site-header">
