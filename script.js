@@ -1,6 +1,6 @@
 let allFacilities = [];
 let filteredFacilities = [];
-let currentSort = "name";
+let currentSort = "adp-desc";
 let maxAdp = 0;
 
 // US State abbreviations to full names mapping
