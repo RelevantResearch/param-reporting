@@ -5,153 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notes on Data Processing – ICE Detention Reports</title>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y0JF41VY73"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Y0JF41VY73"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag("js", new Date());
       gtag("config", "G-Y0JF41VY73");
     </script>
     <link rel="stylesheet" href="../styles.css" />
-    <style>
-      /* Notes page overrides */
-      body {
-        height: auto;
-        min-height: 100vh;
-        overflow: auto;
-      }
-
-      .notes-main {
-        flex: 1;
-        padding: 2rem 1.5rem 3rem;
-        display: flex;
-        justify-content: center;
-      }
-
-      .notes-article {
-        width: 100%;
-        max-width: 780px;
-        background: #fff;
-        border-radius: 12px;
-        border: 1px solid #e9ecef;
-        padding: 2.5rem 3rem;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-      }
-
-      .back-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.4rem;
-        color: #555;
-        text-decoration: none;
-        font-size: 0.85rem;
-        font-weight: 500;
-        margin-bottom: 2rem;
-        padding: 0.4rem 0.75rem;
-        background: #f8f9fa;
-        border: 1px solid #dee2e6;
-        border-radius: 8px;
-        transition: all 0.2s ease;
-      }
-
-      .back-link:hover {
-        background: #e9ecef;
-        border-color: #adb5bd;
-        color: #2c3e50;
-      }
-
-      .notes-article h2 {
-        font-size: 1.35rem;
-        font-weight: 700;
-        color: #2c3e50;
-        margin: 2rem 0 0.75rem;
-        padding-bottom: 0.5rem;
-        border-bottom: 2px solid #e9ecef;
-      }
-
-      .notes-article h2:first-of-type {
-        margin-top: 0.5rem;
-      }
-
-      .notes-article h4 {
-        font-size: 0.95rem;
-        font-weight: 700;
-        color: #495057;
-        margin: 1.5rem 0 0.4rem;
-        text-transform: uppercase;
-        letter-spacing: 0.03em;
-      }
-
-      .notes-article p {
-        font-size: 0.95rem;
-        line-height: 1.75;
-        color: #444;
-        margin-bottom: 0.85rem;
-      }
-
-      .notes-article ul {
-        padding-left: 1.5rem;
-        margin-bottom: 0.85rem;
-      }
-
-      .notes-article li {
-        font-size: 0.95rem;
-        line-height: 1.75;
-        color: #444;
-        margin-bottom: 0.35rem;
-      }
-
-      .notes-article a {
-        color: #2980b9;
-        text-decoration: none;
-      }
-
-      .notes-article a:hover {
-        text-decoration: underline;
-      }
-
-      .notes-article em {
-        font-style: italic;
-      }
-
-      .notes-article strong {
-        font-weight: 600;
-        color: #333;
-      }
-
-      .date-entry {
-        border-left: 3px solid #dee2e6;
-        padding-left: 1rem;
-        margin-bottom: 1.5rem;
-      }
-
-      .date-entry h4 {
-        color: #6c757d;
-        margin-top: 0;
-      }
-
-      .footer {
-        text-align: center;
-        padding: 1.5rem;
-        font-size: 0.8rem;
-        color: #888;
-        border-top: 1px solid #e9ecef;
-        margin-top: 1rem;
-      }
-
-      @media (max-width: 768px) {
-        .notes-main { padding: 1rem 0.75rem 2rem; }
-        .notes-article { padding: 1.5rem 1.25rem; }
-      }
-
-      @media (max-width: 600px) {
-        .notes-article { padding: 1.25rem 1rem; border-radius: 8px; }
-        .notes-article h2 { font-size: 1.1rem; }
-      }
-    </style>
+    <link rel="stylesheet" href="../notes.css" />
   </head>
+
   <body>
-    <!-- Same sticky header as index.html -->
     <header class="site-header">
       <div class="header-logo-wrap">
         <a href="https://detentionreports.com/">
@@ -184,30 +54,74 @@
           Back to Detention Reports
         </a>
 
-        <h2>About Detention Reports</h2>
+        <nav class="notes-toc">
+          <h2>Contents</h2>
+          <ul>
+            <li><a href="#about">About Detention Reports</a></li>
+            <li><a href="#publications">Publications Citing Detention Reports</a></li>
+            <li><a href="#processing-notes">Ongoing Data Processing Notes</a></li>
+          </ul>
+        </nav>
 
-        <p>These reports use the Interval Average Daily Population calculation to estimate recent numbers of detainees at Immigration and Customs Enforcement (ICE) facilities across the United States and its Territories.</p>
+        <h2 id="about">About Detention Reports</h2>
 
-        <p>The reports use numbers compiled from the semi-monthly data updates released by ICE. These data can be found in the "Facilities" tab in the xlsx file at the bottom of the "ICE Detention Management" website <a href="https://www.ice.gov/detain/detention-management">here</a>.</p>
+        <p>Detention Reports is a pro-bono project of Relevant Research, intended to provide the public with accessible, non-partisan, and up-to-date information about ICE's national network of immigrant detention facilities. The source data for this project comes primarily from ICE's biweekly detention spreadsheet available on ICE's website. This data is carefully validated, modestly transformed using Relevant Research's own methodologies (described below), and supplemented with additional vetted information that adds value for a broad public audience. Relevant Research announced <a href="https://detentionreports.com">Detention Reports</a> in July 2025.</p>
 
-        <p>For more information about Interval ADP, you can see our white paper published <a href="https://relevant-research.com/work">here</a>.</p>
+        <p>The most original element of Detention Reports is the application of the Interval Average Daily Population (i.e., Interval ADP) method. Interval ADP was developed by Adam Sawyer and Austin Kocher at Relevant Research as a method for calculating the average detained population at any given facility over a recent time period using ICE's reported year-to-date facility population averages. A full description of the methodology is available in our <a href="https://relevant-research.com/work">white paper</a>.</p>
 
-        <p>Relevant Research announced the new <a href="https://detentionreports.com/">DetentionReports.com</a> platform <a href="https://austinkocher.substack.com/p/new-tool-detentionreportscom-provides">on July 28, 2025</a>.</p>
+        <p>In addition to Interval ADP, Detention Reports collects, cleans, validates, and presents–in a more organized, searchable, and actionable way–available information about each detention facility in straightforward reports format with clear graphics that are easily linked to stable URLs. Detention Reports also provides detention contracts published by ICE when available.</p>
 
-        <p>On April 17, 2026, we unveiled a new interface for the landing page. Users will notice the new layout and the introduction of a dropdown button that permits one to sort detention centers by Interval ADP, alphabetical order, or the date of the most recent update. Detention centers are now represented by different colors on the map depending on Interval ADP.</p>
+        <p>Detention Reports is actively maintained and quickly updated following each new validated publication of ICE's detention spreadsheet, with detailed documentation provided below. To contribute ICE facility contract documentation, submit feedback, ask questions, or notify us of potential corrections, email Adam Sawyer, Director of Research at Relevant Research, at <strong>adam@relevant-research.com</strong>.</p>
 
-        <p>We welcome feedback! Please email Adam at <strong>adam@relevant-research.com</strong> if you have any questions or comments.</p>
+        <p>Detention Reports demonstrates Relevant Research's unique expertise in integrating innovative immigration data analysis, web development, and public impact. If you would like to know more about how Relevant Research can support your work, schedule a conversation with us. Relevant Research was founded by Austin Kocher, Adam Sawyer, and Riwaj Chalise.</p>
 
         <p>Detention Reports contributors: Michael Ale, Riwaj Chalise, Sandesh Nilas Khatiwada, Austin Kocher, Sunita Kunwar, Adam Sawyer, and Bishal Timsina.</p>
 
-        <h2>Ongoing Data Processing Notes</h2>
+        <h2 id="publications">Publications Citing Detention Reports</h2>
+
+        <p><a href="#about">Back to contents</a></p>
+
+        <div class="publications-grid">
+          <a href="https://americancommunitymedia.org/immigration/never-give-up-experts-on-the-federal-and-local-immigration-enforcement-data-trail/">American Community Media</a>
+          <a href="https://calmatters.org/justice/2026/04/new-ice-detention-center-mcfarland/">CalMatters</a>
+          <a href="https://www.cpr.org/2025/09/02/ice-detains-musician-john-shin-aurora/">Colorado Public Radio</a>
+          <a href="https://www.elpasotimes.com/story/news/immigration/2026/04/24/where-are-ice-detention-protests-in-texas-see-the-list/89747637007/">El Paso Times</a>
+          <a href="https://enlacelatinonc.org/alamance-y-new-hanover-que-dicen-los-datos-de-los-centros-de-detencion-de-ice-en-carolina-del-norte/">Enlace Latino NC</a>
+          <a href="https://www.excelsiorcalifornia.com/2026/04/24/ice-abre-discretamente-otro-centro-de-detencin-en-una-antigua-prisin-de-california/">Excelsior California</a>
+          <a href="https://www.huffpost.com/entry/alligator-alcatraz-immigration-jail_n_68d6a319e4b0185d00688297">HuffPost</a>
+          <a href="https://kypolicy.org/ice-arrests-in-kentucky/">KyPolicy</a>
+          <a href="https://michiganadvance.com/2026/02/16/powerful-union-federation-says-hell-no-to-ice-ramping-up-presence-in-michigan/">Michigan Advance</a>
+          <a href="https://sourcenm.com/2025/10/29/torrance-countys-ice-detention-agreement-set-to-expire-in-two-days-amid-federal-shutdown/">SourceNM</a>
+          <a href="https://www.thecity.nyc/2025/12/22/delaney-hall-immigrants-detention-visitors-volunteers-cold-christmas-holidays/">The City</a>
+          <a href="https://theconversation.com/when-immigration-detention-becomes-a-system-of-concentration-lessons-from-research-on-150-historical-cases-277728">The Conversation</a>
+          <a href="https://www.theguardian.com/us-news/2025/aug/01/fbi-immigrant-detainees-cibola-prison-drug-smuggling">The Guardian</a>
+          <a href="https://www.latimes.com/california/story/2025-10-03/california-gave-counties-power-to-inspect-ice-detention-centers-theyre-not-using-it">The Los Angeles Times</a>
+          <a href="https://newrepublic.com/article/204462/kristi-noem-maga-monster-dhs-villain">The New Republic</a>
+          <a href="https://www.inquirer.com/news/ice-custody-immigrants-criminal-records-20250812.html">The Philadelphia Inquirer</a>
+          <a href="https://www.texastribune.org/2026/02/19/ice-detention-deaths-texas-east-montana-dilley-campos/">The Texas Tribune</a>
+          <a href="https://www.washingtonpost.com/business/2026/05/04/ice-detention-centers-force/">The Washington Post</a>
+        </div>
+
+        <h2 id="processing-notes">Ongoing Data Processing Notes</h2>
+
+        <p><a href="#about">Back to contents</a></p>
+
+        <div class="date-entry">
+          <h4>May 14, 2026</h4>
+          <p>We added more information to the "About" portion of this document and then added the "Publications Citing Detention Reports" section.</p>
+        </div>
+
+        <div class="date-entry">
+          <h4>April 17, 2026</h4>
+          <p>Although we did not update any data, we unveiled a new interface for the landing page. Users will notice the new layout and the introduction of a dropdown button that permits one to sort detention centers by Interval ADP, alphabetical order, or the date of the most recent update. Detention centers are now represented by different colors on the map depending on Interval ADP.</p>
+        </div>
 
         <div class="date-entry">
           <h4>April 2, 2026</h4>
           <p>No unique data processing steps were necessary for this release.</p>
-          <p>We added a chart that shows the population classified under "mandatory detention" according to ICE reporting. The determination of mandatory detention can be found in the Immigration Nationality Act <a href="https://www.americanimmigrationcouncil.org/practice-advisory/ina-235b-detention-practice-advisory/">Section 235(b)</a>. Individuals classified under mandatory detention generally cannot be bonded out. Mandatory detention as applied under the Trump administration has led to ongoing federal litigation (See <a href="https://www.justice.gov/eoir/media/1413311/dl?inline">Matter of Yajure Hurtado</a> and <a href="https://www.aclu.org/cases/maldonadobautista-v-dhs?document=PRACTICE-ADVISORY">Maldonado Bautista v. DHS</a>).</p>
-          <p>While some shifts might be due to the typical ICE practice of moving people from facility to facility, changes in mandatory detention policy have created fluctuations in the mandatory detainee population that are <em>not</em> related to ICE transfers. When large groups of people are reclassified as mandatory detainees, the mandatory detention interval adp can <em>exceed</em> the overall ICE detainee population held at that location, theoretically without a single person having been transferred by ICE. In these situations, we have capped the mandatory detention population at 100% of the overall detainee population of a facility.</p>
-          <p>We are grateful for our conversations with <a href="https://josephgunther.me">Joseph Gunther</a> on the topic of mandatory detention and interval adp.</p>
+          <p>We added a chart that shows the population classified under "mandatory detention" according to ICE reporting. The determination of mandatory detention can be found in the Immigration and Nationality Act <a href="https://www.americanimmigrationcouncil.org/practice-advisory/ina-235b-detention-practice-advisory/">Section 235(b)</a>. Individuals classified under mandatory detention generally cannot be bonded out. Mandatory detention as applied under the Trump administration has led to ongoing federal litigation (See <a href="https://www.justice.gov/eoir/media/1413311/dl?inline">Matter of Yajure Hurtado</a> and <a href="https://www.aclu.org/cases/maldonadobautista-v-dhs?document=PRACTICE-ADVISORY">Maldonado Bautista v. DHS</a>).</p>
+          <p>While some shifts might be due to the typical ICE practice of moving people from facility to facility, changes in mandatory detention policy have created fluctuations in the mandatory detainee population that are <em>not</em> related to ICE transfers. When large groups of people are reclassified as mandatory detainees, the mandatory detention Interval ADP can <em>exceed</em> the overall ICE detainee population held at that location, theoretically without a single person having been transferred by ICE. In these situations, we have capped the mandatory detention population at 100% of the overall detainee population of a facility.</p>
+          <p>We are grateful for our conversations with <a href="https://josephgunther.me">Joseph Gunther</a> on the topic of mandatory detention and Interval ADP.</p>
         </div>
 
         <div class="date-entry">
@@ -244,7 +158,7 @@
             <li><p>The lower left quadrant is made up of facilities with lower average detainee population sizes and shorter average stints at that location.</p></li>
           </ul>
           <p>Since ICE moves detainees around frequently, the "Average Length of Stay" indicator on the facility sheet represents how long people are detained at that specific facility (what the Deportation Data Project has called a <a href="https://deportationdata.org/data/processed/ice.html">"stint"</a>) not their overall "stay" in detention, which may include detention stints in multiple facilities.</p>
-          <p>ICE rounded detainee ADPs to the nearest integer in the facility sheet throughout this statistical release. For this reason, summing up subpopulations by criminality, gender, or "ICE Threat Level" will not sum to the total interval ADP.</p>
+          <p>ICE rounded detainee ADPs to the nearest integer in the facility sheet throughout this statistical release. For this reason, summing up subpopulations by criminality, gender, or "ICE Threat Level" will not sum to the total Interval ADP.</p>
         </div>
 
         <div class="date-entry">
