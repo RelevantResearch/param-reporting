@@ -74,10 +74,10 @@ let allCountyPoints = [];
 //   }).addTo(map);
 //   markersLayer = L.layerGroup().addTo(map);
 // }
-// Continental US + Alaska/Hawaii bounding box
+// Continental US + territories bounding box (extended to include PR and Cuba/Gbay)
 const USA_BOUNDS = L.latLngBounds(
-  L.latLng(15.0, -180.0),
-  L.latLng(72.0, -60.0),
+  L.latLng(12.0, -180.0), // extended south to cover PR/Cuba/Gbay
+  L.latLng(72.0, -55.0), // extended east so PR isn't at the hard edge
 );
 const USA_CENTER = [38.5, -96];
 const USA_ZOOM = 3;
@@ -97,13 +97,12 @@ function initMap() {
       maxZoom: 13,
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-      bounds: USA_BOUNDS,
     },
   ).addTo(map);
 
   markersLayer = L.layerGroup().addTo(map);
 
-  // Add ADP legend control to the map
+  // Add ADP legend control to the map (draggable)
   const legend = L.control({ position: "bottomright" });
   legend.onAdd = function () {
     const div = L.DomUtil.create("div", "map-legend");
@@ -114,6 +113,52 @@ function initMap() {
       <div class="map-legend-item"><span class="map-legend-dot" style="background:#ffeda0; border:1px solid #feb24c;"></span> &lt; 100</div>
       <div class="map-legend-item"><span class="map-legend-dot" style="background:#bdc3c7;"></span> No updated data</div>
     `;
+    L.DomEvent.disableClickPropagation(div);
+    L.DomEvent.disableScrollPropagation(div);
+    div.style.cursor = "grab";
+
+    let dragging = false,
+      ox = 0,
+      oy = 0;
+
+    div.addEventListener("mousedown", function (e) {
+      if (e.button !== 0) return;
+      dragging = true;
+      div.style.cursor = "grabbing";
+      const mapEl = map.getContainer();
+      const mapRect = mapEl.getBoundingClientRect();
+      const divRect = div.getBoundingClientRect();
+      // Move out of Leaflet control corner into map container for free positioning
+      if (div.parentElement !== mapEl) {
+        const l = divRect.left - mapRect.left;
+        const t = divRect.top - mapRect.top;
+        mapEl.appendChild(div);
+        div.style.cssText =
+          "position:absolute;left:" +
+          l +
+          "px;top:" +
+          t +
+          "px;z-index:1000;cursor:grabbing;" +
+          div.style.cssText;
+      }
+      ox = e.clientX - parseInt(div.style.left, 10);
+      oy = e.clientY - parseInt(div.style.top, 10);
+      e.preventDefault();
+    });
+
+    document.addEventListener("mousemove", function (e) {
+      if (!dragging) return;
+      div.style.left = e.clientX - ox + "px";
+      div.style.top = e.clientY - oy + "px";
+    });
+
+    document.addEventListener("mouseup", function () {
+      if (dragging) {
+        dragging = false;
+        div.style.cursor = "grab";
+      }
+    });
+
     return div;
   };
   legend.addTo(map);
