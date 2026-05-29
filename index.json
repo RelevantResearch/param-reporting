@@ -1130,6 +1130,16 @@
         "CurrentIntervalADP": 92
     },
     {
+        "Name": "KANSAS CITY HOLDROOM",
+        "City": "Kansas City",
+        "State": "MO",
+        "Zip": "64153",
+        "DETLOC": "KANHOLD",
+        "filename": "KANHOLD.html",
+        "LatestUpdate": "2026-01-22",
+        "CurrentIntervalADP": 2
+    },
+    {
         "Name": "KARNES COUNTY CORRECTIONAL CENTER",
         "City": "Karnes City",
         "State": "TX",
