@@ -7,7 +7,10 @@
         "DETLOC": "NOTES",
         "filename": "notes.html",
         "LatestUpdate": null,
-        "CurrentIntervalADP": null
+        "CurrentIntervalADP": null,
+        "Owner": null,
+        "Operator": null,
+        "Institutional.Type": null
     },
     {
         "Name": "ADAMS COUNTY CORRECTIONAL CENTER",
@@ -17,7 +20,10 @@
         "DETLOC": "ADAMSMS",
         "filename": "ADAMSMS.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1969
+        "CurrentIntervalADP": 1969,
+        "Owner": "CoreCivic",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "ADELANTO ICE PROCESSING CENTER",
@@ -27,7 +33,10 @@
         "DETLOC": "ADLNTCA",
         "filename": "ADLNTCA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1575
+        "CurrentIntervalADP": 1575,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "ALAMANCE COUNTY DETENTION FACILITY",
@@ -37,7 +46,10 @@
         "DETLOC": "ALAMCNC",
         "filename": "ALAMCNC.html",
         "LatestUpdate": "2025-11-10",
-        "CurrentIntervalADP": 22
+        "CurrentIntervalADP": 22,
+        "Owner": "Alamance County",
+        "Operator": "Alamance County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "ALEXANDRIA STAGING FACILI",
@@ -47,7 +59,10 @@
         "DETLOC": "JENATLA",
         "filename": "JENATLA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 394
+        "CurrentIntervalADP": 394,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "ALLEGANY COUNTY JAIL",
@@ -57,7 +72,10 @@
         "DETLOC": "ALLEGNY",
         "filename": "ALLEGNY.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 9
+        "CurrentIntervalADP": 9,
+        "Owner": "Allegany County",
+        "Operator": "Allegany County Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "ALLEN PARISH PUBLIC SAFETY COMPLEX",
@@ -67,7 +85,10 @@
         "DETLOC": "APPSCLA",
         "filename": "APPSCLA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 118
+        "CurrentIntervalADP": 118,
+        "Owner": "Allen Parish",
+        "Operator": "Allen Parish Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "ANCHORAGE CORRECTIONAL COMPLEX",
@@ -77,7 +98,10 @@
         "DETLOC": "ANCHOAK",
         "filename": "ANCHOAK.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 2
+        "CurrentIntervalADP": 2,
+        "Owner": "State of Alaska",
+        "Operator": "Alaska Department of Corrections",
+        "Institutional.Type": "State"
     },
     {
         "Name": "BAKER CORRECTIONAL INSTITUTION",
@@ -87,7 +111,10 @@
         "DETLOC": "FLBAKCI",
         "filename": "FLBAKCI.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 929
+        "CurrentIntervalADP": 929,
+        "Owner": "State of Florida",
+        "Operator": "Florida Department of Corrections",
+        "Institutional.Type": "State"
     },
     {
         "Name": "BAKER COUNTY SHERIFF DEPT.",
@@ -97,7 +124,10 @@
         "DETLOC": "BAKERFL",
         "filename": "BAKERFL.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 261
+        "CurrentIntervalADP": 261,
+        "Owner": "Baker County",
+        "Operator": "Baker County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "BALDWIN COUNTY CORRECTIONAL CENTER",
@@ -107,7 +137,10 @@
         "DETLOC": "BALDWAL",
         "filename": "BALDWAL.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 20
+        "CurrentIntervalADP": 20,
+        "Owner": "Baldwin County",
+        "Operator": "Baldwin County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "BERLIN FED. CORR. INST.",
@@ -117,7 +150,10 @@
         "DETLOC": "BOPBER",
         "filename": "BOPBER.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 134
+        "CurrentIntervalADP": 134,
+        "Owner": "Federal Bureau of Prisons (BOP)",
+        "Operator": "Federal Bureau of Prisons (BOP)",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "BLUEBONNET DETENTION FACILITY",
@@ -127,7 +163,10 @@
         "DETLOC": "BLBNATX",
         "filename": "BLBNATX.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 978
+        "CurrentIntervalADP": 978,
+        "Owner": "Jones County",
+        "Operator": "Management and Training Corporation (MTC)",
+        "Institutional.Type": "Local-Private Contractor"
     },
     {
         "Name": "BOONE COUNTY JAIL",
@@ -137,7 +176,10 @@
         "DETLOC": "BOONEKY",
         "filename": "BOONEKY.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 217
+        "CurrentIntervalADP": 217,
+        "Owner": "Boone County",
+        "Operator": "Boone County Jailer",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "BOURBON CO DET CENTER",
@@ -147,7 +189,10 @@
         "DETLOC": "BOURBKY",
         "filename": "BOURBKY.html",
         "LatestUpdate": "2025-12-26",
-        "CurrentIntervalADP": 0
+        "CurrentIntervalADP": 0,
+        "Owner": "Bourbon County",
+        "Operator": "Bourbon County Fiscal Court",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "BROOKLYN MDC",
@@ -157,7 +202,10 @@
         "DETLOC": "BOPBRO",
         "filename": "BOPBRO.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 201
+        "CurrentIntervalADP": 201,
+        "Owner": "Federal Bureau of Prisons (BOP)",
+        "Operator": "Federal Bureau of Prisons (BOP)",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "BROOME COUNTY JAIL",
@@ -167,7 +215,10 @@
         "DETLOC": "BROMMNY",
         "filename": "BROMMNY.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 25
+        "CurrentIntervalADP": 25,
+        "Owner": "Broome County",
+        "Operator": "Broome County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "BROWARD COUNTY JAIL",
@@ -177,7 +228,10 @@
         "DETLOC": "BROJAFL",
         "filename": "BROJAFL.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 4
+        "CurrentIntervalADP": 4,
+        "Owner": "Broward County",
+        "Operator": "Broward Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "BROWARD TRANSITIONAL CENTER",
@@ -187,7 +241,10 @@
         "DETLOC": "WCCPBFL",
         "filename": "WCCPBFL.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 693
+        "CurrentIntervalADP": 693,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "BUFFALO SERVICE PROCESSING CENTER",
@@ -197,7 +254,10 @@
         "DETLOC": "BTV",
         "filename": "BTV.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 719
+        "CurrentIntervalADP": 719,
+        "Owner": "Department of Homeland Security (DHS)",
+        "Operator": "Akima Global Services (AGS)",
+        "Institutional.Type": "Federal-Private Contractor"
     },
     {
         "Name": "BURLEIGH COUNTY",
@@ -207,7 +267,10 @@
         "DETLOC": "BURLEND",
         "filename": "BURLEND.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 5
+        "CurrentIntervalADP": 5,
+        "Owner": "Burleigh and Morton Counties",
+        "Operator": "Burleigh County Sheriff's Department",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "BUTLER COUNTY JAIL",
@@ -217,7 +280,10 @@
         "DETLOC": "BUTLEOH",
         "filename": "BUTLEOH.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 351
+        "CurrentIntervalADP": 351,
+        "Owner": "Butler County",
+        "Operator": "Butler County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "CALHOUN COUNTY CORRECTIONAL CENTER",
@@ -227,7 +293,10 @@
         "DETLOC": "CALHOMI",
         "filename": "CALHOMI.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 185
+        "CurrentIntervalADP": 185,
+        "Owner": "Calhoun County",
+        "Operator": "Calhoun County Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "CALIFORNIA CITY IMMIGRATION PROCESSING CENTER",
@@ -237,7 +306,10 @@
         "DETLOC": "CACTYCA",
         "filename": "CACTYCA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1796
+        "CurrentIntervalADP": 1796,
+        "Owner": "Department of Homeland Security (DHS)",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Federal-Private Contractor"
     },
     {
         "Name": "CAMBRIA COUNTY PRISON",
@@ -247,7 +319,10 @@
         "DETLOC": "CAMBRPA",
         "filename": "CAMBRPA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 52
+        "CurrentIntervalADP": 52,
+        "Owner": "Cambria County",
+        "Operator": "Cambria County",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "CAMPBELL CO DET CTR",
@@ -257,7 +332,10 @@
         "DETLOC": "CPBDCKY",
         "filename": "CPBDCKY.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 145
+        "CurrentIntervalADP": 145,
+        "Owner": "Campbell County",
+        "Operator": "Campbell County Jailer",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "CAROLINE DETENTION FACILITY",
@@ -267,7 +345,10 @@
         "DETLOC": "CARDFVA",
         "filename": "CARDFVA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 340
+        "CurrentIntervalADP": 340,
+        "Owner": "Peumansend Creek Regional Jail Authority (PCRJA)",
+        "Operator": "Peumansend Creek Regional Jail Authority (PCRJA)",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "CASCADE COUNTY JAIL, MT",
@@ -277,7 +358,10 @@
         "DETLOC": "CASCAMT",
         "filename": "CASCAMT.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 3
+        "CurrentIntervalADP": 3,
+        "Owner": "Cascade County",
+        "Operator": "Cascade County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "CASS COUNTY JAIL",
@@ -287,7 +371,10 @@
         "DETLOC": "CASSCNE",
         "filename": "CASSCNE.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 15
+        "CurrentIntervalADP": 15,
+        "Owner": "Cass County",
+        "Operator": "Cass County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "CCA, FLORENCE CORRECTIONAL CENTER",
@@ -297,7 +384,10 @@
         "DETLOC": "CCAFLAZ",
         "filename": "CCAFLAZ.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 497
+        "CurrentIntervalADP": 497,
+        "Owner": "CoreCivic",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "CENTRAL LOUISIANA ICE PROCESSING CENTER (CLIPC)",
@@ -307,7 +397,10 @@
         "DETLOC": "JENADLA",
         "filename": "JENADLA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1217
+        "CurrentIntervalADP": 1217,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "CHASE COUNTY JAIL",
@@ -317,7 +410,10 @@
         "DETLOC": "CHASEKS",
         "filename": "CHASEKS.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 125
+        "CurrentIntervalADP": 125,
+        "Owner": "Chase County",
+        "Operator": "Chase County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "CHAVEZ DETENTION CENTER",
@@ -327,7 +423,10 @@
         "DETLOC": "CHAVENM",
         "filename": "CHAVENM.html",
         "LatestUpdate": "2026-01-22",
-        "CurrentIntervalADP": 2
+        "CurrentIntervalADP": 2,
+        "Owner": "Chaves County",
+        "Operator": "Chaves County",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "CHIPPEWA COUNTY SSM",
@@ -337,7 +436,10 @@
         "DETLOC": "CHIPPMI",
         "filename": "CHIPPMI.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 32
+        "CurrentIntervalADP": 32,
+        "Owner": "Chippewa County",
+        "Operator": "Chippewa County Sheriff's Department",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "CHITTENDEN REGIONAL CORRECTIONAL FACILITY",
@@ -347,7 +449,10 @@
         "DETLOC": "VTCHTDN",
         "filename": "VTCHTDN.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 3
+        "CurrentIntervalADP": 3,
+        "Owner": "State of Vermont",
+        "Operator": "Vermont Department of Corrections",
+        "Institutional.Type": "State"
     },
     {
         "Name": "CHRISTIAN COUNTY JAIL",
@@ -357,7 +462,10 @@
         "DETLOC": "CHRISKY",
         "filename": "CHRISKY.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 124
+        "CurrentIntervalADP": 124,
+        "Owner": "Christian County",
+        "Operator": "Christian County Jailer",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "CIBOLA COUNTY CORRECTIONAL CENTER",
@@ -367,7 +475,10 @@
         "DETLOC": "CIBOCNM",
         "filename": "CIBOCNM.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 244
+        "CurrentIntervalADP": 244,
+        "Owner": "CoreCivic",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "CIMMARRON CORR FACILITY",
@@ -377,7 +488,10 @@
         "DETLOC": "OKCIMMC",
         "filename": "OKCIMMC.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 591
+        "CurrentIntervalADP": 591,
+        "Owner": "CoreCivic",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "CLARK COUNTY JAIL (IN)",
@@ -387,7 +501,10 @@
         "DETLOC": "CLARKIN",
         "filename": "CLARKIN.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 81
+        "CurrentIntervalADP": 81,
+        "Owner": "Clark County",
+        "Operator": "Clark County Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "CLAY COUNTY JUSTICE CENTER",
@@ -397,7 +514,10 @@
         "DETLOC": "CLAYCIN",
         "filename": "CLAYCIN.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 255
+        "CurrentIntervalADP": 255,
+        "Owner": "Clay County",
+        "Operator": "Clay County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "CLINTON COUNTY CORRECTIONAL FACILITY",
@@ -407,7 +527,10 @@
         "DETLOC": "CLINTPA",
         "filename": "CLINTPA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 92
+        "CurrentIntervalADP": 92,
+        "Owner": "Clinton County Prison Board",
+        "Operator": "Clinton County Prison Board",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "CLINTON COUNTY JAIL (NY)",
@@ -417,7 +540,10 @@
         "DETLOC": "CLICONY",
         "filename": "CLICONY.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 3
+        "CurrentIntervalADP": 3,
+        "Owner": "Clinton County",
+        "Operator": "Clinton County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "CLINTON COUNTY JAIL (IN)",
@@ -427,7 +553,10 @@
         "DETLOC": "CLINTIN",
         "filename": "CLINTIN.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 31
+        "CurrentIntervalADP": 31,
+        "Owner": "Clinton County",
+        "Operator": "Clinton County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "COASTAL BEND DETENTION FACILITY",
@@ -437,7 +566,10 @@
         "DETLOC": "CBENDTX",
         "filename": "CBENDTX.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 51
+        "CurrentIntervalADP": 51,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "COLLIER COUNTY NAPLES JAIL CENTER",
@@ -447,7 +579,10 @@
         "DETLOC": "COLLIFL",
         "filename": "COLLIFL.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 40
+        "CurrentIntervalADP": 40,
+        "Owner": "Collier County",
+        "Operator": "Collier County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "CORR. CTR OF NORTHWEST OHIO",
@@ -457,7 +592,10 @@
         "DETLOC": "OHNORWE",
         "filename": "OHNORWE.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 86
+        "CurrentIntervalADP": 86,
+        "Owner": "Corrections Commission of Northwest Ohio (CCNO)",
+        "Operator": "Corrections Commission of Northwest Ohio (CCNO)",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "CROW WING COUNTY JAIL",
@@ -467,7 +605,10 @@
         "DETLOC": "CROWGMN",
         "filename": "CROWGMN.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 18
+        "CurrentIntervalADP": 18,
+        "Owner": "Crow Wing County",
+        "Operator": "Crow Wing County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "CUMBERLAND COUNTY JAIL",
@@ -477,7 +618,10 @@
         "DETLOC": "CUMBEME",
         "filename": "CUMBEME.html",
         "LatestUpdate": "2026-01-22",
-        "CurrentIntervalADP": 64
+        "CurrentIntervalADP": 64,
+        "Owner": "Cumberland County",
+        "Operator": "Cumberland County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "DAKOTA COUNTY JAIL",
@@ -487,7 +631,10 @@
         "DETLOC": "DAKOTNE",
         "filename": "DAKOTNE.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 37
+        "CurrentIntervalADP": 37,
+        "Owner": "Dakota County",
+        "Operator": "Dakota County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "DALLAS COUNTY JAIL - LEW STERRETT JUSTICE CENTER",
@@ -497,7 +644,10 @@
         "DETLOC": "DALCOTX",
         "filename": "DALCOTX.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 1
+        "CurrentIntervalADP": 1,
+        "Owner": "Dallas County",
+        "Operator": "Dallas County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "DAVIESS COUNTY DETENTION",
@@ -507,7 +657,10 @@
         "DETLOC": "DVCSDKY",
         "filename": "DVCSDKY.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 68
+        "CurrentIntervalADP": 68,
+        "Owner": "Daviess County",
+        "Operator": "Daviess County Jailer",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "DAVIS COUNTY",
@@ -517,7 +670,10 @@
         "DETLOC": "DAVISUT",
         "filename": "DAVISUT.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 6
+        "CurrentIntervalADP": 6,
+        "Owner": "Davis County",
+        "Operator": "Davis County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "DELANEY HALL DETENTION FACILITY",
@@ -527,7 +683,10 @@
         "DETLOC": "DHDFNJ",
         "filename": "DHDFNJ.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 852
+        "CurrentIntervalADP": 852,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "DENVER CONTRACT DETENTION FACILITY",
@@ -537,7 +696,10 @@
         "DETLOC": "DENICDF",
         "filename": "DENICDF.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1283
+        "CurrentIntervalADP": 1283,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "DEPARTMENT OF CORRECTIONS HAGATNA",
@@ -547,7 +709,10 @@
         "DETLOC": "GUDOCHG",
         "filename": "GUDOCHG.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 22
+        "CurrentIntervalADP": 22,
+        "Owner": "Government of Guam",
+        "Operator": "Guam Department of Corrections",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "DESERT VIEW ANNEX",
@@ -557,7 +722,10 @@
         "DETLOC": "CADESVI",
         "filename": "CADESVI.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 447
+        "CurrentIntervalADP": 447,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "DIAMONDBACK CORR FACILITY",
@@ -567,7 +735,10 @@
         "DETLOC": "OKDBACK",
         "filename": "OKDBACK.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 697
+        "CurrentIntervalADP": 697,
+        "Owner": "CoreCivic",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "DILLEY IMMIGRATION PROCESSING CENTER",
@@ -577,7 +748,10 @@
         "DETLOC": "STFRCTX",
         "filename": "STFRCTX.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 249
+        "CurrentIntervalADP": 249,
+        "Owner": "Target Hospitality Corporation",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "DILLEY PROCESSING SINGLE ADULT FEMALE",
@@ -587,7 +761,10 @@
         "DETLOC": "DILLSAF",
         "filename": "DILLSAF.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 287
+        "CurrentIntervalADP": 287,
+        "Owner": "Target Hospitality Corporation",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "DODGE COUNTY JAIL",
@@ -597,7 +774,10 @@
         "DETLOC": "DODGEWI",
         "filename": "DODGEWI.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 112
+        "CurrentIntervalADP": 112,
+        "Owner": "Dodge County",
+        "Operator": "Dodge County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "DONA ANA COUNTY DETENTION CENTER",
@@ -607,7 +787,10 @@
         "DETLOC": "DONAANM",
         "filename": "DONAANM.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 1
+        "CurrentIntervalADP": 1,
+        "Owner": "Doña Ana County",
+        "Operator": "Doña Ana County",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "DOUGLAS COUNTY",
@@ -617,7 +800,10 @@
         "DETLOC": "DOUGLWI",
         "filename": "DOUGLWI.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 28
+        "CurrentIntervalADP": 28,
+        "Owner": "Douglas County",
+        "Operator": "Douglas County Sheriff",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "EAST HIDALGO DETENTION CENTER",
@@ -627,7 +813,10 @@
         "DETLOC": "EHDLGTX",
         "filename": "EHDLGTX.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 2
+        "CurrentIntervalADP": 2,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "EASTERN REGIONAL JAIL",
@@ -637,7 +826,10 @@
         "DETLOC": "WVEASTR",
         "filename": "WVEASTR.html",
         "LatestUpdate": "2026-01-22",
-        "CurrentIntervalADP": 20
+        "CurrentIntervalADP": 20,
+        "Owner": "West Virginia Division of Corrections and Rehabilitation (WVDCR)",
+        "Operator": "West Virginia Division of Corrections and Rehabilitation (WVDCR)",
+        "Institutional.Type": "State"
     },
     {
         "Name": "EDEN DETENTION CTR",
@@ -647,7 +839,10 @@
         "DETLOC": "EDNDCTX",
         "filename": "EDNDCTX.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 644
+        "CurrentIntervalADP": 644,
+        "Owner": "CoreCivic",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "EL PASO COUNTY DETENTION FACILITY",
@@ -657,7 +852,10 @@
         "DETLOC": "EPCDFTX",
         "filename": "EPCDFTX.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 2
+        "CurrentIntervalADP": 2,
+        "Owner": "El Paso County",
+        "Operator": "El Paso County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "EL PASO SERVICE PROCESSING CENTER",
@@ -667,7 +865,10 @@
         "DETLOC": "EPC",
         "filename": "EPC.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 786
+        "CurrentIntervalADP": 786,
+        "Owner": "Department of Homeland Security (DHS)",
+        "Operator": "Department of Homeland Security (DHS)",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "EL PASO SOFT SIDED FACILITY",
@@ -677,7 +878,10 @@
         "DETLOC": "EPSSFTX",
         "filename": "EPSSFTX.html",
         "LatestUpdate": "2025-08-18",
-        "CurrentIntervalADP": 874
+        "CurrentIntervalADP": 874,
+        "Owner": "U.S. Customs and Border Protection",
+        "Operator": "U.S. Customs and Border Protection",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "EL VALLE DETENTION FACILITY",
@@ -687,7 +891,10 @@
         "DETLOC": "ELVDFTX",
         "filename": "ELVDFTX.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 881
+        "CurrentIntervalADP": 881,
+        "Owner": "Management and Training Corporation (MTC)",
+        "Operator": "Management and Training Corporation (MTC)",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "ELIZABETH CONTRACT DETENTION FACILITY",
@@ -697,7 +904,10 @@
         "DETLOC": "ELZICDF",
         "filename": "ELZICDF.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 286
+        "CurrentIntervalADP": 286,
+        "Owner": "CoreCivic",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "ELMORE COUNTY JAIL",
@@ -707,7 +917,10 @@
         "DETLOC": "ELMORID",
         "filename": "ELMORID.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 8
+        "CurrentIntervalADP": 8,
+        "Owner": "Elmore County",
+        "Operator": "Elmore County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "ELOY FEDERAL CONTRACT FACILITY",
@@ -717,7 +930,10 @@
         "DETLOC": "EAZ",
         "filename": "EAZ.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1310
+        "CurrentIntervalADP": 1310,
+        "Owner": "CoreCivic",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "ERIE COUNTY JAIL",
@@ -727,17 +943,23 @@
         "DETLOC": "ERICOPA",
         "filename": "ERICOPA.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 32
+        "CurrentIntervalADP": 32,
+        "Owner": "Erie County",
+        "Operator": "Erie County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "ERO EL PASO CAMP EAST MONTANA",
         "City": "El Paso",
         "State": "TX",
         "Zip": "79936",
-        "DETLOC": "EROELP",
-        "filename": "EROELP.html",
+        "DETLOC": "EROFCB",
+        "filename": "EROFCB.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1480
+        "CurrentIntervalADP": 1480,
+        "Owner": "Department of Homeland Security (DHS)",
+        "Operator": "Amentum Services Inc.",
+        "Institutional.Type": "Federal-Private Contractor"
     },
     {
         "Name": "ETOWAH COUNTY JAIL",
@@ -747,7 +969,10 @@
         "DETLOC": "ETOWAAL",
         "filename": "ETOWAAL.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 93
+        "CurrentIntervalADP": 93,
+        "Owner": "Etowah County",
+        "Operator": "Etowah County Sheriff's Department",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "FARMVILLE DETENTION CENTER",
@@ -757,7 +982,10 @@
         "DETLOC": "FRMVLVA",
         "filename": "FRMVLVA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 630
+        "CurrentIntervalADP": 630,
+        "Owner": "CoreCivic",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "FAYETTE COUNTY DETENTION CENTER",
@@ -767,7 +995,10 @@
         "DETLOC": "FAYETKY",
         "filename": "FAYETKY.html",
         "LatestUpdate": "2026-01-22",
-        "CurrentIntervalADP": 2
+        "CurrentIntervalADP": 2,
+        "Owner": "Lexington-Fayette Urban County Government (LFUCG)",
+        "Operator": "LFUCG Division of Community Corrections",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "FCI ATLANTA",
@@ -777,7 +1008,10 @@
         "DETLOC": "BOPATL",
         "filename": "BOPATL.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 98
+        "CurrentIntervalADP": 98,
+        "Owner": "Federal Bureau of Prisons (BOP)",
+        "Operator": "Federal Bureau of Prisons (BOP)",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "FDC PHILADELPHIA",
@@ -787,7 +1021,10 @@
         "DETLOC": "BOPPHL",
         "filename": "BOPPHL.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 52
+        "CurrentIntervalADP": 52,
+        "Owner": "Federal Bureau of Prisons (BOP)",
+        "Operator": "Federal Bureau of Prisons (BOP)",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "FINNEY COUNTY JAIL",
@@ -797,7 +1034,10 @@
         "DETLOC": "FINNEKS",
         "filename": "FINNEKS.html",
         "LatestUpdate": "2026-01-22",
-        "CurrentIntervalADP": 2
+        "CurrentIntervalADP": 2,
+        "Owner": "Finney County",
+        "Operator": "Finney County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "FLAGLER COUNTY JAIL",
@@ -807,7 +1047,10 @@
         "DETLOC": "FLGLRFL",
         "filename": "FLGLRFL.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 25
+        "CurrentIntervalADP": 25,
+        "Owner": "Flagler County",
+        "Operator": "Flagler County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "FLORENCE SERVICE PROCESSING CENTER",
@@ -817,7 +1060,10 @@
         "DETLOC": "FLO",
         "filename": "FLO.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 312
+        "CurrentIntervalADP": 312,
+        "Owner": "Department of Homeland Security (DHS)",
+        "Operator": "Department of Homeland Security (DHS)",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "FLORENCE STAGING FACILITY",
@@ -827,7 +1073,10 @@
         "DETLOC": "FSF",
         "filename": "FSF.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 436
+        "CurrentIntervalADP": 436,
+        "Owner": "Department of Homeland Security (DHS)",
+        "Operator": "Department of Homeland Security (DHS)",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "FLORIDA SOFT-SIDED FACILITY",
@@ -837,7 +1086,10 @@
         "DETLOC": "FLDSSFS",
         "filename": "FLDSSFS.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1457
+        "CurrentIntervalADP": 1457,
+        "Owner": "State of Florida",
+        "Operator": "Florida Division of Emergency Management (FDEM)",
+        "Institutional.Type": "State"
     },
     {
         "Name": "FLOYD COUNTY JAIL",
@@ -847,7 +1099,10 @@
         "DETLOC": "FLOYDGA",
         "filename": "FLOYDGA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1
+        "CurrentIntervalADP": 1,
+        "Owner": "Floyd County",
+        "Operator": "Floyd County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "FOLKSTON ANNEX IPC",
@@ -857,7 +1112,10 @@
         "DETLOC": "FIPCAGA",
         "filename": "FIPCAGA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 279
+        "CurrentIntervalADP": 279,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "FOLKSTON D RAY ICE PROCESSING CTR",
@@ -867,7 +1125,10 @@
         "DETLOC": "FOLKIPC",
         "filename": "FOLKIPC.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1374
+        "CurrentIntervalADP": 1374,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "FOLKSTON MAIN IPC",
@@ -877,7 +1138,10 @@
         "DETLOC": "FIPCMGA",
         "filename": "FIPCMGA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 644
+        "CurrentIntervalADP": 644,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "FREEBORN COUNTY ADULT DETENTION CENTER",
@@ -887,7 +1151,10 @@
         "DETLOC": "FREEBMN",
         "filename": "FREEBMN.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 37
+        "CurrentIntervalADP": 37,
+        "Owner": "Freeborn County",
+        "Operator": "Freeborn County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "FULTON CO JAIL INDIANA",
@@ -897,7 +1164,10 @@
         "DETLOC": "FULCOIN",
         "filename": "FULCOIN.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 9
+        "CurrentIntervalADP": 9,
+        "Owner": "Fulton County",
+        "Operator": "Fulton County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "GEAUGA COUNTY JAIL",
@@ -907,7 +1177,10 @@
         "DETLOC": "GEAUGOH",
         "filename": "GEAUGOH.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 16
+        "CurrentIntervalADP": 16,
+        "Owner": "Geauga County",
+        "Operator": "Geauga County Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "GLADES COUNTY DETENTION CENTER",
@@ -917,7 +1190,10 @@
         "DETLOC": "GLADEFL",
         "filename": "GLADEFL.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 478
+        "CurrentIntervalADP": 478,
+        "Owner": "Glades Correctional Development Corporation (GCDC)",
+        "Operator": "Glades County Sheriff's Office",
+        "Institutional.Type": "Non-profit-Local"
     },
     {
         "Name": "GOLDEN STATE ANNEX",
@@ -927,7 +1203,10 @@
         "DETLOC": "GLDSACA",
         "filename": "GLDSACA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 565
+        "CurrentIntervalADP": 565,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "GRAND FORKS COUNTY CORRECTIONAL FACILITY",
@@ -937,7 +1216,10 @@
         "DETLOC": "GFCORND",
         "filename": "GFCORND.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 20
+        "CurrentIntervalADP": 20,
+        "Owner": "Grand Forks County",
+        "Operator": "Grand Forks County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "GRAYSON COUNTY JAIL",
@@ -947,7 +1229,10 @@
         "DETLOC": "GRAYSKY",
         "filename": "GRAYSKY.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 152
+        "CurrentIntervalADP": 152,
+        "Owner": "Grayson County",
+        "Operator": "Grayson County Jailer",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "GREENE COUNTY JAIL",
@@ -957,7 +1242,10 @@
         "DETLOC": "GREENMO",
         "filename": "GREENMO.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 270
+        "CurrentIntervalADP": 270,
+        "Owner": "Greene County",
+        "Operator": "Greene County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "GUAYNABO MDC (SAN JUAN)",
@@ -967,7 +1255,10 @@
         "DETLOC": "BOPGUA",
         "filename": "BOPGUA.html",
         "LatestUpdate": "2025-06-23",
-        "CurrentIntervalADP": 6
+        "CurrentIntervalADP": 6,
+        "Owner": "Federal Bureau of Prisons (BOP)",
+        "Operator": "Federal Bureau of Prisons (BOP)",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "HALL COUNTY DEPARTMENT OF CORRECTIONS",
@@ -977,7 +1268,10 @@
         "DETLOC": "HASHENE",
         "filename": "HASHENE.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 11
+        "CurrentIntervalADP": 11,
+        "Owner": "Hall County Board of Supervisors",
+        "Operator": "Hall County Board of Corrections",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "HANCOCK COUNTY PUBLIC SAFETY COMPLEX",
@@ -987,7 +1281,10 @@
         "DETLOC": "HCPSCMS",
         "filename": "HCPSCMS.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 26
+        "CurrentIntervalADP": 26,
+        "Owner": "Hancock County",
+        "Operator": "Hancock County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "HARDIN COUNTY JAIL",
@@ -997,7 +1294,10 @@
         "DETLOC": "HARDJIA",
         "filename": "HARDJIA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 46
+        "CurrentIntervalADP": 46,
+        "Owner": "Hardin County",
+        "Operator": "Hardin County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "HENDERSON DETENTION",
@@ -1007,7 +1307,10 @@
         "DETLOC": "HENDENV",
         "filename": "HENDENV.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 85
+        "CurrentIntervalADP": 85,
+        "Owner": "City of Henderson, NV",
+        "Operator": "Henderson Police Department",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "HILLSBOROUGH COUNTY JAIL",
@@ -1017,7 +1320,10 @@
         "DETLOC": "HICOJFL",
         "filename": "HICOJFL.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 6
+        "CurrentIntervalADP": 6,
+        "Owner": "Hillsborough County",
+        "Operator": "Hillsborough County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "HONOLULU FEDERAL DETENTION CENTER",
@@ -1027,7 +1333,10 @@
         "DETLOC": "BOPHON",
         "filename": "BOPHON.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 60
+        "CurrentIntervalADP": 60,
+        "Owner": "Federal Bureau of Prisons (BOP)",
+        "Operator": "Federal Bureau of Prisons (BOP)",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "HOPKINS COUNTY JAIL",
@@ -1037,7 +1346,10 @@
         "DETLOC": "HPKNSKY",
         "filename": "HPKNSKY.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 185
+        "CurrentIntervalADP": 185,
+        "Owner": "Hopkins County",
+        "Operator": "Hopkins County Jailer",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "HOUSTON CONTRACT DETENTION FACILITY",
@@ -1047,7 +1359,10 @@
         "DETLOC": "HOUICDF",
         "filename": "HOUICDF.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 757
+        "CurrentIntervalADP": 757,
+        "Owner": "CoreCivic",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "IAH SECURE ADULT DETENTION FACILITY (POLK)",
@@ -1057,7 +1372,10 @@
         "DETLOC": "POLKCTX",
         "filename": "POLKCTX.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 860
+        "CurrentIntervalADP": 860,
+        "Owner": "Management and Training Corporation (MTC)",
+        "Operator": "Management and Training Corporation (MTC)",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "IMPERIAL REGIONAL DETENTION FACILITY",
@@ -1067,7 +1385,10 @@
         "DETLOC": "IRADFCA",
         "filename": "IRADFCA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 620
+        "CurrentIntervalADP": 620,
+        "Owner": "Imperial Valley Gateway Center, LLC",
+        "Operator": "Management and Training Corporation (MTC)",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "IRWIN COUNTY DETENTION CENTER",
@@ -1077,7 +1398,10 @@
         "DETLOC": "IRWINGA",
         "filename": "IRWINGA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 252
+        "CurrentIntervalADP": 252,
+        "Owner": "LaSalle Corrections",
+        "Operator": "LaSalle Corrections",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "JACKSON PARISH CORRECTIONAL CENTER",
@@ -1087,7 +1411,10 @@
         "DETLOC": "JKPCCLA",
         "filename": "JKPCCLA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1180
+        "CurrentIntervalADP": 1180,
+        "Owner": "LaSalle Corrections",
+        "Operator": "LaSalle Corrections",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "JEFFERSON COUNTY JAIL",
@@ -1097,7 +1424,10 @@
         "DETLOC": "JEFFEID",
         "filename": "JEFFEID.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 8
+        "CurrentIntervalADP": 8,
+        "Owner": "Jefferson County",
+        "Operator": "Jefferson County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "JOE CORLEY PROCESSING CTR",
@@ -1107,7 +1437,10 @@
         "DETLOC": "JCRLYTX",
         "filename": "JCRLYTX.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 962
+        "CurrentIntervalADP": 962,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "JTF CAMP SIX",
@@ -1117,7 +1450,10 @@
         "DETLOC": "GTMODCU",
         "filename": "GTMODCU.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 9
+        "CurrentIntervalADP": 9,
+        "Owner": "U.S. Department of Defense (DoD)",
+        "Operator": "Joint Task Force Southern Guard (JTF-SG)",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "KANDIYOHI COUNTY JAIL",
@@ -1127,7 +1463,10 @@
         "DETLOC": "KANDIMN",
         "filename": "KANDIMN.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 92
+        "CurrentIntervalADP": 92,
+        "Owner": "Kandiyohi County",
+        "Operator": "Kandiyohi County Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "KANSAS CITY HOLDROOM",
@@ -1137,7 +1476,10 @@
         "DETLOC": "KANHOLD",
         "filename": "KANHOLD.html",
         "LatestUpdate": "2026-01-22",
-        "CurrentIntervalADP": 2
+        "CurrentIntervalADP": 2,
+        "Owner": "Department of Homeland Security (DHS)",
+        "Operator": "Department of Homeland Security (DHS)",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "KARNES COUNTY CORRECTIONAL CENTER",
@@ -1147,7 +1489,10 @@
         "DETLOC": "KARNETX",
         "filename": "KARNETX.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 2
+        "CurrentIntervalADP": 2,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "KARNES COUNTY IMMIGRATION PROCESSING CENTER",
@@ -1157,7 +1502,10 @@
         "DETLOC": "KRNRCTX",
         "filename": "KRNRCTX.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1064
+        "CurrentIntervalADP": 1064,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "KAY CO JUSTICE FACILITY",
@@ -1167,7 +1515,10 @@
         "DETLOC": "KCOJFOK",
         "filename": "KCOJFOK.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 145
+        "CurrentIntervalADP": 145,
+        "Owner": "Kay County",
+        "Operator": "Kay County Justice Facilities Authority (KCJFA)",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "KENTON COUNTY JAIL",
@@ -1177,7 +1528,10 @@
         "DETLOC": "KENTOKY",
         "filename": "KENTOKY.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 131
+        "CurrentIntervalADP": 131,
+        "Owner": "Kenton County",
+        "Operator": "Kenton County Jailer",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "KNOX COUNTY DETENTION FACILITY",
@@ -1187,7 +1541,10 @@
         "DETLOC": "KNXDFTN",
         "filename": "KNXDFTN.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 22
+        "CurrentIntervalADP": 22,
+        "Owner": "Knox County",
+        "Operator": "Knox County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "KROME NORTH SERVICE PROCESSING CENTER",
@@ -1197,7 +1554,10 @@
         "DETLOC": "KRO",
         "filename": "KRO.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 863
+        "CurrentIntervalADP": 863,
+        "Owner": "Department of Homeland Security (DHS)",
+        "Operator": "Akima Global Services (AGS)",
+        "Institutional.Type": "Federal-Private Contractor"
     },
     {
         "Name": "LA PAZ COUNTY ADULT DETENTION FACILITY",
@@ -1207,7 +1567,10 @@
         "DETLOC": "LAPAZAZ",
         "filename": "LAPAZAZ.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 1
+        "CurrentIntervalADP": 1,
+        "Owner": "La Paz County",
+        "Operator": "La Paz County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "LA SALLE COUNTY REGIONAL DETENTION CENTER",
@@ -1217,7 +1580,10 @@
         "DETLOC": "LSRDCTX",
         "filename": "LSRDCTX.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 120
+        "CurrentIntervalADP": 120,
+        "Owner": "La Salle County",
+        "Operator": "La Salle County",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "LAFAYETTE PARISH CORRECTIONAL CENTER",
@@ -1227,7 +1593,10 @@
         "DETLOC": "LAFAYLA",
         "filename": "LAFAYLA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 6
+        "CurrentIntervalADP": 6,
+        "Owner": "Lafayette Parish",
+        "Operator": "Lafayette Parish Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "LAKE COUNTY JAIL",
@@ -1237,7 +1606,10 @@
         "DETLOC": "LAKCOFL",
         "filename": "LAKCOFL.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 1
+        "CurrentIntervalADP": 1,
+        "Owner": "Lake County",
+        "Operator": "Lake County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "LARAMIE COUNTY JAIL",
@@ -1247,7 +1619,10 @@
         "DETLOC": "LARCOWY",
         "filename": "LARCOWY.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 4
+        "CurrentIntervalADP": 4,
+        "Owner": "Laramie County",
+        "Operator": "Laramie County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "LAREDO PROCESSING CENTER",
@@ -1257,7 +1632,10 @@
         "DETLOC": "LRDICDF",
         "filename": "LRDICDF.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 320
+        "CurrentIntervalADP": 320,
+        "Owner": "CoreCivic",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "LAUREL COUNTY CORRECTIONAL CENTER",
@@ -1267,7 +1645,10 @@
         "DETLOC": "LAURELKY",
         "filename": "LAURELKY.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 2
+        "CurrentIntervalADP": 2,
+        "Owner": "Laurel County",
+        "Operator": "Laurel County Corrections Department",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "LAWRENCE COUNTY",
@@ -1277,7 +1658,10 @@
         "DETLOC": "LAWRESD",
         "filename": "LAWRESD.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 14
+        "CurrentIntervalADP": 14,
+        "Owner": "Lawrence County",
+        "Operator": "Lawrence County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "LEAVENWORTH US PENITENTIARY",
@@ -1287,7 +1671,10 @@
         "DETLOC": "BOPLVN",
         "filename": "BOPLVN.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 75
+        "CurrentIntervalADP": 75,
+        "Owner": "Federal Bureau of Prisons (BOP)",
+        "Operator": "Federal Bureau of Prisons (BOP)",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "LEWISBURG US PENITENTIARY",
@@ -1297,7 +1684,10 @@
         "DETLOC": "BOPLEW",
         "filename": "BOPLEW.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 175
+        "CurrentIntervalADP": 175,
+        "Owner": "Federal Bureau of Prisons (BOP)",
+        "Operator": "Federal Bureau of Prisons (BOP)",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "LEXINGTON COUNTY JAIL",
@@ -1307,7 +1697,10 @@
         "DETLOC": "LEXINSC",
         "filename": "LEXINSC.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 7
+        "CurrentIntervalADP": 7,
+        "Owner": "Lexington County",
+        "Operator": "Lexington County Sheriff's Department",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "LIBERTY COUNTY JAIL",
@@ -1317,7 +1710,10 @@
         "DETLOC": "LBRTYFL",
         "filename": "LBRTYFL.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 9
+        "CurrentIntervalADP": 9,
+        "Owner": "Liberty County",
+        "Operator": "Liberty County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "LIMESTONE COUNTY DETENTION CENTER",
@@ -1327,7 +1723,10 @@
         "DETLOC": "LIMESTX",
         "filename": "LIMESTX.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 262
+        "CurrentIntervalADP": 262,
+        "Owner": "LaSalle Corrections",
+        "Operator": "LaSalle Corrections",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "LINCOLN COUNTY JAIL",
@@ -1337,7 +1736,10 @@
         "DETLOC": "LINCONE",
         "filename": "LINCONE.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 42
+        "CurrentIntervalADP": 42,
+        "Owner": "Lincoln County",
+        "Operator": "Lincoln County Sheriff's Department",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "LINN COUNTY JAIL",
@@ -1347,7 +1749,10 @@
         "DETLOC": "LINNJIA",
         "filename": "LINNJIA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 50
+        "CurrentIntervalADP": 50,
+        "Owner": "Linn County",
+        "Operator": "Linn County Sheriff's Department",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "LOGAN COUNTY JAIL",
@@ -1357,7 +1762,10 @@
         "DETLOC": "LOGANOK",
         "filename": "LOGANOK.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 6
+        "CurrentIntervalADP": 6,
+        "Owner": "Logan County",
+        "Operator": "Logan County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "LOUISIANA ICE PROCESSING",
@@ -1367,7 +1775,10 @@
         "DETLOC": "LICEPLA",
         "filename": "LICEPLA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 187
+        "CurrentIntervalADP": 187,
+        "Owner": "State of Louisiana",
+        "Operator": "LaSalle Corrections",
+        "Institutional.Type": "State-Private Contractor"
     },
     {
         "Name": "LUBBOCK COUNTY DETENTION CENTER",
@@ -1377,7 +1788,10 @@
         "DETLOC": "LUBBOTX",
         "filename": "LUBBOTX.html",
         "LatestUpdate": "2026-01-22",
-        "CurrentIntervalADP": 2
+        "CurrentIntervalADP": 2,
+        "Owner": "Lubbock County",
+        "Operator": "Lubbock County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "MADISON COUNTY JAIL",
@@ -1387,7 +1801,10 @@
         "DETLOC": "MADISMS",
         "filename": "MADISMS.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 6
+        "CurrentIntervalADP": 6,
+        "Owner": "Madison County",
+        "Operator": "Madison County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "MAHONING COUNTY JAIL",
@@ -1397,7 +1814,10 @@
         "DETLOC": "MAHONOH",
         "filename": "MAHONOH.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 101
+        "CurrentIntervalADP": 101,
+        "Owner": "Mahoning County",
+        "Operator": "Mahoning County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "MARION COUNTY JAIL",
@@ -1407,7 +1827,10 @@
         "DETLOC": "MARIOIN",
         "filename": "MARIOIN.html",
         "LatestUpdate": "2026-01-22",
-        "CurrentIntervalADP": 38
+        "CurrentIntervalADP": 38,
+        "Owner": "Marion County",
+        "Operator": "Marion County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "MARTIN COUNTY JAIL",
@@ -1417,7 +1840,10 @@
         "DETLOC": "MARTIFL",
         "filename": "MARTIFL.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 7
+        "CurrentIntervalADP": 7,
+        "Owner": "Martin County",
+        "Operator": "Martin County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "MCCOOK DETENTION CENTER",
@@ -1427,7 +1853,10 @@
         "DETLOC": "MCCKNE",
         "filename": "MCCKNE.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 151
+        "CurrentIntervalADP": 151,
+        "Owner": "State of Nebraska",
+        "Operator": "Nebraska Department of Correctional Services (NDCS)",
+        "Institutional.Type": "State"
     },
     {
         "Name": "MESA VERDE ICE PROCESSING CENTER",
@@ -1437,7 +1866,10 @@
         "DETLOC": "CACFMES",
         "filename": "CACFMES.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 327
+        "CurrentIntervalADP": 327,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "MIAMI CORRECTIONAL CENTER",
@@ -1447,7 +1879,10 @@
         "DETLOC": "INMIAMI",
         "filename": "INMIAMI.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 533
+        "CurrentIntervalADP": 533,
+        "Owner": "State of Indiana",
+        "Operator": "Indiana Department of Correction (IDOC)",
+        "Institutional.Type": "State"
     },
     {
         "Name": "MIAMI FEDERAL DETENTION",
@@ -1457,7 +1892,10 @@
         "DETLOC": "BOPMIM",
         "filename": "BOPMIM.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 459
+        "CurrentIntervalADP": 459,
+        "Owner": "Federal Bureau of Prisons (BOP)",
+        "Operator": "Federal Bureau of Prisons (BOP)",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "MIAMI STAGING FACILITY",
@@ -1467,7 +1905,10 @@
         "DETLOC": "MSF",
         "filename": "MSF.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 18
+        "CurrentIntervalADP": 18,
+        "Owner": "Department of Homeland Security (DHS)",
+        "Operator": "Department of Homeland Security (DHS)",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "MIDWEST REGIONAL RECEPTION CENTER",
@@ -1477,7 +1918,10 @@
         "DETLOC": "CCALEKS",
         "filename": "CCALEKS.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 7
+        "CurrentIntervalADP": 7,
+        "Owner": "CoreCivic",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "MIGRANT OPS CENTER MAIN A",
@@ -1487,7 +1931,10 @@
         "DETLOC": "GTMOACU",
         "filename": "GTMOACU.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 14
+        "CurrentIntervalADP": 14,
+        "Owner": "Department of Homeland Security (DHS)",
+        "Operator": "Akima Infrastructure Protection (AIP)",
+        "Institutional.Type": "Federal-Private Contractor"
     },
     {
         "Name": "MILLER COUNTY JAIL",
@@ -1497,7 +1944,10 @@
         "DETLOC": "MILLRAR",
         "filename": "MILLRAR.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 6
+        "CurrentIntervalADP": 6,
+        "Owner": "Miller County",
+        "Operator": "Miller County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "MINICASSIA DETENTION CENTER",
@@ -1507,7 +1957,10 @@
         "DETLOC": "MINICID",
         "filename": "MINICID.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 3
+        "CurrentIntervalADP": 3,
+        "Owner": "Minidoka and Cassia Counties",
+        "Operator": "Minidoka and Cassia Counties",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "MINNEHAHA COUNTY JAIL",
@@ -1517,7 +1970,10 @@
         "DETLOC": "MINNESD",
         "filename": "MINNESD.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 3
+        "CurrentIntervalADP": 3,
+        "Owner": "Minnehaha County",
+        "Operator": "Minnehaha County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "MONROE COUNTY DETENTION-DORM",
@@ -1527,7 +1983,10 @@
         "DETLOC": "MONROMI",
         "filename": "MONROMI.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 116
+        "CurrentIntervalADP": 116,
+        "Owner": "Monroe County",
+        "Operator": "Monroe County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "MONTGOMERY COUNTY JAIL",
@@ -1537,7 +1996,10 @@
         "DETLOC": "MONTGNY",
         "filename": "MONTGNY.html",
         "LatestUpdate": "2025-12-26",
-        "CurrentIntervalADP": 7
+        "CurrentIntervalADP": 7,
+        "Owner": "Montgomery County",
+        "Operator": "Montgomery County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "MONTGOMERY ICE PROCESSING CENTER",
@@ -1547,7 +2009,10 @@
         "DETLOC": "MTGPCTX",
         "filename": "MTGPCTX.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1229
+        "CurrentIntervalADP": 1229,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "MOSHANNON VALLEY PROCESSING CENTER",
@@ -1557,7 +2022,10 @@
         "DETLOC": "MSVPCPA",
         "filename": "MSVPCPA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1622
+        "CurrentIntervalADP": 1622,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "MUSCATINE COUNTY JAIL",
@@ -1567,7 +2035,10 @@
         "DETLOC": "MUSCAIA",
         "filename": "MUSCAIA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 11
+        "CurrentIntervalADP": 11,
+        "Owner": "Muscatine County",
+        "Operator": "Muscatine County Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "NASSAU COUNTY CORRECTIONAL CENTER",
@@ -1577,7 +2048,10 @@
         "DETLOC": "NASSANY",
         "filename": "NASSANY.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 20
+        "CurrentIntervalADP": 20,
+        "Owner": "Nassau County",
+        "Operator": "Nassau County Sheriff's Department",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "NATRONA COUNTY JAIL",
@@ -1587,7 +2061,10 @@
         "DETLOC": "NATROWY",
         "filename": "NATROWY.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 5
+        "CurrentIntervalADP": 5,
+        "Owner": "Natrona County",
+        "Operator": "Natrona County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "NELSON COLEMAN CORRECTION",
@@ -1597,7 +2074,10 @@
         "DETLOC": "NLSCOLA",
         "filename": "NLSCOLA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 3
+        "CurrentIntervalADP": 3,
+        "Owner": "St. Charles Parish",
+        "Operator": "St. Charles Parish Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "NEVADA SOUTHERN DETENTION CENTER",
@@ -1607,7 +2087,10 @@
         "DETLOC": "NVSDCNV",
         "filename": "NVSDCNV.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 484
+        "CurrentIntervalADP": 484,
+        "Owner": "CoreCivic",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "NEW HANOVER COUNTY JAIL",
@@ -1617,7 +2100,10 @@
         "DETLOC": "NWHNVNC",
         "filename": "NWHNVNC.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 5
+        "CurrentIntervalADP": 5,
+        "Owner": "New Hanover County",
+        "Operator": "New Hanover County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "NIAGARA COUNTY JAIL",
@@ -1627,7 +2113,10 @@
         "DETLOC": "NIAGANY",
         "filename": "NIAGANY.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 4
+        "CurrentIntervalADP": 4,
+        "Owner": "Niagara County",
+        "Operator": "Niagara County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "NORTH CENTRAL REGIONAL JAIL",
@@ -1637,7 +2126,10 @@
         "DETLOC": "WVNCENT",
         "filename": "WVNCENT.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 4
+        "CurrentIntervalADP": 4,
+        "Owner": "West Virginia Division of Corrections and Rehabilitation (WVDCR)",
+        "Operator": "West Virginia Division of Corrections and Rehabilitation (WVDCR)",
+        "Institutional.Type": "State"
     },
     {
         "Name": "NORTH LAKE CORRECTIONAL FACILITY",
@@ -1647,7 +2139,10 @@
         "DETLOC": "NRLKCMI",
         "filename": "NRLKCMI.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1390
+        "CurrentIntervalADP": 1390,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "NORTHEAST OHIO CORRECTIONAL CENTER",
@@ -1657,7 +2152,10 @@
         "DETLOC": "CCANOOH",
         "filename": "CCANOOH.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 176
+        "CurrentIntervalADP": 176,
+        "Owner": "CoreCivic",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "NORTHERN REGIONAL JAIL",
@@ -1667,7 +2165,10 @@
         "DETLOC": "WVNORTH",
         "filename": "WVNORTH.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 44
+        "CurrentIntervalADP": 44,
+        "Owner": "West Virginia Division of Corrections and Rehabilitation (WVDCR)",
+        "Operator": "West Virginia Division of Corrections and Rehabilitation (WVDCR)",
+        "Institutional.Type": "State"
     },
     {
         "Name": "NORTHWEST ICE PROCESSSING CENTER",
@@ -1677,7 +2178,10 @@
         "DETLOC": "CSCNWWA",
         "filename": "CSCNWWA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1103
+        "CurrentIntervalADP": 1103,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "NORTHWEST REGIONAL CORRECTIONS CENTER",
@@ -1687,17 +2191,23 @@
         "DETLOC": "NWRCCMN",
         "filename": "NWRCCMN.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 10
+        "CurrentIntervalADP": 10,
+        "Owner": "Tri-County Community Corrections (TCCC)",
+        "Operator": "Tri-County Community Corrections (TCCC)",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "NORTHWEST STATE CORRECTIONAL CENTER",
         "City": "Swanton",
         "State": "VT",
         "Zip": "05488",
-        "DETLOC": "VTSTALB",
-        "filename": "VTSTALB.html",
+        "DETLOC": "NWSCFVT",
+        "filename": "NWSCFVT.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 8
+        "CurrentIntervalADP": 8,
+        "Owner": "State of Vermont",
+        "Operator": "Vermont Department of Corrections (DOC)",
+        "Institutional.Type": "State"
     },
     {
         "Name": "NORTHWESTERN REGIONAL JUVENILE DETENTION CENTER",
@@ -1707,7 +2217,10 @@
         "DETLOC": "NRJDCVA",
         "filename": "NRJDCVA.html",
         "LatestUpdate": "2025-06-23",
-        "CurrentIntervalADP": 61
+        "CurrentIntervalADP": 61,
+        "Owner": "Northwestern Regional Juvenile Detention Commission",
+        "Operator": "Northwestern Regional Juvenile Detention Commission",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "OLDHAM COUNTY DETENTION CENTER",
@@ -1717,7 +2230,10 @@
         "DETLOC": "OLDHAKY",
         "filename": "OLDHAKY.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 144
+        "CurrentIntervalADP": 144,
+        "Owner": "Oldham County",
+        "Operator": "Oldham County Jailer",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "ORANGE COUNTY JAIL (FL)",
@@ -1727,7 +2243,10 @@
         "DETLOC": "ORANGFL",
         "filename": "ORANGFL.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 25
+        "CurrentIntervalADP": 25,
+        "Owner": "Orange County",
+        "Operator": "Orange County Corrections Department",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "ORANGE COUNTY JAIL (NY)",
@@ -1737,7 +2256,10 @@
         "DETLOC": "ORANGNY",
         "filename": "ORANGNY.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 128
+        "CurrentIntervalADP": 128,
+        "Owner": "Orange County",
+        "Operator": "Orange County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "OTAY MESA DETENTION CENTER",
@@ -1747,7 +2269,10 @@
         "DETLOC": "CCASDCA",
         "filename": "CCASDCA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1171
+        "CurrentIntervalADP": 1171,
+        "Owner": "Department of Homeland Security (DHS)",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Federal-Private Contractor"
     },
     {
         "Name": "OTERO COUNTY PROCESSING CENTER",
@@ -1757,7 +2282,10 @@
         "DETLOC": "OTRPCNM",
         "filename": "OTRPCNM.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 803
+        "CurrentIntervalADP": 803,
+        "Owner": "Otero County",
+        "Operator": "Management and Training Corporation (MTC)",
+        "Institutional.Type": "Local-Private Contractor"
     },
     {
         "Name": "OZARK COUNTY SHERIFF'S OFFICE",
@@ -1767,7 +2295,10 @@
         "DETLOC": "OZARKMO",
         "filename": "OZARKMO.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 24
+        "CurrentIntervalADP": 24,
+        "Owner": "Ozark County",
+        "Operator": "Ozark County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "PENNINGTON COUNTY JAIL (SOUTH DAKOTA)",
@@ -1777,7 +2308,10 @@
         "DETLOC": "PENNISD",
         "filename": "PENNISD.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 5
+        "CurrentIntervalADP": 5,
+        "Owner": "Pennington County",
+        "Operator": "Pennington County Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "PHELPS COUNTY JAIL (MO)",
@@ -1787,7 +2321,10 @@
         "DETLOC": "PHELPMO",
         "filename": "PHELPMO.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 11
+        "CurrentIntervalADP": 11,
+        "Owner": "Phelps County",
+        "Operator": "Phelps County Sheriff's Department",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "PHELPS COUNTY JAIL (NE)",
@@ -1797,7 +2334,10 @@
         "DETLOC": "PHELPNE",
         "filename": "PHELPNE.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 27
+        "CurrentIntervalADP": 27,
+        "Owner": "Phelps County",
+        "Operator": "Phelps County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "PICKENS COUNTY DETENTION CENTER",
@@ -1807,7 +2347,10 @@
         "DETLOC": "PCKNSAL",
         "filename": "PCKNSAL.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 46
+        "CurrentIntervalADP": 46,
+        "Owner": "Pickens County",
+        "Operator": "Pickens County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "PIKE COUNTY JAIL",
@@ -1817,7 +2360,10 @@
         "DETLOC": "PIKCOPA",
         "filename": "PIKCOPA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 229
+        "CurrentIntervalADP": 229,
+        "Owner": "Pike County",
+        "Operator": "Pike County Prison Board",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "PINE PRAIRIE ICE PROCESSING CENTER",
@@ -1827,7 +2373,10 @@
         "DETLOC": "PINEPLA",
         "filename": "PINEPLA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 789
+        "CurrentIntervalADP": 789,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "PINELLAS COUNTY JAIL",
@@ -1837,7 +2386,10 @@
         "DETLOC": "PINELFL",
         "filename": "PINELFL.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 26
+        "CurrentIntervalADP": 26,
+        "Owner": "Pinellas County",
+        "Operator": "Pinellas County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "PLATTE COUNTY JAIL",
@@ -1847,7 +2399,10 @@
         "DETLOC": "PLATTWY",
         "filename": "PLATTWY.html",
         "LatestUpdate": "2025-12-26",
-        "CurrentIntervalADP": 2
+        "CurrentIntervalADP": 2,
+        "Owner": "Platte County",
+        "Operator": "Platte County Sheriffs Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "PLYMOUTH COUNTY CORRECTIONAL FACILITY",
@@ -1857,7 +2412,10 @@
         "DETLOC": "PLYMOMA",
         "filename": "PLYMOMA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 470
+        "CurrentIntervalADP": 470,
+        "Owner": "Commonwealth of Massachusetts",
+        "Operator": "Plymouth County Sheriff's Department",
+        "Institutional.Type": "State-Local"
     },
     {
         "Name": "POLK COUNTY JAIL (FL)",
@@ -1867,7 +2425,10 @@
         "DETLOC": "POLKJFL",
         "filename": "POLKJFL.html",
         "LatestUpdate": "2025-11-10",
-        "CurrentIntervalADP": 1
+        "CurrentIntervalADP": 1,
+        "Owner": "Polk County",
+        "Operator": "Polk County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "POLK COUNTY JAIL (IA)",
@@ -1877,7 +2438,10 @@
         "DETLOC": "POLKJIA",
         "filename": "POLKJIA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 55
+        "CurrentIntervalADP": 55,
+        "Owner": "Polk County",
+        "Operator": "Polk County Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "PORT ISABEL SPC",
@@ -1887,7 +2451,10 @@
         "DETLOC": "PIC",
         "filename": "PIC.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1116
+        "CurrentIntervalADP": 1116,
+        "Owner": "Department of Homeland Security (DHS)",
+        "Operator": "Ahtna Support and Training Services",
+        "Institutional.Type": "Federal-Private Contractor"
     },
     {
         "Name": "POTTAWATTAMIE COUNTY JAIL",
@@ -1897,7 +2464,10 @@
         "DETLOC": "POTTAIA",
         "filename": "POTTAIA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 28
+        "CurrentIntervalADP": 28,
+        "Owner": "Pottawattamie County",
+        "Operator": "Pottawattamie County Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "PRAIRIELAND DETENTION CENTER",
@@ -1907,7 +2477,10 @@
         "DETLOC": "PRLDCTX",
         "filename": "PRLDCTX.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 895
+        "CurrentIntervalADP": 895,
+        "Owner": "City of Alvarado PFC Board of Directors",
+        "Operator": "LaSalle Corrections",
+        "Institutional.Type": "Local-Private Contractor"
     },
     {
         "Name": "PUTNAM COUNTY SHERIFF",
@@ -1917,7 +2490,10 @@
         "DETLOC": "PUTNMTN",
         "filename": "PUTNMTN.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 12
+        "CurrentIntervalADP": 12,
+        "Owner": "Putnam County",
+        "Operator": "Putnam County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "RAPPAHANNOCK REGIONAL JAIL",
@@ -1927,7 +2503,10 @@
         "DETLOC": "RAPRJVA",
         "filename": "RAPRJVA.html",
         "LatestUpdate": "2025-11-10",
-        "CurrentIntervalADP": 1
+        "CurrentIntervalADP": 1,
+        "Owner": "Rappahannock Regional Jail Authority",
+        "Operator": "Rappahannock Regional Jail Authority",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "RICHWOOD CORRECTIONAL CENTER",
@@ -1937,7 +2516,10 @@
         "DETLOC": "RWCCMLA",
         "filename": "RWCCMLA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 926
+        "CurrentIntervalADP": 926,
+        "Owner": "LaSalle Corrections",
+        "Operator": "LaSalle Corrections",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "RIO GRANDE DETENTION CENTER",
@@ -1947,7 +2529,10 @@
         "DETLOC": "RGRNDTX",
         "filename": "RGRNDTX.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 622
+        "CurrentIntervalADP": 622,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "RIVER CORRECTIONAL CENTER",
@@ -1957,7 +2542,10 @@
         "DETLOC": "RVRCCLA",
         "filename": "RVRCCLA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 488
+        "CurrentIntervalADP": 488,
+        "Owner": "LaSalle Corrections",
+        "Operator": "LaSalle Corrections",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "RIVERSIDE REGIONAL JAIL",
@@ -1967,7 +2555,10 @@
         "DETLOC": "RSREGVA",
         "filename": "RSREGVA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 30
+        "CurrentIntervalADP": 30,
+        "Owner": "Riverside Regional Jail Authority (RRJA)",
+        "Operator": "Riverside Regional Jail Authority (RRJA)",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "ROANOKE CITY JAIL",
@@ -1977,7 +2568,10 @@
         "DETLOC": "RONKEVA",
         "filename": "RONKEVA.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 2
+        "CurrentIntervalADP": 2,
+        "Owner": "City of Roanoke",
+        "Operator": "Roanoke City Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "ROBERT A DEYTON DETENTION FACILITY",
@@ -1987,7 +2581,10 @@
         "DETLOC": "RADDFGA",
         "filename": "RADDFGA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 26
+        "CurrentIntervalADP": 26,
+        "Owner": "Clayton County",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Local-Private Contractor"
     },
     {
         "Name": "ROCKINGHAM COUNTY JAIL",
@@ -1997,7 +2594,10 @@
         "DETLOC": "ROCKIVA",
         "filename": "ROCKIVA.html",
         "LatestUpdate": "2026-01-22",
-        "CurrentIntervalADP": 1
+        "CurrentIntervalADP": 1,
+        "Owner": "Rockingham County",
+        "Operator": "Rockingham County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "SAIPAN DEPARTMENT OF CORRECTIONS (SUSUPE)",
@@ -2007,7 +2607,10 @@
         "DETLOC": "MPSIPAN",
         "filename": "MPSIPAN.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 17
+        "CurrentIntervalADP": 17,
+        "Owner": "Government of the Commonwealth of the Northern Mariana Islands (CNMI)",
+        "Operator": "Government of the Commonwealth of the Northern Mariana Islands (CNMI) Department of Corrections",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "SALT LAKE COUNTY METRO JAIL",
@@ -2017,7 +2620,10 @@
         "DETLOC": "SLSLCUT",
         "filename": "SLSLCUT.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1
+        "CurrentIntervalADP": 1,
+        "Owner": "Salt Lake County Sheriff's Office",
+        "Operator": "Salt Lake County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "SAN DIEGO DISTRICT STAGING",
@@ -2027,7 +2633,10 @@
         "DETLOC": "SNDHOLD",
         "filename": "SNDHOLD.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 7
+        "CurrentIntervalADP": 7,
+        "Owner": "Department of Homeland Security (DHS)",
+        "Operator": "Department of Homeland Security (DHS)",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "SAN JUAN STAGING",
@@ -2037,7 +2646,10 @@
         "DETLOC": "SJS",
         "filename": "SJS.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 12
+        "CurrentIntervalADP": 12,
+        "Owner": "Department of Homeland Security (DHS)",
+        "Operator": "Department of Homeland Security (DHS)",
+        "Institutional.Type": "Federal"
     },
     {
         "Name": "SAN LUIS REGIONAL DETENTION CENTER",
@@ -2047,7 +2659,10 @@
         "DETLOC": "SLRDCAZ",
         "filename": "SLRDCAZ.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 180
+        "CurrentIntervalADP": 180,
+        "Owner": "City of San Luis",
+        "Operator": "LaSalle Corrections",
+        "Institutional.Type": "Local-Private Contractor"
     },
     {
         "Name": "SARASOTA COUNTY JAIL",
@@ -2057,7 +2672,10 @@
         "DETLOC": "SARASFL",
         "filename": "SARASFL.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 1
+        "CurrentIntervalADP": 1,
+        "Owner": "Sarasota County",
+        "Operator": "Sarasota County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "SARPY COUNTY JAIL",
@@ -2067,7 +2685,10 @@
         "DETLOC": "SARPYNE",
         "filename": "SARPYNE.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 20
+        "CurrentIntervalADP": 20,
+        "Owner": "Sarpy County",
+        "Operator": "Sarpy County Board of Corrections",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "SAUK COUNTY SHERIFF",
@@ -2077,7 +2698,10 @@
         "DETLOC": "SAUKCWI",
         "filename": "SAUKCWI.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 10
+        "CurrentIntervalADP": 10,
+        "Owner": "Sauk County",
+        "Operator": "Sauk County Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "SCOTT COUNTY DET. FACILITY",
@@ -2087,7 +2711,10 @@
         "DETLOC": "SCOTTIA",
         "filename": "SCOTTIA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 2
+        "CurrentIntervalADP": 2,
+        "Owner": "Scott County",
+        "Operator": "Scott County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "SEBASTIAN COUNTY DETENTION CENTER",
@@ -2097,7 +2724,10 @@
         "DETLOC": "SEBASAR",
         "filename": "SEBASAR.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 1
+        "CurrentIntervalADP": 1,
+        "Owner": "Sebastian County",
+        "Operator": "Sebastian County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "SENECA COUNTY JAIL",
@@ -2107,7 +2737,10 @@
         "DETLOC": "SENECOH",
         "filename": "SENECOH.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 58
+        "CurrentIntervalADP": 58,
+        "Owner": "Seneca County",
+        "Operator": "Seneca County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "SHERBURNE COUNTY JAIL",
@@ -2117,7 +2750,10 @@
         "DETLOC": "SHERBMN",
         "filename": "SHERBMN.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 93
+        "CurrentIntervalADP": 93,
+        "Owner": "Sherburne County",
+        "Operator": "Sherburne County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "SIOUX COUNTY JAIL",
@@ -2127,7 +2763,10 @@
         "DETLOC": "SIOUXIA",
         "filename": "SIOUXIA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 11
+        "CurrentIntervalADP": 11,
+        "Owner": "Sioux County",
+        "Operator": "Sioux County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "SOUTH CENTRAL REGIONAL JAIL",
@@ -2137,7 +2776,10 @@
         "DETLOC": "WVSCENT",
         "filename": "WVSCENT.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 83
+        "CurrentIntervalADP": 83,
+        "Owner": "West Virginia Division of Corrections and Rehabilitation (WVDCR)",
+        "Operator": "West Virginia Division of Corrections and Rehabilitation (WVDCR)",
+        "Institutional.Type": "State"
     },
     {
         "Name": "SOUTH LOUISIANA ICE PROCESSING CENTER",
@@ -2147,7 +2789,10 @@
         "DETLOC": "BASILLA",
         "filename": "BASILLA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 933
+        "CurrentIntervalADP": 933,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "SOUTH TEXAS ICE PROCESSING CENTER",
@@ -2157,7 +2802,10 @@
         "DETLOC": "STCDFTX",
         "filename": "STCDFTX.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1701
+        "CurrentIntervalADP": 1701,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "SOUTHERN REGIONAL",
@@ -2167,7 +2815,10 @@
         "DETLOC": "WVSOUTH",
         "filename": "WVSOUTH.html",
         "LatestUpdate": "2026-01-22",
-        "CurrentIntervalADP": 1
+        "CurrentIntervalADP": 1,
+        "Owner": "West Virginia Division of Corrections and Rehabilitation (WVDCR)",
+        "Operator": "West Virginia Division of Corrections and Rehabilitation (WVDCR)",
+        "Institutional.Type": "State"
     },
     {
         "Name": "SOUTHWESTERN REGIONAL JAIL",
@@ -2177,7 +2828,10 @@
         "DETLOC": "WVSWEST",
         "filename": "WVSWEST.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 13
+        "CurrentIntervalADP": 13,
+        "Owner": "West Virginia Division of Corrections and Rehabilitation (WVDCR)",
+        "Operator": "West Virginia Division of Corrections and Rehabilitation (WVDCR)",
+        "Institutional.Type": "State"
     },
     {
         "Name": "ST. CLAIR COUNTY JAIL",
@@ -2187,7 +2841,10 @@
         "DETLOC": "STCLAMI",
         "filename": "STCLAMI.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 61
+        "CurrentIntervalADP": 61,
+        "Owner": "St. Clair County",
+        "Operator": "St. Clair County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "ST. LUCIE COUNTY JAIL",
@@ -2197,7 +2854,10 @@
         "DETLOC": "STLUCFL",
         "filename": "STLUCFL.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1
+        "CurrentIntervalADP": 1,
+        "Owner": "St. Lucie County",
+        "Operator": "St. Lucie County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "STE. GENEVIEVE COUNTY SHERIFF/JAIL",
@@ -2207,7 +2867,10 @@
         "DETLOC": "STGENMO",
         "filename": "STGENMO.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 148
+        "CurrentIntervalADP": 148,
+        "Owner": "Ste. Genevieve County",
+        "Operator": "Ste. Genevieve County Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "STEWART DETENTION CENTER",
@@ -2217,7 +2880,10 @@
         "DETLOC": "STWRTGA",
         "filename": "STWRTGA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 2063
+        "CurrentIntervalADP": 2063,
+        "Owner": "CoreCivic",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "STRAFFORD COUNTY CORRECTIONS",
@@ -2227,7 +2893,10 @@
         "DETLOC": "STRAFNH",
         "filename": "STRAFNH.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 123
+        "CurrentIntervalADP": 123,
+        "Owner": "Strafford County",
+        "Operator": "Strafford County Department of Corrections",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "SWEETWATER COUNTY JAIL",
@@ -2237,7 +2906,10 @@
         "DETLOC": "SWEETWY",
         "filename": "SWEETWY.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 14
+        "CurrentIntervalADP": 14,
+        "Owner": "Sweetwater County",
+        "Operator": "Sweetwater County Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "T DON HUTTO DETENTION CENTER",
@@ -2247,7 +2919,10 @@
         "DETLOC": "CCAHUTX",
         "filename": "CCAHUTX.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 421
+        "CurrentIntervalADP": 421,
+        "Owner": "CoreCivic",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "TOM GREEN COUNTY JAIL",
@@ -2257,7 +2932,10 @@
         "DETLOC": "TGREETX",
         "filename": "TGREETX.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 2
+        "CurrentIntervalADP": 2,
+        "Owner": "Tom Green County",
+        "Operator": "Tom Green County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "TOOELE COUNTY JAIL",
@@ -2267,7 +2945,10 @@
         "DETLOC": "TOOELUT",
         "filename": "TOOELUT.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 9
+        "CurrentIntervalADP": 9,
+        "Owner": "Tooele County",
+        "Operator": "Tooele County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "TORRANCE COUNTY DETENTION FACILITY",
@@ -2277,7 +2958,10 @@
         "DETLOC": "TOORANM",
         "filename": "TOORANM.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 319
+        "CurrentIntervalADP": 319,
+        "Owner": "CoreCivic",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "TULSA COUNTY JAIL (DAVID L. MOSS JUSTICE CTR)",
@@ -2287,7 +2971,10 @@
         "DETLOC": "TULCOOK",
         "filename": "TULCOOK.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 13
+        "CurrentIntervalADP": 13,
+        "Owner": "Tulsa County Criminal Justice Authority (TCCJA)",
+        "Operator": "Tulsa County Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "TURNER GUILFORD KNIGHT (TGK) JAIL",
@@ -2297,7 +2984,10 @@
         "DETLOC": "TGKJLFL",
         "filename": "TGKJLFL.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 10
+        "CurrentIntervalADP": 10,
+        "Owner": "Miami-Dade County",
+        "Operator": "Miami-Dade Corrections and Rehabilitation Department (MDCR)",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "TWO BRIDGES REGIONAL JAIL",
@@ -2307,7 +2997,10 @@
         "DETLOC": "TBRJLME",
         "filename": "TBRJLME.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 4
+        "CurrentIntervalADP": 4,
+        "Owner": "Lincoln and Sagadahoc Multicounty Jail Authority",
+        "Operator": "Lincoln and Sagadahoc Multicounty Jail Authority",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "UINTA COUNTY JAIL",
@@ -2317,7 +3010,10 @@
         "DETLOC": "UINTAWY",
         "filename": "UINTAWY.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 37
+        "CurrentIntervalADP": 37,
+        "Owner": "Uinta County",
+        "Operator": "Uinta County Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "VAL VERDE CORRECTIONAL FACILITY",
@@ -2327,7 +3023,10 @@
         "DETLOC": "VALVETX",
         "filename": "VALVETX.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 3
+        "CurrentIntervalADP": 3,
+        "Owner": "GEO Group",
+        "Operator": "GEO Group",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "VICTORIA COUNTY JAIL",
@@ -2337,7 +3036,10 @@
         "DETLOC": "VICTOTX",
         "filename": "VICTOTX.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 14
+        "CurrentIntervalADP": 14,
+        "Owner": "Victoria County",
+        "Operator": "Victoria County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "WALTON COUNTY JAIL",
@@ -2347,7 +3049,10 @@
         "DETLOC": "WLTSOFL",
         "filename": "WLTSOFL.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 27
+        "CurrentIntervalADP": 27,
+        "Owner": "Walton County",
+        "Operator": "Walton County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "WARD COUNTY JAIL",
@@ -2357,7 +3062,10 @@
         "DETLOC": "WARDCND",
         "filename": "WARDCND.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 3
+        "CurrentIntervalADP": 3,
+        "Owner": "Ward County",
+        "Operator": "Ward County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "WASHINGTON COUNTY DETENTION CENTER",
@@ -2367,7 +3075,10 @@
         "DETLOC": "WASHIAR",
         "filename": "WASHIAR.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 4
+        "CurrentIntervalADP": 4,
+        "Owner": "Washington County",
+        "Operator": "Washington County Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "WASHINGTON COUNTY JAIL (PURGATORY CORRECTIONAL FACILITY)",
@@ -2377,7 +3088,10 @@
         "DETLOC": "WASHCUT",
         "filename": "WASHCUT.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 12
+        "CurrentIntervalADP": 12,
+        "Owner": "Washington County",
+        "Operator": "Washington County Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "WASHOE COUNTY JAIL",
@@ -2387,7 +3101,10 @@
         "DETLOC": "WASHONV",
         "filename": "WASHONV.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 45
+        "CurrentIntervalADP": 45,
+        "Owner": "Washoe County",
+        "Operator": "Washoe County Sheriff's Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "WAUKESHA COUNTY JAIL",
@@ -2397,7 +3114,10 @@
         "DETLOC": "WAUKEWI",
         "filename": "WAUKEWI.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1
+        "CurrentIntervalADP": 1,
+        "Owner": "Waukesha County",
+        "Operator": "Waukesha County Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "WEBB COUNTY DETENTION CENTER (CCA)",
@@ -2407,7 +3127,10 @@
         "DETLOC": "WEBDCTX",
         "filename": "WEBDCTX.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 374
+        "CurrentIntervalADP": 374,
+        "Owner": "CoreCivic",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "WEBER COUNTY JAIL",
@@ -2417,7 +3140,10 @@
         "DETLOC": "WEBERUT",
         "filename": "WEBERUT.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 9
+        "CurrentIntervalADP": 9,
+        "Owner": "Weber County",
+        "Operator": "Weber County Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "WESTERN REGIONAL JAIL AND CORRECTIONAL FACILITY",
@@ -2427,7 +3153,10 @@
         "DETLOC": "WVWESTR",
         "filename": "WVWESTR.html",
         "LatestUpdate": "2026-02-05",
-        "CurrentIntervalADP": 57
+        "CurrentIntervalADP": 57,
+        "Owner": "West Virginia Division of Corrections and Rehabilitation (WVDCR)",
+        "Operator": "West Virginia Division of Corrections and Rehabilitation (WVDCR)",
+        "Institutional.Type": "State"
     },
     {
         "Name": "WESTERN TENNESSEE DETENTION FACILITY",
@@ -2437,7 +3166,10 @@
         "DETLOC": "TNWESDF",
         "filename": "TNWESDF.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 396
+        "CurrentIntervalADP": 396,
+        "Owner": "CoreCivic",
+        "Operator": "CoreCivic",
+        "Institutional.Type": "Private Contractor"
     },
     {
         "Name": "WESTERN VIRGINIA REGIONAL JAIL",
@@ -2447,7 +3179,10 @@
         "DETLOC": "WVIRGVA",
         "filename": "WVIRGVA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 3
+        "CurrentIntervalADP": 3,
+        "Owner": "Western Virginia Regional Jail Authority",
+        "Operator": "Western Virginia Regional Jail Authority",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "WINN CORRECTIONAL CENTER",
@@ -2457,7 +3192,10 @@
         "DETLOC": "LAWINCI",
         "filename": "LAWINCI.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 1577
+        "CurrentIntervalADP": 1577,
+        "Owner": "Winn Parish Law Enforcement District",
+        "Operator": "LaSalle Corrections",
+        "Institutional.Type": "Local-Private Contractor"
     },
     {
         "Name": "WOODBURY COUNTY JAIL",
@@ -2467,7 +3205,10 @@
         "DETLOC": "WOODBIA",
         "filename": "WOODBIA.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 63
+        "CurrentIntervalADP": 63,
+        "Owner": "Woodbury County",
+        "Operator": "Woodbury County Sheriff’s Office",
+        "Institutional.Type": "Local"
     },
     {
         "Name": "WYATT DETENTION CENTER",
@@ -2477,6 +3218,9 @@
         "DETLOC": "WYATTRI",
         "filename": "WYATTRI.html",
         "LatestUpdate": "2026-04-02",
-        "CurrentIntervalADP": 102
+        "CurrentIntervalADP": 102,
+        "Owner": "Central Falls Detention Facility Corporation (CFDFC)",
+        "Operator": "Central Falls Detention Facility Corporation (CFDFC)",
+        "Institutional.Type": "Local"
     }
 ]
