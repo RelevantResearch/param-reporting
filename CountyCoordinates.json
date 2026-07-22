@@ -1692,5 +1692,47 @@
     "State": "RI",
     "Longitude": -71.384,
     "Latitude": 41.8923
+  },
+  {
+    "Name": "CACHE COUNTY JAIL",
+    "City": "LOGAN",
+    "State": "UT",
+    "Longitude": -111.8656,
+    "Latitude": 41.73705
+  },
+  {
+    "Name": "CENTRAL VALLEY ANNEX",
+    "City": "MCFARLAND",
+    "State": "CA",
+    "Longitude": -119.229,
+    "Latitude": 35.66812
+  },
+  {
+    "Name": "CHARLOTTE COUNTY JAIL",
+    "City": "PUNTA GORDA",
+    "State": "FL",
+    "Longitude": -82.00684,
+    "Latitude": 26.91514
+  },
+  {
+    "Name": "FRANKLIN COUNTY JAIL",
+    "City": "CHAMBERSBURG",
+    "State": "PA",
+    "Longitude": -77.64437,
+    "Latitude": 40.00168
+  },
+  {
+    "Name": "GARVIN COUNTY DETENTION CENTER",
+    "City": "PAULS VALLEY",
+    "State": "OK",
+    "Longitude": -97.22226,
+    "Latitude": 34.74068
+  },
+  {
+    "Name": "RANDALL COUNTY JAIL",
+    "City": "AMARILLO",
+    "State": "TX",
+    "Longitude": -101.8677,
+    "Latitude": 35.11751
   }
 ]
