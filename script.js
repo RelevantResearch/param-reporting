@@ -366,6 +366,47 @@ function setDynamicPlaceholders() {
       cities.length > 0 ? `e.g., ${cities[0]}` : "Search cities...";
     document.getElementById("zipSearch").placeholder =
       zips.length > 0 ? `e.g., ${zips[0]}` : "Search zip codes...";
+
+    // Populate owner dropdown
+    const owners = [
+      ...new Set(allFacilities.map((f) => f.Owner).filter(Boolean)),
+    ].sort();
+    const ownerSelect = document.getElementById("ownerSearch");
+    ownerSelect.innerHTML = '<option value="">All Owners</option>';
+    owners.forEach((val) => {
+      const opt = document.createElement("option");
+      opt.value = val;
+      opt.textContent = val;
+      ownerSelect.appendChild(opt);
+    });
+
+    // Populate operator dropdown
+    const operators = [
+      ...new Set(allFacilities.map((f) => f.Operator).filter(Boolean)),
+    ].sort();
+    const operatorSelect = document.getElementById("operatorSearch");
+    operatorSelect.innerHTML = '<option value="">All Operators</option>';
+    operators.forEach((val) => {
+      const opt = document.createElement("option");
+      opt.value = val;
+      opt.textContent = val;
+      operatorSelect.appendChild(opt);
+    });
+
+    // Populate institutional type dropdown
+    const types = [
+      ...new Set(
+        allFacilities.map((f) => f["Institutional.Type"]).filter(Boolean),
+      ),
+    ].sort();
+    const typeSelect = document.getElementById("typeSearch");
+    typeSelect.innerHTML = '<option value="">All Types</option>';
+    types.forEach((val) => {
+      const opt = document.createElement("option");
+      opt.value = val;
+      opt.textContent = val;
+      typeSelect.appendChild(opt);
+    });
   }
 }
 
@@ -469,10 +510,30 @@ function displayFacilities(facilities) {
             </div>`
         : "";
 
+      const owner = facility.Owner || "";
+      const operator = facility.Operator || "";
+      const instType = facility["Institutional.Type"] || "";
+
+      const ownerBadge = owner
+        ? `<span class="tag tag-owner" title="Owner">${owner}</span>`
+        : "";
+      const operatorBadge = operator
+        ? `<span class="tag tag-operator" title="Operator">${operator}</span>`
+        : "";
+      const typeBadge = instType
+        ? `<span class="tag tag-type tag-type-${instType.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/, "")}">${instType}</span>`
+        : "";
+
+      const tagsHtml =
+        ownerBadge || operatorBadge || typeBadge
+          ? `<div class="facility-tags">${ownerBadge}${operatorBadge}${typeBadge}</div>`
+          : "";
+
       return `
             <a href="${linkPath}" class="facility-item ${adpClass}">
                 <div class="facility-name">${facility.Name}</div>
                 <div class="facility-location">${facility.City}, ${facility.State} ${facility.Zip}</div>
+                ${tagsHtml}
                 <div class="facility-meta">${adpBadge}${updatedBadge}</div>
                 ${adpBar}
             </a>
@@ -498,6 +559,9 @@ function searchFacilities() {
     .getElementById("zipSearch")
     .value.toLowerCase()
     .trim();
+  const ownerQuery = document.getElementById("ownerSearch").value;
+  const operatorQuery = document.getElementById("operatorSearch").value;
+  const typeQuery = document.getElementById("typeSearch").value;
 
   filteredFacilities = allFacilities.filter((facility) => {
     const facilityName = (facility.Name || "").toLowerCase();
@@ -520,11 +584,32 @@ function searchFacilities() {
       !stateQuery || facilityState.toUpperCase() === stateQuery.toUpperCase();
     const matchesCity = !cityQuery || facilityCity.includes(cityQuery);
     const matchesZip = !zipQuery || facilityZip.includes(zipQuery);
+    const matchesOwner =
+      !ownerQuery || (facility.Owner || "") === ownerQuery;
+    const matchesOperator =
+      !operatorQuery || (facility.Operator || "") === operatorQuery;
+    const matchesType =
+      !typeQuery || (facility["Institutional.Type"] || "") === typeQuery;
 
-    return matchesSearch && matchesState && matchesCity && matchesZip;
+    return (
+      matchesSearch &&
+      matchesState &&
+      matchesCity &&
+      matchesZip &&
+      matchesOwner &&
+      matchesOperator &&
+      matchesType
+    );
   });
 
-  const hasFilters = searchQuery || stateQuery || cityQuery || zipQuery;
+  const hasFilters =
+    searchQuery ||
+    stateQuery ||
+    cityQuery ||
+    zipQuery ||
+    ownerQuery ||
+    operatorQuery ||
+    typeQuery;
 
   // Results count in toolbar
   const resultsCount = document.getElementById("resultsCount");
@@ -547,6 +632,9 @@ function clearAllFilters() {
   document.getElementById("stateSearch").value = "";
   document.getElementById("citySearch").value = "";
   document.getElementById("zipSearch").value = "";
+  document.getElementById("ownerSearch").value = "";
+  document.getElementById("operatorSearch").value = "";
+  document.getElementById("typeSearch").value = "";
   searchFacilities();
 }
 
@@ -563,6 +651,15 @@ document
 document
   .getElementById("zipSearch")
   .addEventListener("input", searchFacilities);
+document
+  .getElementById("ownerSearch")
+  .addEventListener("change", searchFacilities);
+document
+  .getElementById("operatorSearch")
+  .addEventListener("change", searchFacilities);
+document
+  .getElementById("typeSearch")
+  .addEventListener("change", searchFacilities);
 document
   .getElementById("clearFilters")
   .addEventListener("click", clearAllFilters);

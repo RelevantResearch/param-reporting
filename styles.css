@@ -452,6 +452,84 @@ select.filter-input {
     letter-spacing: 0.02em;
 }
 
+/* Facility tags (Owner, Operator, Institutional Type) */
+.facility-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 0.35rem;
+}
+
+.tag {
+    font-size: 0.68rem;
+    padding: 0.1rem 0.45rem;
+    border-radius: 4px;
+    font-weight: 500;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tag-owner {
+    background: #eef2f7;
+    color: #4a5568;
+}
+
+.tag-operator {
+    background: #e8f4f8;
+    color: #2c5282;
+}
+
+.tag-type {
+    font-weight: 600;
+}
+
+.tag-type-federal {
+    background: #2c3e50;
+    color: #fff;
+}
+
+.tag-type-federal-private-contractor {
+    background: #50596e;
+    color: #fff;
+}
+
+.tag-type-state {
+    background: #276749;
+    color: #fff;
+}
+
+.tag-type-state-local {
+    background: #38a169;
+    color: #fff;
+}
+
+.tag-type-state-private-contractor {
+    background: #2f855a;
+    color: #fff;
+}
+
+.tag-type-local {
+    background: #2b6cb0;
+    color: #fff;
+}
+
+.tag-type-local-private-contractor {
+    background: #2c5282;
+    color: #fff;
+}
+
+.tag-type-private-contractor {
+    background: #c05621;
+    color: #fff;
+}
+
+.tag-type-non-profit-local {
+    background: #6b46c1;
+    color: #fff;
+}
+
 /* ADP mini progress bar */
 .facility-adp-track {
     height: 3px;
