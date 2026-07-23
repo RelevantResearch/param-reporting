@@ -2496,7 +2496,7 @@
         "Institutional.Type": "Local"
     },
     {
-        "Name": "POLK COUNTY JAIL",
+        "Name": "POLK COUNTY JAIL (IA)",
         "City": "Des Moines",
         "State": "IA",
         "Zip": "50313",
@@ -2938,7 +2938,7 @@
         "Institutional.Type": "Local"
     },
     {
-        "Name": "STE. GENEVIEVE COUNTY SHERIFF-JAIL",
+        "Name": "STE. GENEVIEVE COUNTY SHERIFF/JAIL",
         "City": "Ste. Genevieve",
         "State": "MO",
         "Zip": "63670",
