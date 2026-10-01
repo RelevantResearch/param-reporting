@@ -196,14 +196,12 @@ function initMap() {
     zoomControl: true,
   }).setView(USA_CENTER, USA_ZOOM);
 
-  L.tileLayer(
-    "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-    {
-      maxZoom: 13,
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    },
-  ).addTo(map);
+  // CARTO basemaps now require an API key; using OpenStreetMap tiles until we have one.
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 13,
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  }).addTo(map);
 
   markersLayer = L.layerGroup().addTo(map);
 
