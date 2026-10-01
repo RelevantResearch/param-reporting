@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centros de detención de ICE - Directorio</title>
+    <link rel="alternate" hreflang="en" href="https://detentionreports.com/" />
+    <link rel="alternate" hreflang="es" href="https://detentionreports.com/es/" />
+    <link rel="alternate" hreflang="x-default" href="https://detentionreports.com/" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Y0JF41VY73"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Y0JF41VY73");
+    </script>
+    <link rel="stylesheet" href="../styles.css" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js").then((registration) => {
+          // Force the browser to check for a new SW version on every page load
+          registration.update();
+        });
+
+        // When a new SW activates (new cache version deployed), reload once to
+        // get fresh files. SessionStorage flag prevents an infinite reload loop.
+        navigator.serviceWorker.addEventListener("controllerchange", () => {
+          if (!sessionStorage.getItem("sw-reloaded")) {
+            sessionStorage.setItem("sw-reloaded", "1");
+            window.location.reload();
+          }
+        });
+      }
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  </head>
+
+  <body>
+    <!-- Spanish homepage: shares styles.css and script.js with the English one -->
+    <!-- Sticky header bar: logo left, title + stats right -->
+    <header class="site-header">
+      <div class="header-logo-wrap">
+        <img src="../logo.png" alt="Logotipo de Relevant Research" class="header-logo" />
+      </div>
+      <div class="header-content">
+        <div class="header-title-row">
+          <h1>ICE Detention Reports</h1>
+          <div class="header-actions">
+            <a href="../" class="notes-link lang-link" hreflang="en" lang="en"
+              >English</a
+            >
+            <a href="#" id="notesLink" class="notes-link" style="display: none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                ></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              Notas sobre el procesamiento de datos (en inglés)
+            </a>
+          </div>
+        </div>
+        <div class="stats" id="totalFacilities">Cargando...</div>
+      </div>
+    </header>
+
+    <!-- Two-column main layout -->
+    <div class="main-layout">
+      <!-- Left panel: map + filters (always visible) -->
+      <aside class="left-panel">
+        <div class="date-info-block">
+          <span class="date-info-heading">Datos hasta el</span>
+          <span class="date-info">9 de julio de 2026</span>
+        </div>
+
+        <div class="map-section">
+          <div class="map-header">
+            <div class="map-title-text">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polygon
+                  points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"
+                ></polygon>
+                <line x1="8" y1="2" x2="8" y2="18"></line>
+                <line x1="16" y1="6" x2="16" y2="22"></line>
+              </svg>
+              Mapa de centros
+            </div>
+            <div class="map-hint">Haga clic en un marcador para abrir el informe</div>
+          </div>
+          <div id="map"></div>
+        </div>
+
+        <div class="search-container">
+          <div class="filter-section-label">Filtrar centros</div>
+          <div class="filter-row">
+            <div class="filter-group full-width">
+              <label for="stateSearch">Estado</label>
+              <select id="stateSearch" class="filter-input">
+                <option value="">Todos los estados</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="citySearch">Ciudad</label>
+              <input
+                type="text"
+                id="citySearch"
+                class="filter-input"
+                placeholder="p. ej., Natchez"
+              />
+            </div>
+            <div class="filter-group">
+              <label for="zipSearch">Código postal</label>
+              <input
+                type="text"
+                id="zipSearch"
+                class="filter-input"
+                placeholder="p. ej., 39120"
+              />
+            </div>
+          </div>
+          <div class="filter-row">
+            <div class="filter-group">
+              <label for="ownerSearch">Propietario</label>
+              <select id="ownerSearch" class="filter-input">
+                <option value="">Todos los propietarios</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="operatorSearch">Operador</label>
+              <select id="operatorSearch" class="filter-input">
+                <option value="">Todos los operadores</option>
+              </select>
+            </div>
+          </div>
+          <div class="filter-row">
+            <div class="filter-group full-width">
+              <label for="typeSearch">Tipo de institución</label>
+              <select id="typeSearch" class="filter-input">
+                <option value="">Todos los tipos</option>
+              </select>
+            </div>
+          </div>
+          <div class="search-box-wrapper">
+            <svg
+              class="search-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input
+              type="text"
+              class="search-box"
+              id="searchInput"
+              placeholder="Buscar por nombre, ubicación o código..."
+              autocomplete="off"
+            />
+          </div>
+          <div class="search-footer">
+            <button id="clearFilters" class="clear-btn" style="display: none">
+              × Borrar filtros
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right panel: scrollable facility list -->
+      <main class="right-panel">
+        <div class="facilities-container">
+          <div class="facilities-toolbar">
+            <span id="resultsCount" class="results-count">Cargando...</span>
+            <div class="sort-control">
+              <span class="sort-label">Ordenar</span>
+              <select id="sortBy" class="sort-select">
+                <option value="name">Nombre A → Z</option>
+                <option value="adp-desc" selected>PDP: mayor primero</option>
+                <option value="adp-asc">PDP: menor primero</option>
+                <option value="updated-desc">Actualizados recientemente</option>
+                <option value="updated-asc">Actualizados hace más tiempo</option>
+              </select>
+            </div>
+          </div>
+          <div class="adp-legend">
+            <span class="legend-item legend-high">&ge; 1,000</span>
+            <span class="legend-item legend-medium">100 – 999</span>
+            <span class="legend-item legend-low">&lt; 100</span>
+            <span class="legend-item legend-none">Sin datos actualizados</span>
+          </div>
+          <div id="facilitiesContent" class="loading">
+            Cargando centros...
+          </div>
+        </div>
+
+        <footer class="footer">
+          <p>
+            Este directorio ofrece transparencia e información sobre los
+            centros de detención de ICE en todo Estados Unidos.
+          </p>
+          <p>
+            ¿Preguntas? Escriba a Adam a
+            <a href="mailto:adam@relevant-research.com"
+              >adam@relevant-research.com</a
+            >
+          </p>
+          <p>
+            Desarrollado por
+            <a href="https://relevant-research.com/" target="_blank"
+              >Relevant Research</a
+            >
+          </p>
+        </footer>
+      </main>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

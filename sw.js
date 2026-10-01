@@ -1,6 +1,6 @@
 // Service Worker — network-first, versioned cache bust
 // Bump CACHE_VERSION on every deployment to force clients to clear old caches
-const CACHE_VERSION = "v20260417";
+const CACHE_VERSION = "v20260918";
 const CACHE_NAME = `detention-reports-${CACHE_VERSION}`;
 
 // On install: skip waiting so the new SW activates immediately

@@ -81,6 +81,17 @@ body {
     color: #2c3e50;
 }
 
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.lang-link {
+    font-weight: 600;
+}
+
 /* === MAIN TWO-COLUMN LAYOUT === */
 .main-layout {
     flex: 1;

@@ -3,6 +3,111 @@ let filteredFacilities = [];
 let currentSort = "adp-desc";
 let maxAdp = 0;
 
+// Language is taken from <html lang="...">. The Spanish homepage lives in /es/,
+// so data files and facility pages are resolved relative to the site root.
+const LANG = document.documentElement.lang === "es" ? "es" : "en";
+const ROOT = LANG === "es" ? "../" : "./";
+const FACILITY_DIR = LANG === "es" ? "../facility/es/" : "facility/";
+
+const STRINGS = {
+  en: {
+    adp: "ADP",
+    adpLevel: "ADP Level",
+    noUpdatedData: "No updated data",
+    noAdpData: "No ADP data",
+    updated: "Updated",
+    detentionCenters: (n) => `${n} Detention Centers`,
+    facilities: (n) => `${n} facilities`,
+    facilitiesOf: (n, total) => `${n} of ${total} facilities`,
+    loadError:
+      "Error loading facilities. Please check if index.json exists.",
+    allStates: "All States",
+    allOwners: "All Owners",
+    allOperators: "All Operators",
+    allTypes: "All Types",
+    example: (v) => `e.g., ${v}`,
+    searchCities: "Search cities...",
+    searchZips: "Search zip codes...",
+    noMatches: "No facilities match your filters.",
+    clearFilters: "Clear filters",
+    owner: "Owner",
+    operator: "Operator",
+    months: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    formatDate: (m, d, y) => `${m} ${d}, ${y}`,
+  },
+  es: {
+    adp: "PDP",
+    adpLevel: "Nivel de PDP",
+    noUpdatedData: "Sin datos actualizados",
+    noAdpData: "Sin datos de PDP",
+    updated: "Actualizado",
+    detentionCenters: (n) => `${n} centros de detención`,
+    facilities: (n) => `${n} centros`,
+    facilitiesOf: (n, total) => `${n} de ${total} centros`,
+    loadError:
+      "Error al cargar los centros. Verifique que exista index.json.",
+    allStates: "Todos los estados",
+    allOwners: "Todos los propietarios",
+    allOperators: "Todos los operadores",
+    allTypes: "Todos los tipos",
+    example: (v) => `p. ej., ${v}`,
+    searchCities: "Buscar ciudades...",
+    searchZips: "Buscar códigos postales...",
+    noMatches: "Ningún centro coincide con sus filtros.",
+    clearFilters: "Borrar filtros",
+    owner: "Propietario",
+    operator: "Operador",
+    months: ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sept", "oct", "nov", "dic"],
+    formatDate: (m, d, y) => `${d} ${m} ${y}`,
+  },
+};
+const T = STRINGS[LANG];
+
+// Spanish names only where they differ from English
+const stateNamesEs = {
+  HI: "Hawái",
+  LA: "Luisiana",
+  MI: "Míchigan",
+  NH: "Nuevo Hampshire",
+  NJ: "Nueva Jersey",
+  NM: "Nuevo México",
+  NY: "Nueva York",
+  NC: "Carolina del Norte",
+  ND: "Dakota del Norte",
+  OR: "Oregón",
+  PA: "Pensilvania",
+  SC: "Carolina del Sur",
+  SD: "Dakota del Sur",
+  WV: "Virginia Occidental",
+  DC: "Distrito de Columbia",
+  AS: "Samoa Americana",
+  MP: "Islas Marianas del Norte",
+  VI: "Islas Vírgenes de EE. UU.",
+};
+
+// Institutional types are stored in English (e.g. "State-Private Contractor");
+// the Spanish page translates each part for display only.
+const typePartsEs = {
+  Federal: "Federal",
+  Local: "Local",
+  State: "Estatal",
+  "Private Contractor": "Contratista privado",
+  "Non-profit": "Sin fines de lucro",
+};
+
+function displayStateName(abbr) {
+  if (LANG === "es" && stateNamesEs[abbr]) return stateNamesEs[abbr];
+  return stateNames[abbr] || abbr;
+}
+
+function displayType(type) {
+  if (LANG !== "es" || !type) return type;
+  return type
+    .split(/-(?=[A-Z])/)
+    .map((part) => typePartsEs[part] || part)
+    .join(" - ");
+}
+
 // US State abbreviations to full names mapping
 const stateNames = {
   AL: "Alabama",
@@ -107,11 +212,11 @@ function initMap() {
   legend.onAdd = function () {
     const div = L.DomUtil.create("div", "map-legend");
     div.innerHTML = `
-      <div class="map-legend-title">ADP Level</div>
+      <div class="map-legend-title">${T.adpLevel}</div>
       <div class="map-legend-item"><span class="map-legend-dot" style="background:#f03b20;"></span> &ge; 1,000</div>
       <div class="map-legend-item"><span class="map-legend-dot" style="background:#feb24c;"></span> 100 – 999</div>
       <div class="map-legend-item"><span class="map-legend-dot" style="background:#ffeda0; border:1px solid #feb24c;"></span> &lt; 100</div>
-      <div class="map-legend-item"><span class="map-legend-dot" style="background:#bdc3c7;"></span> No updated data</div>
+      <div class="map-legend-item"><span class="map-legend-dot" style="background:#bdc3c7;"></span> ${T.noUpdatedData}</div>
     `;
     L.DomEvent.disableClickPropagation(div);
     L.DomEvent.disableScrollPropagation(div);
@@ -169,7 +274,7 @@ function initMap() {
 }
 async function loadCountyCoordinates() {
   try {
-    const response = await fetch("./CountyCoordinates.json");
+    const response = await fetch(`${ROOT}CountyCoordinates.json`);
     const data = await response.json();
     allCountyPoints = data;
     renderCountyMarkers(data);
@@ -221,7 +326,7 @@ function renderCountyMarkers(points) {
 
     // Rich tooltip with ADP info
     const adpLabel =
-      adp != null ? `ADP: ${adp.toLocaleString()}` : "No ADP data";
+      adp != null ? `${T.adp}: ${adp.toLocaleString()}` : T.noAdpData;
     const updatedLabel =
       match && match.LatestUpdate ? formatDate(match.LatestUpdate) : "";
     const tooltipHtml = `
@@ -229,7 +334,7 @@ function renderCountyMarkers(points) {
         <div style="font-weight:600; margin-bottom:2px;">${p.Name}</div>
         <div style="color:#888; font-size:0.75rem;">${p.City}, ${p.State}</div>
         <div style="color:${colors.fill}; font-weight:700; margin-top:4px;">${adpLabel}</div>
-        ${updatedLabel ? `<div style="color:#aaa; font-size:0.72rem;">Updated: ${updatedLabel}</div>` : ""}
+        ${updatedLabel ? `<div style="color:#aaa; font-size:0.72rem;">${T.updated}: ${updatedLabel}</div>` : ""}
       </div>`;
 
     const marker = L.circleMarker([lat, lng], {
@@ -245,7 +350,7 @@ function renderCountyMarkers(points) {
 
     marker.on("click", () => {
       const filename = match ? match.filename : facilityNameToHtmlFile(p.Name);
-      window.location.href = `facility/${filename}`;
+      window.location.href = `${FACILITY_DIR}${filename}`;
     });
   });
 }
@@ -294,7 +399,7 @@ function updateMapMarkers() {
 // Load facilities from JSON
 async function loadFacilities() {
   try {
-    const response = await fetch("./index.json");
+    const response = await fetch(`${ROOT}index.json`);
     const data = await response.json();
 
     // Separate the NOTES entry from real facilities
@@ -313,18 +418,19 @@ async function loadFacilities() {
     // Show notes link if notes entry exists
     const notesLink = document.getElementById("notesLink");
     if (notesEntry && notesLink) {
-      notesLink.href = `facility/${notesEntry.filename}`;
+      notesLink.href = `${ROOT}facility/${notesEntry.filename}`;
       notesLink.style.display = "inline-flex";
     }
 
     // Update total count (header badge)
-    document.getElementById("totalFacilities").textContent =
-      `${allFacilities.length} Detention Centers`;
+    document.getElementById("totalFacilities").textContent = T.detentionCenters(
+      allFacilities.length,
+    );
 
     // Results count in toolbar
     const resultsCount = document.getElementById("resultsCount");
     if (resultsCount)
-      resultsCount.textContent = `${allFacilities.length} facilities`;
+      resultsCount.textContent = T.facilities(allFacilities.length);
 
     // Set dynamic placeholders based on first few facilities
     setDynamicPlaceholders();
@@ -334,7 +440,7 @@ async function loadFacilities() {
   } catch (error) {
     console.error("Error loading facilities:", error);
     document.getElementById("facilitiesContent").innerHTML =
-      '<div class="no-results">Error loading facilities. Please check if index.json exists.</div>';
+      `<div class="no-results">${T.loadError}</div>`;
   }
 }
 
@@ -352,27 +458,27 @@ function setDynamicPlaceholders() {
 
     // Populate states dropdown with full names
     const stateSelect = document.getElementById("stateSearch");
-    stateSelect.innerHTML = '<option value="">All States</option>';
+    stateSelect.innerHTML = `<option value="">${T.allStates}</option>`;
 
     stateAbbreviations.forEach((abbr) => {
       const option = document.createElement("option");
       option.value = abbr; // Keep abbreviation as value for filtering
-      option.textContent = stateNames[abbr] || abbr; // Show full name, fallback to abbreviation
+      option.textContent = displayStateName(abbr); // Show full name, fallback to abbreviation
       stateSelect.appendChild(option);
     });
 
     // Set placeholders for other fields with examples from the data
     document.getElementById("citySearch").placeholder =
-      cities.length > 0 ? `e.g., ${cities[0]}` : "Search cities...";
+      cities.length > 0 ? T.example(cities[0]) : T.searchCities;
     document.getElementById("zipSearch").placeholder =
-      zips.length > 0 ? `e.g., ${zips[0]}` : "Search zip codes...";
+      zips.length > 0 ? T.example(zips[0]) : T.searchZips;
 
     // Populate owner dropdown
     const owners = [
       ...new Set(allFacilities.map((f) => f.Owner).filter(Boolean)),
     ].sort();
     const ownerSelect = document.getElementById("ownerSearch");
-    ownerSelect.innerHTML = '<option value="">All Owners</option>';
+    ownerSelect.innerHTML = `<option value="">${T.allOwners}</option>`;
     owners.forEach((val) => {
       const opt = document.createElement("option");
       opt.value = val;
@@ -385,7 +491,7 @@ function setDynamicPlaceholders() {
       ...new Set(allFacilities.map((f) => f.Operator).filter(Boolean)),
     ].sort();
     const operatorSelect = document.getElementById("operatorSearch");
-    operatorSelect.innerHTML = '<option value="">All Operators</option>';
+    operatorSelect.innerHTML = `<option value="">${T.allOperators}</option>`;
     operators.forEach((val) => {
       const opt = document.createElement("option");
       opt.value = val;
@@ -400,11 +506,11 @@ function setDynamicPlaceholders() {
       ),
     ].sort();
     const typeSelect = document.getElementById("typeSearch");
-    typeSelect.innerHTML = '<option value="">All Types</option>';
+    typeSelect.innerHTML = `<option value="">${T.allTypes}</option>`;
     types.forEach((val) => {
       const opt = document.createElement("option");
       opt.value = val;
-      opt.textContent = val;
+      opt.textContent = displayType(val);
       typeSelect.appendChild(opt);
     });
   }
@@ -444,21 +550,11 @@ function sortFacilities(facilities) {
 function formatDate(dateStr) {
   if (!dateStr) return "";
   const [year, month, day] = dateStr.split("-");
-  const months = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
-  return `${months[parseInt(month, 10) - 1]} ${parseInt(day, 10)}, ${year}`;
+  return T.formatDate(
+    T.months[parseInt(month, 10) - 1],
+    parseInt(day, 10),
+    year,
+  );
 }
 
 // Display facilities
@@ -469,8 +565,8 @@ function displayFacilities(facilities) {
     container.innerHTML = `
             <div class="no-results">
                 <div class="no-results-icon">&#9740;</div>
-                <div>No facilities match your filters.</div>
-                <button onclick="clearAllFilters()" class="no-results-clear">Clear filters</button>
+                <div>${T.noMatches}</div>
+                <button onclick="clearAllFilters()" class="no-results-clear">${T.clearFilters}</button>
             </div>`;
     return;
   }
@@ -479,7 +575,7 @@ function displayFacilities(facilities) {
 
   const facilitiesHTML = sorted
     .map((facility) => {
-      const linkPath = `facility/${facility.filename}`;
+      const linkPath = `${FACILITY_DIR}${facility.filename}`;
       const adp = facility.CurrentIntervalADP;
       const hasAdp = adp !== null && adp !== undefined;
 
@@ -492,10 +588,10 @@ function displayFacilities(facilities) {
       }
 
       const adpBadge = hasAdp
-        ? `<span class="facility-adp"><span class="meta-label">ADP</span> ${adp.toLocaleString()}</span>`
+        ? `<span class="facility-adp"><span class="meta-label">${T.adp}</span> ${adp.toLocaleString()}</span>`
         : "";
       const updatedBadge = facility.LatestUpdate
-        ? `<span class="facility-updated"><span class="meta-label">Updated</span> ${formatDate(facility.LatestUpdate)}</span>`
+        ? `<span class="facility-updated"><span class="meta-label">${T.updated}</span> ${formatDate(facility.LatestUpdate)}</span>`
         : "";
 
       // Mini progress bar relative to max ADP
@@ -515,13 +611,13 @@ function displayFacilities(facilities) {
       const instType = facility["Institutional.Type"] || "";
 
       const ownerBadge = owner
-        ? `<span class="tag tag-owner" title="Owner">${owner}</span>`
+        ? `<span class="tag tag-owner" title="${T.owner}">${owner}</span>`
         : "";
       const operatorBadge = operator
-        ? `<span class="tag tag-operator" title="Operator">${operator}</span>`
+        ? `<span class="tag tag-operator" title="${T.operator}">${operator}</span>`
         : "";
       const typeBadge = instType
-        ? `<span class="tag tag-type tag-type-${instType.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/, "")}">${instType}</span>`
+        ? `<span class="tag tag-type tag-type-${instType.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/, "")}">${displayType(instType)}</span>`
         : "";
 
       const tagsHtml =
@@ -568,6 +664,7 @@ function searchFacilities() {
     const facilityCity = (facility.City || "").toLowerCase();
     const facilityState = (facility.State || "").toLowerCase();
     const facilityStateFull = (stateNames[facility.State] || "").toLowerCase();
+    const facilityStateEs = (stateNamesEs[facility.State] || "").toLowerCase();
     const facilityDetloc = (facility.DETLOC || "").toLowerCase();
     const facilityZip = (facility.Zip || "").toString().toLowerCase();
 
@@ -577,6 +674,7 @@ function searchFacilities() {
       facilityCity.includes(searchQuery) ||
       facilityState.includes(searchQuery) ||
       facilityStateFull.includes(searchQuery) ||
+      (facilityStateEs && facilityStateEs.includes(searchQuery)) ||
       facilityDetloc.includes(searchQuery) ||
       facilityZip.includes(searchQuery);
 
@@ -615,8 +713,8 @@ function searchFacilities() {
   const resultsCount = document.getElementById("resultsCount");
   if (resultsCount) {
     resultsCount.textContent = hasFilters
-      ? `${filteredFacilities.length} of ${allFacilities.length} facilities`
-      : `${allFacilities.length} facilities`;
+      ? T.facilitiesOf(filteredFacilities.length, allFacilities.length)
+      : T.facilities(allFacilities.length);
   }
 
   // Show/hide clear button
