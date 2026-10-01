@@ -11,6 +11,7 @@ const FACILITY_DIR = LANG === "es" ? "../facility/es/" : "facility/";
 
 const STRINGS = {
   en: {
+    adp: "ADP",
     adpLevel: "ADP Level",
     noUpdatedData: "No updated data",
     noAdpData: "No ADP data",
@@ -35,9 +36,10 @@ const STRINGS = {
     formatDate: (m, d, y) => `${m} ${d}, ${y}`,
   },
   es: {
-    adpLevel: "Nivel de ADP",
+    adp: "PDP",
+    adpLevel: "Nivel de PDP",
     noUpdatedData: "Sin datos actualizados",
-    noAdpData: "Sin datos de ADP",
+    noAdpData: "Sin datos de PDP",
     updated: "Actualizado",
     detentionCenters: (n) => `${n} centros de detención`,
     facilities: (n) => `${n} centros`,
@@ -324,7 +326,7 @@ function renderCountyMarkers(points) {
 
     // Rich tooltip with ADP info
     const adpLabel =
-      adp != null ? `ADP: ${adp.toLocaleString()}` : T.noAdpData;
+      adp != null ? `${T.adp}: ${adp.toLocaleString()}` : T.noAdpData;
     const updatedLabel =
       match && match.LatestUpdate ? formatDate(match.LatestUpdate) : "";
     const tooltipHtml = `
@@ -586,7 +588,7 @@ function displayFacilities(facilities) {
       }
 
       const adpBadge = hasAdp
-        ? `<span class="facility-adp"><span class="meta-label">ADP</span> ${adp.toLocaleString()}</span>`
+        ? `<span class="facility-adp"><span class="meta-label">${T.adp}</span> ${adp.toLocaleString()}</span>`
         : "";
       const updatedBadge = facility.LatestUpdate
         ? `<span class="facility-updated"><span class="meta-label">${T.updated}</span> ${formatDate(facility.LatestUpdate)}</span>`
